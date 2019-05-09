@@ -1,0 +1,5228 @@
+<!DOCTYPE html>
+<html lang="ru" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cycerone</title>
+
+	<!-- css -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="font/icon/flaticon.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body id="blue_theme">
+	<header class="header">
+		<div class="row">
+			<div class="header__logo col-2">C</div>
+
+			<div class="header__right col-4">
+				<div class="header__right-logo-m"><span>C</span></div>
+				<div class="header__right-logo-d"><span>Cycerone</span></div>
+
+				<nav class="header__right-nav">	
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">בית</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link active">כל האירועים</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__gamma col-8 col-md-4">
+				<div class="header__gamma-state">
+					מצב אמת
+				</div>
+				<div class="header__gamma-simulation">
+					סימולציה
+				</div>
+			</div>
+			
+			<div class="header__left col-4">
+				<div class="header__left-powered">
+					<img src="img/powered.png" alt="powered by">
+					<span>:Powered by</span>
+				</div>
+
+				<div class="header__left-icon">
+					<i class="flat flaticon-menu"></i>
+				</div>
+			</div>
+
+			<div class="header__icon col-2">
+				<a href="/"><i class="flat flaticon-left-arrow"></i></a>
+			</div>
+		</div>
+
+		<div class="popup-switch">
+			<div class="heading">צבע מערכת</div>
+
+			<div class="switch">
+				<input type="radio" id="dark" name="switch" checked="checked">
+				<label for="dark">כהה</label>
+
+				<input type="radio" id="light" name="switch">
+				<label for="light">בהיר</label>
+			</div>
+
+			<div class="link">
+				<a href="#">ניהול הרשאות</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="top-bar col-12">
+		<div class="top-bar__breadcrumbs">
+			<span>כל האירועים</span>
+			<i class="flat flaticon-left-arrow"></i>
+			<span class="active">אירוע #123456</span>
+		</div>
+
+		<div class="top-bar__links">
+			<div class="top-bar__hierarchy top-bar__item">
+				<a href="#"><i class="flat flaticon-sitemap"></i></a>
+			</div>
+
+			<div class="top-bar__share top-bar__item">
+				<a href="#"><i class="flat flaticon-export"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="single-event jumbotron-fluid">
+		<div class="head-wrap__cover col-lg-11">
+			<div class="container head-wrap">
+				<div class="single-event__head">
+					<div class="head-cover">
+						<div class="head-icon">
+							<i class="flat flaticon-money"></i>
+						</div>
+						<div class="head-info">
+							<div class="head-time">
+								זמן מתחילת אירוע <span>10:20 שעות</span>
+							</div>
+
+							<div class="head-title">
+								התפשטות תוכנת כופר  
+								<i class="open-info flat flaticon-info"></i>
+							</div>
+						</div>	
+					</div>
+
+					<div class="head-advance">
+						<span class="advance-item head-advance__done"><i class="flat flaticon-check"></i></span>
+						<span class="advance-item head-advance__done"><i class="flat flaticon-check"></i></span>
+						<span class="advance-item head-advance__performance"></span>
+						<span class="advance-item head-advance__empty"></span>
+						<span class="advance-item head-advance__empty"></span>
+					</div>
+				</div>
+				
+				<div class="info">
+					<div class="info-header">
+						<div class="info-header__logo col-2">
+							C
+						</div>
+
+						<div class="info-header__title col-8">
+							משימות
+						</div>
+
+						<div class="info-header__icon col-2">
+							<i class="flat flaticon-cross cross"></i>
+						</div>
+					</div>
+					
+					<div class="info-cover">
+						<div class="info-icon">
+							<i class="flat flaticon-info"></i>
+						</div>
+						<div class="info-card__info">
+							<div class="info-time">
+								זמן מתחילת אירוע <span>10:20 שעות</span>
+							</div>
+							<div class="info-title">
+								תפשטות תוכנת כופר  
+							</div>
+						</div>
+					</div>
+
+					<div class="info-advance">
+						<span class="advance-item info-advance__done"><i class="flat flaticon-check"></i></span>
+						<span class="advance-item info-advance__done"><i class="flat flaticon-check"></i></span>
+						<span class="advance-item info-advance__performance"></span>
+						<span class="advance-item info-advance__empty"></span>
+						<span class="advance-item info-advance__empty"></span>
+					</div>
+
+					<div class="info-description">
+						כאן יופיע תיאור של האירוע. התיאור יופיע 
+						כטקסט ללא אפשרות עריכה, כאשר מעבר 
+						עכבר מעל השורה תהיה מגבלת תווים או 
+						חיווי גלילה. יש לאפשר מקום לכשתי שורות 
+						בתיאור האירוע. במדה ועודכן טקסט התיאור
+						יש להוסיף חיווי טקסטואלי לכך בסוגריים   <br class="br">
+
+						<span>(עודכן:&nbsp;10:10:24)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="evaluation">
+			<div class="evaluation-cover">
+				<div class="evaluation-title title col-lg-1">
+					הערכת מצב  <br>
+
+					<span>
+						לפני 04:20 שעות
+					</span>
+				</div>
+
+				<ul class="evaluation-description col-lg-10">
+					<i class="flat flaticon-caret-down"></i>
+
+					<li class="evaluation-item">
+						תיאור פעולת ההערכה
+					</li>
+
+					<li class="evaluation-item">
+						תקציר טקסטואלי של ההערכה, למשל התקבלה דרישת כופר 10000 שח בביטקוין
+					</li>
+
+					<li class="evaluation-item evaluation-link">
+						<a href="#">צפיה במשימה ועריכתה</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="content-cover col-lg-11">
+				<div class="evaluation-content">
+					כאן יופיע תיאור טקסטואלי נרחב של הערכת המצב, אשר עשוי לקחת כ-5-6 שורות ותתכן בו גלילה  <br>
+					כאן יופיע תיאור טקסטואלי נרחב של הערכת המצב, אשר עשוי לקחת כ-5-6 שורות ותתכן בו גלילה  <br>
+					כאן יופיע תיאור טקסטואלי נרחב של הערכת המצב, אשר עשוי לקחת כ-5-6 שורות ותתכן בו גלילה
+				</div>
+			</div>
+		</div>
+		
+		<div class="stage">
+			<div class="stage-title title col-lg-1">
+				שלב האירוע
+			</div>
+
+			<div class="advance col-lg-10">
+				<div class="cover-item done">
+					<span class="advance-item advance__done"><i class="flat flaticon-check"></i></span>
+					זיהוי ואימות
+				</div>
+				<div class="cover-item done">
+					<span class="advance-item advance__done"><i class="flat flaticon-check"></i></span>
+					תגובה וטיפול
+				</div>
+				<div class="cover-item performance">
+					<span class="advance-item advance__performance"></span>
+					הכלה ובלימה
+				</div>
+				<div class="cover-item empty">
+					<span class="advance-item advance__empty"></span>
+					התאוששות ותחקור
+				</div>
+				<div class="cover-item empty">
+					<span class="advance-item advance__empty"></span>
+					חזרה לשגרה
+				</div>
+
+				<div class="base-line">
+					<div class="line active"></div>
+					<div class="line active"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>	
+			</div>
+		</div>
+		
+		<div class="task-managed">
+			<div class="task-managed__title title col-lg-1">
+				המשימות המנוהלות באירוע
+			</div>
+
+			<div class="task-managed__tabs col-lg-10">
+
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#closed" data-toggle="tab">סגורות (<span>7</span>)</a>
+					</li>
+					<li class="nav-item">
+						<a class="active" href="#open_close" data-toggle="tab">פתוחות (<span>3</span>)</a>
+					</li>
+					<li class="nav-item">
+						<a href="#all_tasks" data-toggle="tab">כל המשימות (<span>10</span>)</a>
+					</li>	
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane fade" id="closed" aria-labelledby="closed">
+						<div class="single-event__events">
+							<div class="thead">
+								<ul class="single-event__event-head">
+									<li class="event-item time col-2">
+										התחלה
+										<i class="flat flaticon-down-arrow"></i>
+									</li>
+									<li class="event-item icon col-1 col-md-2">סוג</li>
+									<li class="event-item task col-5 col-md-2">שם המשימה</li>
+
+									<li class="event-item description col-md-3">תיאור</li> <!-- none -->
+
+									<li class="event-item assigned col-4 col-md-2">מוקצה אל  </li>
+
+									<li class="event-item status col-1">סטטוס</li>
+								</ul>
+							</div>
+
+							<div class="tbody">
+								<ul class="single-event__event open first">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i> לפני 5 דקות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>בחירת משימות</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">הפעלת משימות</li>
+
+									<li class="event-item description col-md-3">בחר את המשימות שברצונך להפעיל ...</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אבטחת מידע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_0">
+											<label for="task_1_0">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_0">
+											<label for="task_2_0">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_0">
+											<label for="task_3_0">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני שעה</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">הקמת צוות אירוע</li>
+
+									<li class="event-item description col-md-3">יידעתי את כל הגורמים הרלוונטיים בקיום...</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_1">
+											<label for="task_1_1">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_1">
+											<label for="task_2_1">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_1">
+											<label for="task_3_1">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 03:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">וידוא פעולות תגובה...</li>
+
+									<li class="event-item description col-md-3">
+										וידוא ניתוק השרת הנגוע מהרשת והעברה...
+										<i class="flat flaticon-speech-bubble"></i>
+									</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אבטחת מידע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_2">
+											<label for="task_1_2">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_2">
+											<label for="task_2_2">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_2">
+											<label for="task_3_2">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event suspended">
+									<li class="event-item time col-2">
+										<span class="text_m">03:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 03:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">העברת דיווח פנימי</li>
+								
+									<li class="event-item description col-md-3">העברת דיווח למנכ"ל הה"מ וסמנכ"ל תשתיות</li>
+								
+									<li class="event-item assigned col-4 col-md-2">צוות ניהול בכיר</li>
+									<li class="event-item status col-md-1">מושהה</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_3">
+											<label for="task_1_3">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_3">
+											<label for="task_2_3">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_3">
+											<label for="task_3_3">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event open_not">
+									<li class="event-item time col-2">
+										<span class="text_m">04:10</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:10 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">עדכון גורמי פנים</li>
+								
+									<li class="event-item description col-md-3">פנייה למחלקה המשפטית ועדכונה אודות אירוע<i class="flat flaticon-speech-bubble"></i></li>
+								
+									<li class="event-item assigned col-4 col-md-2">
+										מנכ”ל הה”מ
+										<i class="flat flaticon-mail"></i>
+									</li>
+									<li class="event-item status col-md-1">פתוח!</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="actions">
+											<div class="actions-warning">
+												פנייה למחלקה המשפטית ועדכונה אודות אירוע
+											</div>
+									
+											<div class="actions__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<ul class="actions-items">
+												<li class="actions-item">יש לשלוח למנכ”ל המחלקה המשפטית</li>
+												<li class="actions-item">יש לעדכן את המחלקה המשפטית באירוע </li>
+											</ul>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event closed">
+									<li class="event-item time col-2">
+										<span class="text_m">04:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-new-web-page"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">תיאור פעולת ההערכה</li>
+								
+									<li class="event-item description col-md-3">תקציר טקסטואלי של ההערכה, למשל התקבלה...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">סגור</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_4">
+											<label for="task_1_4">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_4">
+											<label for="task_2_4">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_4">
+											<label for="task_3_4">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">07:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i> לפני 07:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-new-web-page"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">עדכון גורמי פנים</li>
+								
+									<li class="event-item description col-md-3">בחר את המשימות שברצונך להפעיל ...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנכ”ל הה”מ</li>
+									<li class="event-item status col-md-1">פתוח!</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_5">
+											<label for="task_1_5">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_5">
+											<label for="task_2_5">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_5">
+											<label for="task_3_5">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעולות שננקטו
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+										
+										<div class="add-assessment">
+											<i class="flat flaticon-plus"></i>
+											הוספת הערכת מצב
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event closed">
+									<li class="event-item time col-2">
+										<span class="text_m">04:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">תיאור פעולת ההערכה</li>
+								
+									<li class="event-item description col-md-3">תקציר טקסטואלי של ההערכה, למשל התקבלה...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">סגור</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="actions">
+											<div class="warning">
+												פנייה למחלקה המשפטית ועדכונה אודות אירוע
+											</div>
+									
+											<div class="actions__heading mission-heading">
+												1 פעולה לביצוע:	
+											</div>
+									
+											<ul class="actions-items">
+												<li class="actions-item">יש לעדכן הערכת מצב</li>
+											</ul>
+										</div>
+									
+										<div class="assessments col-md-5">
+											<div class="assessment-heading mission-heading">
+												פירוט על הפעולות שננקטו
+											</div>
+
+											<div class="assessments-cover">	
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														1. מהו מספר תחנות הקצה שנפגעו? 
+													</div>
+													<div class="assessment-text">
+														<span>1. מהו מספר תחנות הקצה שנפגעו? </span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														2. האם נפגע שרת הקבצים? 
+													</div>
+													<div class="assessment-text">
+														<span>2. האם נפגע שרת הקבצים? </span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														3. האם הושבתה/נפגעה פעילות עסקית מהותית?
+													</div>
+													<div class="assessment-text">
+														<span>3. האם הושבתה/נפגעה פעילות עסקית מהותית?</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														4. האם ידוע מקור ההדבקה?
+													</div>
+													<div class="assessment-text">
+														<span>4. האם ידוע מקור ההדבקה?</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														5. האם הועבר דיווח לדירקטוריון?
+													</div>
+													<div class="assessment-text">
+														5. האם הועבר דיווח לדירקטוריון?
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														6. האם מעורבים גיורמים חיצוניים (כדוגמת ספקי שירות 
+														ומודיעין, רגולטור וגורמי אכיפה)? 
+													</div>
+													<div class="assessment-text">
+														6. האם מעורבים גיורמים חיצוניים (כדוגמת ספקי שירות 
+														ומודיעין, רגולטור וגורמי אכיפה)? 
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														7. סכום דרישת כופר
+													</div>
+													<div class="assessment-text">
+														<span>7. סכום דרישת כופר</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														8. נתונים רלוונטיים נוספים והחלטות ארגוניות שהתקבלו
+													</div>
+													<div class="assessment-text">
+														<span>8. נתונים רלוונטיים נוספים והחלטות ארגוניות שהתקבלו</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="toolbar">
+									<ul>
+										<li>
+											<i class="flat flaticon-mail"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-checkmark"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-pause"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-floppy-disk"></i>
+										</li>
+									</ul>
+								</div>
+
+								<div class="spread-popup">
+									<div class="spread-popup__heading">
+										<div class="spread-heading__title">
+											<i class="flat flaticon-money"></i>
+											<span>הערכת מצב</span> | התפשטות תוכנת כופר
+										</div>
+										<div class="spread-heading__icon">
+											<i class="flat flaticon-cross"></i>
+										</div>
+									</div>
+
+									<div class="spread-popup__content">
+										<div class="spread-heading">
+											1. מהו מספר תחנות הקצה שנפגעו? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											2. האם נפגע שרת הקבצים? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											3. האם הושבתה/נפגעה פעילות עסקית מהותית? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											4. האם ידוע מקור ההדבקה? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											5. האם הועבר דיווח לדירקטוריון? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											6. האם מעורבים גורמים חיצוניים (כדוגמת ספקי שירות ומודיעין, רגולטור וגורמי אכיפה)?
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+									</div>
+
+									<ul class="spread-popup__buttons">
+										<li class="spread-popup__button spread-popup__close">
+											<a href="#">ביטול</a>
+										</li>
+										<li class="spread-popup__button">
+											<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade show active" id="open_close" aria-labelledby="open_close">
+						<div class="single-event__events">
+							<div class="thead">
+								<ul class="single-event__event-head">
+									<li class="event-item time col-2">
+										התחלה
+										<i class="flat flaticon-down-arrow"></i>
+									</li>
+									<li class="event-item icon col-1 col-md-2">סוג</li>
+									<li class="event-item task col-5 col-md-2">שם המשימה</li>
+
+									<li class="event-item description col-md-3">תיאור</li> <!-- none -->
+
+									<li class="event-item assigned col-4 col-md-2">מוקצה אל  </li>
+
+									<li class="event-item status col-1">סטטוס</li>
+								</ul>
+							</div>
+
+							<div class="tbody">
+								<ul class="single-event__event open first">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i> לפני 5 דקות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>בחירת משימות</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">הפעלת משימות</li>
+
+									<li class="event-item description col-md-3">בחר את המשימות שברצונך להפעיל ...</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אבטחת מידע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_6">
+											<label for="task_1_6">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_6">
+											<label for="task_2_6">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_6">
+											<label for="task_3_6">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+											
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני שעה</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">הקמת צוות אירוע</li>
+
+									<li class="event-item description col-md-3">יידעתי את כל הגורמים הרלוונטיים בקיום...</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_7">
+											<label for="task_1_7">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_7">
+											<label for="task_2_7">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_7">
+											<label for="task_3_7">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 03:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">וידוא פעולות תגובה...</li>
+
+									<li class="event-item description col-md-3">
+										וידוא ניתוק השרת הנגוע מהרשת והעברה...
+										<i class="flat flaticon-speech-bubble"></i>
+									</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אבטחת מידע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_8">
+											<label for="task_1_8">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_8">
+											<label for="task_2_8">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_8">
+											<label for="task_3_8">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event suspended">
+									<li class="event-item time col-2">
+										<span class="text_m">03:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 03:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">העברת דיווח פנימי</li>
+								
+									<li class="event-item description col-md-3">העברת דיווח למנכ"ל הה"מ וסמנכ"ל תשתיות</li>
+								
+									<li class="event-item assigned col-4 col-md-2">צוות ניהול בכיר</li>
+									<li class="event-item status col-md-1">מושהה</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_9">
+											<label for="task_1_9">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_9">
+											<label for="task_2_9">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_9">
+											<label for="task_3_9">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event open_not">
+									<li class="event-item time col-2">
+										<span class="text_m">04:10</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:10 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">עדכון גורמי פנים</li>
+								
+									<li class="event-item description col-md-3">פנייה למחלקה המשפטית ועדכונה אודות אירוע<i class="flat flaticon-speech-bubble"></i></li>
+								
+									<li class="event-item assigned col-4 col-md-2">
+										מנכ”ל הה”מ
+										<i class="flat flaticon-mail"></i>
+									</li>
+									<li class="event-item status col-md-1">פתוח!</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="actions">
+											<div class="actions-warning">
+												פנייה למחלקה המשפטית ועדכונה אודות אירוע
+											</div>
+									
+											<div class="actions__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<ul class="actions-items">
+												<li class="actions-item">יש לשלוח למנכ”ל המחלקה המשפטית</li>
+												<li class="actions-item">יש לעדכן את המחלקה המשפטית באירוע </li>
+											</ul>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event closed">
+									<li class="event-item time col-2">
+										<span class="text_m">04:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-new-web-page"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">תיאור פעולת ההערכה</li>
+								
+									<li class="event-item description col-md-3">תקציר טקסטואלי של ההערכה, למשל התקבלה...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">סגור</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_10">
+											<label for="task_1_10">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_10">
+											<label for="task_2_10">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_10">
+											<label for="task_3_10">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">07:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i> לפני 07:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-new-web-page"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">עדכון גורמי פנים</li>
+								
+									<li class="event-item description col-md-3">בחר את המשימות שברצונך להפעיל ...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנכ”ל הה”מ</li>
+									<li class="event-item status col-md-1">פתוח!</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_11">
+											<label for="task_1_11">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_11">
+											<label for="task_2_11">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_11">
+											<label for="task_3_11">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעולות שננקטו
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+										
+										<div class="add-assessment">
+											<i class="flat flaticon-plus"></i>
+											הוספת הערכת מצב
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event closed">
+									<li class="event-item time col-2">
+										<span class="text_m">04:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">תיאור פעולת ההערכה</li>
+								
+									<li class="event-item description col-md-3">תקציר טקסטואלי של ההערכה, למשל התקבלה...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">סגור</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="actions">
+											<div class="warning">
+												פנייה למחלקה המשפטית ועדכונה אודות אירוע
+											</div>
+									
+											<div class="actions__heading mission-heading">
+												1 פעולה לביצוע:	
+											</div>
+									
+											<ul class="actions-items">
+												<li class="actions-item">יש לעדכן הערכת מצב</li>
+											</ul>
+										</div>
+									
+										<div class="assessments col-md-5">
+											<div class="assessment-heading mission-heading">
+												פירוט על הפעולות שננקטו
+											</div>
+
+											<div class="assessments-cover">	
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														1. מהו מספר תחנות הקצה שנפגעו? 
+													</div>
+													<div class="assessment-text">
+														<span>1. מהו מספר תחנות הקצה שנפגעו? </span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														2. האם נפגע שרת הקבצים? 
+													</div>
+													<div class="assessment-text">
+														<span>2. האם נפגע שרת הקבצים? </span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														3. האם הושבתה/נפגעה פעילות עסקית מהותית?
+													</div>
+													<div class="assessment-text">
+														<span>3. האם הושבתה/נפגעה פעילות עסקית מהותית?</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														4. האם ידוע מקור ההדבקה?
+													</div>
+													<div class="assessment-text">
+														<span>4. האם ידוע מקור ההדבקה?</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														5. האם הועבר דיווח לדירקטוריון?
+													</div>
+													<div class="assessment-text">
+														5. האם הועבר דיווח לדירקטוריון?
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														6. האם מעורבים גיורמים חיצוניים (כדוגמת ספקי שירות 
+														ומודיעין, רגולטור וגורמי אכיפה)? 
+													</div>
+													<div class="assessment-text">
+														6. האם מעורבים גיורמים חיצוניים (כדוגמת ספקי שירות 
+														ומודיעין, רגולטור וגורמי אכיפה)? 
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														7. סכום דרישת כופר
+													</div>
+													<div class="assessment-text">
+														<span>7. סכום דרישת כופר</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														8. נתונים רלוונטיים נוספים והחלטות ארגוניות שהתקבלו
+													</div>
+													<div class="assessment-text">
+														<span>8. נתונים רלוונטיים נוספים והחלטות ארגוניות שהתקבלו</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="toolbar">
+									<ul>
+										<li>
+											<i class="flat flaticon-mail"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-checkmark"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-pause"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-floppy-disk"></i>
+										</li>
+									</ul>
+								</div>
+
+								<div class="spread-popup">
+									<div class="spread-popup__heading">
+										<div class="spread-heading__title">
+											<i class="flat flaticon-money"></i>
+											<span>הערכת מצב</span> | התפשטות תוכנת כופר
+										</div>
+										<div class="spread-heading__icon">
+											<i class="flat flaticon-cross"></i>
+										</div>
+									</div>
+
+									<div class="spread-popup__content">
+										<div class="spread-heading">
+											1. מהו מספר תחנות הקצה שנפגעו? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											2. האם נפגע שרת הקבצים? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											3. האם הושבתה/נפגעה פעילות עסקית מהותית? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											4. האם ידוע מקור ההדבקה? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											5. האם הועבר דיווח לדירקטוריון? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											6. האם מעורבים גורמים חיצוניים (כדוגמת ספקי שירות ומודיעין, רגולטור וגורמי אכיפה)?
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+									</div>
+
+									<ul class="spread-popup__buttons">
+										<li class="spread-popup__button spread-popup__close">
+											<a href="#">ביטול</a>
+										</li>
+										<li class="spread-popup__button">
+											<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="all_tasks" aria-labelledby="all_tasks">
+						<div class="single-event__events">
+							<div class="thead">
+								<ul class="single-event__event-head">
+									<li class="event-item time col-2">
+										התחלה
+										<i class="flat flaticon-down-arrow"></i>
+									</li>
+									<li class="event-item icon col-1 col-md-2">סוג</li>
+									<li class="event-item task col-5 col-md-2">שם המשימה</li>
+
+									<li class="event-item description col-md-3">תיאור</li> <!-- none -->
+
+									<li class="event-item assigned col-4 col-md-2">מוקצה אל  </li>
+
+									<li class="event-item status col-1">סטטוס</li>
+								</ul>
+							</div>
+
+							<div class="tbody">
+								<ul class="single-event__event open first">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i> לפני 5 דקות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>בחירת משימות</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">הפעלת משימות</li>
+
+									<li class="event-item description col-md-3">בחר את המשימות שברצונך להפעיל ...</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אבטחת מידע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_12">
+											<label for="task_1_12">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_12">
+											<label for="task_2_12">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_12">
+											<label for="task_3_12">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני שעה</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">הקמת צוות אירוע</li>
+
+									<li class="event-item description col-md-3">יידעתי את כל הגורמים הרלוונטיים בקיום...</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_13">
+											<label for="task_1_13">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_13">
+											<label for="task_2_13">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_13">
+											<label for="task_3_13">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">00:05</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 03:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-clipboards"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">וידוא פעולות תגובה...</li>
+
+									<li class="event-item description col-md-3">
+										וידוא ניתוק השרת הנגוע מהרשת והעברה...
+										<i class="flat flaticon-speech-bubble"></i>
+									</li>
+
+									<li class="event-item assigned col-4 col-md-2">מנהל אבטחת מידע</li>
+									<li class="event-item status col-md-1">פתוח</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task col-lg-2">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_14">
+											<label for="task_1_14">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_14">
+											<label for="task_2_14">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_14">
+											<label for="task_3_14">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event suspended">
+									<li class="event-item time col-2">
+										<span class="text_m">03:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 03:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">העברת דיווח פנימי</li>
+								
+									<li class="event-item description col-md-3">העברת דיווח למנכ"ל הה"מ וסמנכ"ל תשתיות</li>
+								
+									<li class="event-item assigned col-4 col-md-2">צוות ניהול בכיר</li>
+									<li class="event-item status col-md-1">מושהה</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_15">
+											<label for="task_1_15">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_15">
+											<label for="task_2_15">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_15">
+											<label for="task_3_15">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event open_not">
+									<li class="event-item time col-2">
+										<span class="text_m">04:10</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:10 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>משימה</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">עדכון גורמי פנים</li>
+								
+									<li class="event-item description col-md-3">פנייה למחלקה המשפטית ועדכונה אודות אירוע<i class="flat flaticon-speech-bubble"></i></li>
+								
+									<li class="event-item assigned col-4 col-md-2">
+										מנכ”ל הה”מ
+										<i class="flat flaticon-mail"></i>
+									</li>
+									<li class="event-item status col-md-1">פתוח!</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="actions">
+											<div class="actions-warning">
+												פנייה למחלקה המשפטית ועדכונה אודות אירוע
+											</div>
+									
+											<div class="actions__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<ul class="actions-items">
+												<li class="actions-item">יש לשלוח למנכ”ל המחלקה המשפטית</li>
+												<li class="actions-item">יש לעדכן את המחלקה המשפטית באירוע </li>
+											</ul>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event closed">
+									<li class="event-item time col-2">
+										<span class="text_m">04:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-new-web-page"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">תיאור פעולת ההערכה</li>
+								
+									<li class="event-item description col-md-3">תקציר טקסטואלי של ההערכה, למשל התקבלה...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">סגור</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_16">
+											<label for="task_1_16">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_16">
+											<label for="task_2_16">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_16">
+											<label for="task_3_16">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעילות שננקטו
+											</div>
+									
+											<div class="text-cover">
+												<div class="details__text">
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+													<p>						
+														נשלח מייל לרשימת התפוצה של ההמחלקה   בACTIVE DIRECTORY
+													</p>
+													<p>
+														נשלח מייל וSMS על הערכת המצב החדשה למנכ”ל  ישירות
+													</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event open">
+									<li class="event-item time col-2">
+										<span class="text_m">07:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i> לפני 07:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-new-web-page"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">עדכון גורמי פנים</li>
+								
+									<li class="event-item description col-md-3">בחר את המשימות שברצונך להפעיל ...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנכ”ל הה”מ</li>
+									<li class="event-item status col-md-1">פתוח!</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="sub-task">
+											<div class="sub-task__heading mission-heading">
+												שלוש תתי משימות לביצוע:	
+											</div>
+									
+											<input type="checkbox" checked="checked" id="task_1_17">
+											<label for="task_1_17">
+												פעולות מיידיות לביצוע
+											</label>
+									
+											<input type="checkbox" checked="checked" id="task_2_17">
+											<label for="task_2_17">
+												איסוף נתונים ראשוניים
+											</label>
+									
+											<input type="checkbox" id="task_3_17">
+											<label for="task_3_17">
+												העברת דיווח ראשוני 
+											</label>
+										</div>
+									
+										<div class="details col-md-5">
+											<div class="details__heading mission-heading">
+												פירוט על הפעולות שננקטו
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+										
+										<div class="add-assessment">
+											<i class="flat flaticon-plus"></i>
+											הוספת הערכת מצב
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<ul class="single-event__event closed">
+									<li class="event-item time col-2">
+										<span class="text_m">04:20</span>
+										<span class="text_d"><i class="flat flaticon-caret-down"></i>לפני 04:20 שעות</span>
+									</li>
+									<li class="event-item icon col-1 col-md-2">
+										<i class="flat flaticon-list"></i>
+										<span>הערכת מצב</span>
+									</li>
+									<li class="event-item task col-5 col-md-2">תיאור פעולת ההערכה</li>
+								
+									<li class="event-item description col-md-3">תקציר טקסטואלי של ההערכה, למשל התקבלה...</li>
+								
+									<li class="event-item assigned col-4 col-md-2">מנהל אירוע</li>
+									<li class="event-item status col-md-1">סגור</li>
+								</ul>
+								
+								<div class="single-event__mission">
+									<div class="mission-cover">
+										<div class="actions">
+											<div class="warning">
+												פנייה למחלקה המשפטית ועדכונה אודות אירוע
+											</div>
+									
+											<div class="actions__heading mission-heading">
+												1 פעולה לביצוע:	
+											</div>
+									
+											<ul class="actions-items">
+												<li class="actions-item">יש לעדכן הערכת מצב</li>
+											</ul>
+										</div>
+									
+										<div class="assessments col-md-5">
+											<div class="assessment-heading mission-heading">
+												פירוט על הפעולות שננקטו
+											</div>
+
+											<div class="assessments-cover">	
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														1. מהו מספר תחנות הקצה שנפגעו? 
+													</div>
+													<div class="assessment-text">
+														<span>1. מהו מספר תחנות הקצה שנפגעו? </span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														2. האם נפגע שרת הקבצים? 
+													</div>
+													<div class="assessment-text">
+														<span>2. האם נפגע שרת הקבצים? </span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														3. האם הושבתה/נפגעה פעילות עסקית מהותית?
+													</div>
+													<div class="assessment-text">
+														<span>3. האם הושבתה/נפגעה פעילות עסקית מהותית?</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														4. האם ידוע מקור ההדבקה?
+													</div>
+													<div class="assessment-text">
+														<span>4. האם ידוע מקור ההדבקה?</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														5. האם הועבר דיווח לדירקטוריון?
+													</div>
+													<div class="assessment-text">
+														5. האם הועבר דיווח לדירקטוריון?
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														6. האם מעורבים גיורמים חיצוניים (כדוגמת ספקי שירות 
+														ומודיעין, רגולטור וגורמי אכיפה)? 
+													</div>
+													<div class="assessment-text">
+														6. האם מעורבים גיורמים חיצוניים (כדוגמת ספקי שירות 
+														ומודיעין, רגולטור וגורמי אכיפה)? 
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														7. סכום דרישת כופר
+													</div>
+													<div class="assessment-text">
+														<span>7. סכום דרישת כופר</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+										
+												<div class="assessment">
+													<div class="assessment-title mission-heading">
+														8. נתונים רלוונטיים נוספים והחלטות ארגוניות שהתקבלו
+													</div>
+													<div class="assessment-text">
+														<span>8. נתונים רלוונטיים נוספים והחלטות ארגוניות שהתקבלו</span>
+														התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר 
+														עכבר מעל השורה תראה עפרון והקלקה על חיווי העפרון 
+														תאפשר את עריכת הטקסט המקורי במצב עריכה תהיה 
+														מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי 
+														שורות בתיאור האירוע. 
+													</div>
+												</div>
+											</div>
+										</div>
+									
+										<div class="comment col-md-5">
+											<div class="comment__heading mission-heading">
+												<i class="falt flaticon-speech-bubble"></i>
+												הערות למנהל אירוע
+											</div>
+									
+											<textarea placeholder="המנכ”ל לא ענה לי במייל. אולי לא יודע"></textarea>
+										</div>
+									</div>
+
+									<div class="mission-buttons">
+										<div class="mission-buttons__assigned">
+											<div class="assigned-heading">
+												מוקצה אל
+											</div>
+											
+											<ul class="assigned-items">
+												<li class="assigned-item">
+													<div class="select">
+														<select>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+															<option>מנכ”ל הה”מ</option>
+														</select>
+													</div>
+												</li>
+												<li class="assigned-item">
+													<a href="#"><i class="flat flaticon-mail"></i> תזכורת</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="view-task">
+											<a href="#">צפיה במשימה ועריכתה</a>
+										</div>
+
+										<ul class="mission-buttons__toolbar">
+											<li class="button completed">
+												<a href="#"><i class="flat flaticon-checkmark"></i> הושלם</a>
+											</li>
+											<li class="button pause">
+												<a href="#"><i class="flat flaticon-pause"></i> השהייה</a>
+											</li>
+											<li class="button keeping">
+												<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="toolbar">
+									<ul>
+										<li>
+											<i class="flat flaticon-mail"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-checkmark"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-pause"></i>
+										</li>
+										<li>
+											<i class="flat flaticon-floppy-disk"></i>
+										</li>
+									</ul>
+								</div>
+
+								<div class="spread-popup">
+									<div class="spread-popup__heading">
+										<div class="spread-heading__title">
+											<i class="flat flaticon-money"></i>
+											<span>הערכת מצב</span> | התפשטות תוכנת כופר
+										</div>
+										<div class="spread-heading__icon">
+											<i class="flat flaticon-cross"></i>
+										</div>
+									</div>
+
+									<div class="spread-popup__content">
+										<div class="spread-heading">
+											1. מהו מספר תחנות הקצה שנפגעו? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											2. האם נפגע שרת הקבצים? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											3. האם הושבתה/נפגעה פעילות עסקית מהותית? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											4. האם ידוע מקור ההדבקה? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											5. האם הועבר דיווח לדירקטוריון? 
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+
+										<div class="spread-heading">
+											6. האם מעורבים גורמים חיצוניים (כדוגמת ספקי שירות ומודיעין, רגולטור וגורמי אכיפה)?
+										</div>
+										<div class="spread">
+											התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל  השורה תראה עפרון והקלקה על חיווי העפרון תאפשר את 
+											עריכת הטקסט המקורי במצב עריכה תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. 
+										</div>
+									</div>
+
+									<ul class="spread-popup__buttons">
+										<li class="spread-popup__button spread-popup__close">
+											<a href="#">ביטול</a>
+										</li>
+										<li class="spread-popup__button">
+											<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Permissions -->
+	<div class="permissions">
+		<div class="permissions-header">
+			<div class="permissions-header__button col-2">
+				<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+			</div>
+			
+			<div class="permissions-header__title col-8">
+				ניהול הרשאות מערכת
+			</div>
+
+			<div class="permissions-header__icon col-2">
+				<i class="flat flaticon-cross cross"></i>
+			</div>
+		</div>
+
+		<div class="container permissions-groups col-12 col-xl-9">
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל הגנת סייבר
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל הגנת סייבר
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Permissions end -->
+
+	<!-- Diagram -->
+	<div class="diagram">
+		<div class="diagram-header">
+			<div class="diagram-header__title col-8">
+				עץ משימות עתידיות
+			</div>
+
+			<div class="diagram-header__icon col-2">
+				<i class="flat flaticon-cross cross"></i>
+			</div>
+		</div>
+		
+		<div class="diagram-head__cover">
+			<div class="diagram-head col-10">
+				<div class="diagram-head__name">
+					<div class="name-icon">
+						<i class="flat flaticon-money"></i>
+					</div>
+					<div class="name-cover">
+						<div class="name-time">
+							מן מתחילת אירוע <span>10:20 שעות</span>
+						</div>
+						<div class="name-title">
+							התפשטות תוכנת כופר
+						</div>
+					</div>
+				</div>
+
+				<div class="diagram-head__description col-6">
+					כאן יופיע תיאור של האירוע. התיאור יופיע כטקסט ללא אפשרות עריכה, כאשר מעבר עכבר מעל השורה 
+					תהיה מגבלת תווים או חיווי גלילה. יש לאפשר מקום לכשתי שורות בתיאור האירוע. במדה ועודכן טקסט 
+					התיאור יש להוסיף חיווי טקסטואלי לכך בסוגריים  <span>(עודכן:&nbsp;10:10:24)</span>
+				</div>
+			</div>
+
+			<div class="diagram-highlight">
+				<div class="diagram-highlight__mode">
+					<div class="mode-title">הדגשת מצב</div>
+					<div class="mode-buttons">
+						<input type="radio" name="highlight" class="mode-button" id="button_1">
+						<label for="button_1">זיהוי ואימות</label>
+					
+						<input type="radio" name="highlight" class="mode-button" id="button_2">
+						<label for="button_2">תגובה וטיפול</label>
+
+						<input type="radio" name="highlight" class="mode-button" id="button_3" checked="checked">
+						<label for="button_3">הכלה ובלימה</label>
+
+						<input type="radio" name="highlight" class="mode-button" id="button_4">
+						<label for="button_4">התאוששות ותחקור</label>
+
+						<input type="radio" name="highlight" class="mode-button" id="button_5">
+						<label for="button_5">חזרה לשגרה</label>
+					</div>
+
+					<div class="mode-link">
+						<a href="#">מקרא</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="diagram-style">
+				<div class="diagram-style__close">
+					<i class="flat flaticon-cross"></i>
+				</div>
+
+				<div class="diagram-style__items">
+					<div class="diagram-style__item active">פעיל</div>
+					<div class="diagram-style__item accentuated item-active">מודגש</div>
+					<div class="diagram-style__item suspended">מושהה</div>
+					<div class="diagram-style__item future">עתידי</div>
+
+					<div class="diagram-style__item not-active">לא הופעל</div>
+					<div class="diagram-style__item opening">פתיחה</div>
+					<div class="diagram-style__item closed">סגור</div>
+					<div class="diagram-style__item closure">סגירה</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="diagram-tree">
+			<div class="diagram-tree__items">
+				<div class="diagram-tree__level">
+					<div class="diagram-tree__wrap active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות SOC
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">העברת התחנה / השרת שהוצפן לremediation </li>
+									<li class="list-item">ביצוע Dump לזכרון התחנה / השרת שהוצפן </li>
+									<li class="list-item">בירור אופן ההדבקה ומקור האירוע ,זיהוי החולשה שנוצלה </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות תשתיות
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">ביצוע Clone לשרת קבצים</li>
+									<li class="list-item">שחזור ספריות רשת מ Snapshot אחרון</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות טכנאים
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">בחינת קריטיות המידע שהוצפן בדיסקים המקומיים בתחנות  הקצה - יבוצע למול המשתמשים</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap suspended">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות תחקור ובקרה
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">איסוף נתונים ומידע אודות האירוע</li>
+									<li class="list-item">יצירת (IOC (Indicator of Compromise</li>
+									<li class="list-item">זיהוי מערכות ונכסים נוספים שנפגעו</li>
+									<li class="list-item">זיהוי מקור הפרצה</li>
+									<li class="list-item">אמידת היקף הנזק והפגיעה בפעילות העסקית</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap not-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנהל אבטחת מידע
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">העברת דיווח לסמנכ"ל תשתיות</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap closed">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: יועמ”ש
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">העברת דיווח למנכ"ל הה"מ (חבר ההנהלה הממונה על  אבטחת המידע)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="diagram-tree__level">
+					<div class="diagram-tree__wrap active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-new-web-page"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										הערכת מצב
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנהל אבטחת מידע 
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">ביצוע הערכת מצב</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="diagram-tree__level">
+					<div class="diagram-tree__wrap active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-clipboards"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										בחירת משימות
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנהל אבטחת מידע
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">הכרזה על אירוע סייבר</li>
+									<li class="list-item">ניתוח מעמיק ונסיון לשליפת מפתח ההצפנה</li>
+									<li class="list-item">טיפול במקור ההדבקה (באם ידוע) - בחירה [ערוץ הדוא"ל /  קישור אינטרנטי / התקן נייד / לא ידוע]</li>
+									<li class="list-item">הקצאת תחנות חלופיות להמשך פעילות</li>
+									<li class="list-item">הקמת צוות ניהול בכיר</li>
+									<li class="list-item">בדיקה האם קיים גיבוי זמין</li>
+									<li class="list-item">פניה לספקי שירות ומודיעין</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="diagram-tree__level">
+					<div class="diagram-tree__wrap accentuated item-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-clipboards"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										בחירת משימות
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: נתוני מערכת
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">ערוץ הדוא"ל</li>
+									<li class="list-item">קישור אינטרנטי</li>
+									<li class="list-item">התקן נייד</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap accentuated item-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנהל אבטחת מידע
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">הכרזה על אירוע סייבר - העברת SMS + הודעת דוא"ל לגורמים הבאים:</li>
+									<li class="list-item">חברי צוות ניהול בכיר</li>
+									<li class="list-item">צוות SOC</li>
+									<li class="list-item">צוות תשתיות</li>
+									<li class="list-item">צוות תחקור ובקרה</li>
+									<li class="list-item">מנהלי מחלקה עסקית שנפגעה</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap accentuated item-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות תחקור ובקרה 
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">תיעוד המידע הקיים אודות האירוע</li>
+									<li class="list-item">התחקות אחר פעולות התוקף / מקור האירוע</li>
+									<li class="list-item">נסיון לשליפת מפתח ההצפנה ע"י שימוש בכלי חקירה  וב-Dump</li>
+									<li class="list-item">איתור סוג הפוגען</li>
+									<li class="list-item">נסיון לביטול ההצפנה באמצעות מפתחות מוכרים</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap accentuated item-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: סמנכ”ל טכנולוגיה
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">החלפת תחנות העבודה שהוצפנו בתחנות תקינות ושמירת  התחנות המוצפנות לצורך תחקור</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap accentuated item-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנכ”ל הה”מ
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">הקמת צוות ניהול בכיר – מונה את הבאים:</li>
+									<li class="list-item">מנכ"ל הה"מ (יו"ר הצוות)</li>
+									<li class="list-item">מנהלת מחלקת תקשורת וקשרי חוץ</li>
+									<li class="list-item">סמנכ"ל טכנולוגיה ואבטחת מידע בהה"מ</li>
+									<li class="list-item">יועמ"ש</li>
+									<li class="list-item">מנהל המשכיות עסקית</li>
+									<li class="list-item">מנהל משאבי אנוש</li>
+									<li class="list-item">נציג שירות לקוחות</li>
+									<li class="list-item">נציג חטיבה עסקית שנפגעה</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap accentuated item-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות תשתיות
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">בדיקה האם קיים גיבו זמין למידע מהותיי שנפגע</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap accentuated item-active">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנהל אבטחת מידע
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">פניה לספקי שירות ומודיעין לבירור פרטים נוספים על  המתקפה, וסיוע בתהליכי החקירה + (רשימת ספקיםרלוונטים ודרכי התקשרות)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="diagram-tree__level">
+					<div class="diagram-tree__wrap closure">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות תשתיות
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">שמירת הדוא"ל המקורי לצורך תחקור</li>
+									<li class="list-item"> מחיק תהדוא"ל הזדוני מכלל תיבות הדוא"ל בהן התקבל</li>
+									<li class="list-item"> יצירת חתימה מיידית ב McafeeTIE והפצתה לכל הארגון</li>
+									<li class="list-item">איתור הפוגען בתחנות נוספות באמצעות מערכת Viefinity</li>
+									<li class="list-item">מחיקת כלל הפוגענים שזוהו בסרירה</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap closure">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנהל אבטחת מידע 
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">מוקצה עבור: צוות תקשורת</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="diagram-tree__wrap closure">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-list"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										משימה
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: צוות תשתיות
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">חסימת ההתקן</li>
+									<li class="list-item"> שמירת ההתקן לצורך תחקור</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="diagram-tree__level">
+					<div class="diagram-tree__wrap opening">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-new-web-page"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										הערכת מצב
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: מנהל אבטחת מידע 
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">ביצוע הערכת מצב</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="diagram-tree__level">
+					<div class="diagram-tree__wrap future">
+						<div class="diagram-tree__item">
+							<div class="item-header">
+								<div class="item-header__icon">
+									<i class="flat flaticon-new-web-page"></i>
+								</div>
+				
+								<div class="item-header__cover">
+									<div class="item-header__heading">
+										בחירת משימות
+									</div>
+									<div class="item-header__sub">
+										מוקצה עבור: נתוני מערכת
+									</div>
+								</div>
+							</div>
+				
+							<div class="item-body">
+								<ul class="list">
+									<li class="list-item">קיים גיבוי זמין / ניתן לשחרר את ההצפנה</li>
+									<li class="list-item">לא קיים גיבוי זמין ולא ניתן לשחרר את ההצפנה</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Diagram end -->
+	
+	<!-- Overlay -->
+	<div class="overlay"></div>
+	<!-- Overlay end -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

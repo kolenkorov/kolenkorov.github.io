@@ -1,0 +1,109 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 03/07/2018 15:54
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-new-web-page:before { content: "\f100"; }
+.flaticon-export:before { content: "\f101"; }
+.flaticon-forward-arrow:before { content: "\f102"; }
+.flaticon-share:before { content: "\f103"; }
+.flaticon-file-transfer:before { content: "\f104"; }
+.flaticon-miscellaneous:before { content: "\f105"; }
+.flaticon-sitemap:before { content: "\f106"; }
+.flaticon-caret-down:before { content: "\f107"; }
+.flaticon-dot:before { content: "\f108"; }
+.flaticon-perfect-circle:before { content: "\f109"; }
+.flaticon-money:before { content: "\f10a"; }
+.flaticon-calendar:before { content: "\f10b"; }
+.flaticon-checkmark:before { content: "\f10c"; }
+.flaticon-mail:before { content: "\f10d"; }
+.flaticon-menu:before { content: "\f10e"; }
+.flaticon-pause:before { content: "\f10f"; }
+.flaticon-notification-bell-outline-interface-symbol:before { content: "\f110"; }
+.flaticon-cross:before { content: "\f111"; }
+.flaticon-check:before { content: "\f112"; }
+.flaticon-return:before { content: "\f113"; }
+.flaticon-information-button:before { content: "\f114"; }
+.flaticon-database:before { content: "\f115"; }
+.flaticon-dot-inside-a-circle:before { content: "\f116"; }
+.flaticon-watch:before { content: "\f117"; }
+.flaticon-left-arrow:before { content: "\f118"; }
+.flaticon-web-page:before { content: "\f119"; }
+.flaticon-plus:before { content: "\f11a"; }
+.flaticon-speech-bubble:before { content: "\f11b"; }
+.flaticon-list:before { content: "\f11c"; }
+.flaticon-clipboards:before { content: "\f11d"; }
+.flaticon-down-arrow:before { content: "\f11e"; }
+.flaticon-credit-card:before { content: "\f11f"; }
+.flaticon-floppy-disk:before { content: "\f120"; }
+.flaticon-forbidden:before { content: "\f121"; }
+.flaticon-radiation:before { content: "\f122"; }
+    
+    $font-Flaticon-new-web-page: "\f100";
+    $font-Flaticon-export: "\f101";
+    $font-Flaticon-forward-arrow: "\f102";
+    $font-Flaticon-share: "\f103";
+    $font-Flaticon-file-transfer: "\f104";
+    $font-Flaticon-miscellaneous: "\f105";
+    $font-Flaticon-sitemap: "\f106";
+    $font-Flaticon-caret-down: "\f107";
+    $font-Flaticon-dot: "\f108";
+    $font-Flaticon-perfect-circle: "\f109";
+    $font-Flaticon-money: "\f10a";
+    $font-Flaticon-calendar: "\f10b";
+    $font-Flaticon-checkmark: "\f10c";
+    $font-Flaticon-mail: "\f10d";
+    $font-Flaticon-menu: "\f10e";
+    $font-Flaticon-pause: "\f10f";
+    $font-Flaticon-notification-bell-outline-interface-symbol: "\f110";
+    $font-Flaticon-cross: "\f111";
+    $font-Flaticon-check: "\f112";
+    $font-Flaticon-return: "\f113";
+    $font-Flaticon-information-button: "\f114";
+    $font-Flaticon-database: "\f115";
+    $font-Flaticon-dot-inside-a-circle: "\f116";
+    $font-Flaticon-watch: "\f117";
+    $font-Flaticon-left-arrow: "\f118";
+    $font-Flaticon-web-page: "\f119";
+    $font-Flaticon-plus: "\f11a";
+    $font-Flaticon-speech-bubble: "\f11b";
+    $font-Flaticon-list: "\f11c";
+    $font-Flaticon-clipboards: "\f11d";
+    $font-Flaticon-down-arrow: "\f11e";
+    $font-Flaticon-credit-card: "\f11f";
+    $font-Flaticon-floppy-disk: "\f120";
+    $font-Flaticon-forbidden: "\f121";
+    $font-Flaticon-radiation: "\f122";

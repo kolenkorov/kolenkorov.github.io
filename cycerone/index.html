@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="ru" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cycerone</title>
+
+	<!-- css -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="font/icon/flaticon.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="blue_theme">
+	<header class="header">
+		<div class="row">
+			<div class="header__logo col-2">C</div>
+
+			<div class="header__right col-4">
+				<div class="header__right-logo-m"><span>C</span></div>
+				<div class="header__right-logo-d"><span>Cycerone</span></div>
+
+				<nav class="header__right-nav">	
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">בית</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link active">כל האירועים</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__gamma col-8 col-md-4">
+				<div class="header__gamma-state">
+					מצב אמת
+				</div>
+				<div class="header__gamma-simulation">
+					סימולציה
+				</div>
+			</div>
+			
+			<div class="header__left col-4">
+				<div class="header__left-powered">
+					<img src="img/powered.png" alt="powered by">
+					<span>:Powered by</span>
+				</div>
+
+				<div class="header__left-icon">
+					<i class="flat flaticon-menu"></i>
+				</div>
+			</div>
+
+			<div class="header__icon col-2">
+				<i class="flat flaticon-bell bell"></i>
+			</div>
+		</div>
+
+		<div class="popup-switch">
+			<div class="heading">צבע מערכת</div>
+
+			<div class="switch">
+				<input type="radio" id="dark" name="switch" checked="checked">
+				<label for="dark">כהה</label>
+
+				<input type="radio" id="light" name="switch">
+				<label for="light">בהיר</label>
+			</div>
+
+			<div class="link">
+				<a href="#">ניהול הרשאות</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrap">
+		<div class="wrap-right col-md-4 col-lg-5">	
+			<div class="tabs">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#" data-toggle="tab">כל האירועים  (13)</a>
+					</li>
+					<li class="nav-item">
+						<a class="active" href="#" data-toggle="tab">פתוחים  (3)</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" data-toggle="tab">סגורים  (<span>7</span>)</a>
+					</li>	
+				</ul>
+			</div>
+
+			<div class="cycerone cycerone-blue">
+				<img src="img/cycerone-blue.png" alt="cycerone">
+			</div>
+
+			<div class="cycerone cycerone-blue__light">
+				<img src="img/cycerone-blue.png" alt="cycerone">
+			</div>
+
+			<div class="cycerone cycerone-red">
+				<img src="img/cycerone-red.png" alt="cycerone">
+			</div>
+
+			<div class="cycerone cycerone-red__light">
+				<img src="img/cycerone-red_light.png" alt="cycerone">
+			</div>
+
+			<!-- Simulation events -->
+			<div class="simulation-events"> <!-- col-12 -->
+				<div class="simulation-events__number">3</div>
+				<div class="simulation-events__text">
+					אירועי  
+					סימולציה
+				</div>
+				
+				<div class="sub-cover">
+					<div class="simulation-events-sub">
+						<div class="simulation-events-sub__number">1</div>
+						<div class="simulation-events-sub__text">
+							דלף נתוני  אשראי
+						</div>
+					</div>
+
+					<div class="simulation-events-sub">
+						<div class="simulation-events-sub__number">1</div>
+						<div class="simulation-events-sub__text">
+							התפשטות  תוכנת כופר
+						</div>
+					</div>
+
+					<div class="simulation-events-sub">
+						<div class="simulation-events-sub__number">1</div>
+						<div class="simulation-events-sub__text">
+							מתקפת מניעת שירות על האתר
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Simulation events end -->
+		</div>
+	
+		<div class="wrap-left col-md-8 col-lg-7">
+			<div class="cards-cover col-md-6">
+				<!-- Button add -->
+				<div class="add">
+					<i class="flat flaticon-plus"></i>
+					<span>יצירת אירוע חדש</span>
+				</div>
+				<!-- Button add end -->
+
+				<!-- Cards -->
+				<div class="cards col-12">
+					<a href="#" class="card">
+						<div class="card-body">
+							<h6 class="card-time">התפשטות תוכנת כופר  | לפני 11:23:01</h6>
+
+							<h5 class="title">שתי תחנות עם קבצים מוצפנים</h5>
+							
+							<div class="card-description">
+								<span>
+									הערכת מצב אחרונה (לפני 21 דקות)
+								</span> <br>
+								מספר תחנות שנפגעו: 7 תחנות | השפעה על 
+								פעילות עסקית: ללא השפעה קריטית בשלב זה
+
+							</div>
+
+							<div class="card-cover">
+								<div class="card-advance">
+									<span class="advance-item done"><i class="flat flaticon-check"></i></span>
+									<span class="advance-item done"><i class="flat flaticon-check"></i></span>
+									<span class="advance-item done" data-description="שלב טיפול:  הכלה ובלימה"></span>
+									<span class="advance-item performance"></span>
+									<span class="advance-item empty"></span>
+
+									<div class="base-line">
+										<div class="line active"></div>
+										<div class="line active"></div>
+										<div class="line active"></div>
+										<div class="line"></div>
+									</div>
+								</div>
+
+								<div class="card-tasks">
+									<div class="card-tasks__opening">
+										<span>10</span>
+										משימות פתוחות
+									</div>
+									<div class="card-tasks__closes">
+										<span>13</span>
+										משימות סגורות  
+									</div>
+								</div>
+							</div>	
+						</div>
+
+						<div class="card-icon">
+							<i class="flat flaticon-money"></i>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card-body">
+							<h6 class="card-time">התפשטות תוכנת כופר  | לפני 11:23:01</h6>
+
+							<h5 class="title">שתי תחנות עם קבצים מוצפנים</h5>
+
+							<div class="card-description">
+								<span>
+									הערכת מצב אחרונה (לפני 21 דקות)
+								</span> <br>
+								מספר תחנות שנפגעו: 7 תחנות | השפעה על 
+								פעילות עסקית: ללא השפעה קריטית בשלב זה
+
+							</div>
+
+							<div class="card-cover">
+								<div class="card-advance">
+									<span class="advance-item done"><i class="flat flaticon-check"></i></span>
+									<span class="advance-item done"><i class="flat flaticon-check"></i></span>
+									<span class="advance-item performance" data-description="שלב טיפול:  הכלה ובלימה"></span>
+									<span class="advance-item empty"></span>
+									<span class="advance-item empty"></span>
+
+									<div class="base-line">
+										<div class="line active"></div>
+										<div class="line active"></div>
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
+
+								<div class="card-tasks">
+									<div class="card-tasks__opening">
+										<span>10</span>
+										משימות פתוחות
+									</div>
+									<div class="card-tasks__closes">
+										<span>13</span>
+										משימות סגורות  
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card-icon">
+							<i class="flat flaticon-money"></i>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card-body">
+							<h6 class="card-time">התפשטות תוכנת כופר  | לפני 11:23:01</h6>
+
+							<h5 class="title">שתי תחנות עם קבצים מוצפנים</h5>
+
+							<div class="card-description">
+								<span>
+									הערכת מצב אחרונה (לפני 21 דקות)
+								</span> <br>
+								מספר תחנות שנפגעו: 7 תחנות | השפעה על 
+								פעילות עסקית: ללא השפעה קריטית בשלב זה
+
+							</div>
+
+							<div class="card-cover">
+								<div class="card-advance">
+									<span class="advance-item done"><i class="flat flaticon-check"></i></span>
+									<span class="advance-item done"><i class="flat flaticon-check"></i></span>
+									<span class="advance-item performance" data-description="שלב טיפול:  הכלה ובלימה"></span>
+									<span class="advance-item empty"></span>
+									<span class="advance-item empty"></span>
+
+									<div class="base-line">
+										<div class="line active"></div>
+										<div class="line active"></div>
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
+
+								<div class="card-tasks">
+									<div class="card-tasks__opening">
+										<span>10</span>
+										משימות פתוחות
+									</div>
+									<div class="card-tasks__closes">
+										<span>13</span>
+										משימות סגורות  
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card-icon">
+							<i class="flat flaticon-money"></i>
+						</div>
+					</a>
+				</div>
+				<!-- Cards end -->
+			</div>
+
+			<!-- Feed -->
+			<div class="feed col-md-6">
+				<div class="feed-cover">
+					<div class="feed-header">
+						<div class="feed-header__logo col-2">
+							C
+						</div>
+
+						<div class="feed-header__title col-8">
+							משימות
+						</div>
+
+						<div class="feed-header__icon col-2">
+							<i class="flat flaticon-cross cross"></i>
+						</div>
+					</div>
+					<div class="feed-close">
+						<i class="flat flaticon-return"></i>
+					</div>
+					<div class="feed-tabs">
+						<ul class="nav nav-tabs" id="myTab">
+							<li class="nav-item">
+								<a class="active" href="#open-task" data-toggle="tab"><span class="item-m">משימות פתוחות (<span>10</span>)</span>   <span class="item-d"><span>10</span> משימות פתוחות </span></a>
+							</li>
+							<li class="nav-item">
+								<a href="#closed-task" data-toggle="tab"><span class="item-m">סגורות (<span>13</span>)</span> <span class="item-d"><span>13</span>סגורות </span></a>
+							</li>	
+						</ul>
+						
+						<div class="tab-cover__content">
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="open-task" aria-labelledby="open-task">
+									<ul class="feed-items">
+										<div class="feed-heading">
+											<div class="icon">
+												<i class="flat flaticon-money"></i>
+											</div>	
+											<h6>התפשטות תוכנת כופר</h6>
+										</div>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+									</ul>
+
+									<ul class="feed-items">
+										<div class="feed-heading">
+											<div class="icon">
+												<i class="flat flaticon-credit-card"></i>
+											</div>	
+											<h6>דלף נתוני אשראי</h6>
+										</div>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+									</ul>
+								</div>
+
+								<div class="tab-pane fade" id="closed-task" aria-labelledby="home">
+									<ul class="feed-items">
+										<div class="feed-heading">
+											<div class="icon">
+												<i class="flat flaticon-money"></i>
+											</div>	
+											<h6>התפשטות תוכנת כופר</h6>
+										</div>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+									</ul>
+
+									<ul class="feed-items">
+										<div class="feed-heading">
+											<div class="icon">
+												<i class="flat flaticon-credit-card"></i>
+											</div>	
+											<h6>דלף נתוני אשראי</h6>
+										</div>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+
+										<li class="feed-item"><span class="time">10:12</span>משימה עודכנה - הערה חדשה </li>
+										<li class="feed-item"><span class="time">10:12</span>מצוות כספים לא מגיב כבר 4 שעות </li>
+										<li class="feed-item"><span class="time">10:12</span>מנפתחה משימה חדשה: “שם המשימה” עבור אנשי התשתיות </li>
+										<li class="feed-item"><span class="time">10:12</span>נסגרה משימה X</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+
+			<div class="feed-panel">
+				<ul class="nav nav-tabs" id="myTab">
+					<li class="nav-item">
+						<a class="active" href="#open-task" data-toggle="tab"><span class="item-d"><span>10</span> משימות פתוחות </span></a>
+					</li>
+					<li class="nav-item">
+						<a href="#closed-task" data-toggle="tab"><span class="item-d"><span>13</span> סגורות </span></a>
+					</li>	
+				</ul>
+			</div>
+			<!-- Feed end -->
+		</div>
+	</div>
+
+	<!-- Create events -->
+	<div class="create-event">
+		<div class="event-header">
+			<div class="event-header__logo col-2">
+				C
+			</div>
+
+			<div class="event-header__title col-8 col-md-8">
+				משימות
+			</div>
+
+			<div class="event-header__title-d col-md-10">
+				יצירת אירוע
+			</div>
+
+			<div class="event-header__icon col-2">
+				<i class="flat flaticon-cross cross"></i>
+			</div>
+		</div>
+
+		<div class="create-event__type">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#database" data-toggle="tab">
+						<i class="flat flaticon-database"></i>
+						<span class="name-m">
+							בסיס  <br>
+							נתונים
+						</span>
+
+						<span class="name-d">
+							תוכנה המשביתה  <br>
+							בסיס נתונים מרכזי
+						</span>
+					</a>
+				</li>
+	
+				<li class="nav-item">
+					<a  class="active" href="#malicious" data-toggle="tab">
+						<i class="flat flaticon-radiation"></i>
+						<span class="name-m">
+							תוכנה <br>
+							זדונית
+						</span>
+
+						<span class="name-d">
+							וירוס המשבית את  <br>
+							פעילות הרשת
+						</span>
+					</a>
+				</li>
+	
+				<li class="nav-item">
+					<a href="#service" data-toggle="tab">
+						<i class="flat flaticon-web-page"></i>
+						<span class="name-m">
+							מניעת  <br>
+							 שירות
+						</span>
+
+						<span class="name-d">
+							מתקפת מניעת  <br>
+							שירות על האתר
+						</span>
+					</a>
+				</li>
+	
+				<li class="nav-item">
+					<a href="#card" data-toggle="tab">
+						<i class="flat flaticon-credit-card"></i>
+						<span class="name-m">
+							דלף <br>
+							 אשראי
+						</span>
+
+						<span class="name-d">
+							דלף נתוני <br> 
+							אשראי
+						</span>
+					</a>
+				</li>
+	
+				<li class="nav-item">
+					<a href="#cryptocurrency" data-toggle="tab">
+						<i class="flat flaticon-money"></i>
+						<span class="name-m">
+							תוכנת <br>
+							כופר
+						</span>
+
+						<span class="name-d">
+							התפשטות  <br>
+							תוכנת כופר
+						</span>
+					</a>
+				</li>
+			</ul>
+	
+			<div class="tab-content">
+				<div class="tab-pane fade show" id="database" aria-labelledby="open-task">
+					<div class="event">
+						<div class="event-cover">
+							<div class="event-date">
+								<div class="event-date__title">זמן תחילת אירוע</div>
+								<div class="event-date__cover">
+									<div class="date">01.01.2019</div>
+									<div class="time">18:13</div>
+									<div class="icon">
+										<i class="flat flaticon-watch"></i>
+										<i class="flat flaticon-calendar"></i>
+									</div>
+								</div>
+							</div>
+	
+							<div class="event-select">
+								<div class="event-select__title">הקצאת מנהל אירוע</div>
+								<div class="select">
+									<select>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="event-text">
+							<textarea placeholder="יש להזין תיאור אירוע של דלף נתוני אשראי"></textarea>
+						</div>
+	
+						<div class="event-ok">
+							<i class="flat flaticon-check"></i>
+						</div>
+
+						<div class="event-create__cover">
+							<div class="event-cancelation"><a class="cancelation" href="#">ביטול</a></div>
+							<div class="event-create"><a href="#">יצירת אירוע</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade show active" id="malicious" aria-labelledby="open-task">
+					<div class="event">
+						<div class="event-cover">
+							<div class="event-date">
+								<div class="event-date__title">זמן תחילת אירוע</div>
+								<div class="event-date__cover">
+									<div class="date">01.01.2019</div>
+									<div class="time">18:13</div>
+									<div class="icon">
+										<i class="flat flaticon-watch"></i>
+										<i class="flat flaticon-calendar"></i>
+									</div>
+								</div>
+							</div>
+	
+							<div class="event-select">
+								<div class="event-select__title">הקצאת מנהל אירוע</div>
+								<div class="select">
+									<select>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+	
+						<div class="event-text">
+							<textarea placeholder="יש להזין תיאור אירוע של דלף נתוני אשראי"></textarea>
+						</div>
+	
+						<div class="event-ok">
+							<i class="flat flaticon-check"></i>
+						</div>
+
+						<div class="event-create__cover">
+							<div class="event-cancelation"><a  class="cancelation" href="#">ביטול</a></div>
+							<div class="event-create"><a href="#">יצירת אירוע</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade show" id="service" aria-labelledby="open-task">
+					<div class="event">
+						<div class="event-cover">
+							<div class="event-date">
+								<div class="event-date__title">זמן תחילת אירוע</div>
+								<div class="event-date__cover">
+									<div class="date">01.01.2019</div>
+									<div class="time">18:13</div>
+									<div class="icon">
+										<i class="flat flaticon-watch"></i>
+										<i class="flat flaticon-calendar"></i>
+									</div>
+								</div>
+							</div>
+	
+							<div class="event-select">
+								<div class="event-select__title">הקצאת מנהל אירוע</div>
+								<div class="select">
+									<select>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+	
+						<div class="event-text">
+							<textarea placeholder="יש להזין תיאור אירוע של דלף נתוני אשראי"></textarea>
+						</div>
+	
+						<div class="event-ok">
+							<i class="flat flaticon-check"></i>
+						</div>
+
+						<div class="event-create__cover">
+							<div class="event-cancelation"><a  class="cancelation" href="#">ביטול</a></div>
+							<div class="event-create"><a href="#">יצירת אירוע</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade show" id="card" aria-labelledby="open-task">
+					<div class="event">
+						<div class="event-cover">
+							<div class="event-date">
+								<div class="event-date__title">זמן תחילת אירוע</div>
+								<div class="event-date__cover">
+									<div class="date">01.01.2019</div>
+									<div class="time">18:13</div>
+									<div class="icon">
+										<i class="flat flaticon-watch"></i>
+										<i class="flat flaticon-calendar"></i>
+									</div>
+								</div>
+							</div>
+	
+							<div class="event-select">
+								<div class="event-select__title">הקצאת מנהל אירוע</div>
+								<div class="select">
+									<select>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+	
+						<div class="event-text">
+							<textarea placeholder="יש להזין תיאור אירוע של דלף נתוני אשראי"></textarea>
+						</div>
+	
+						<div class="event-ok">
+							<i class="flat flaticon-check"></i>
+						</div>
+
+						<div class="event-create__cover">
+							<div class="event-cancelation"><a class="cancelation" href="#">ביטול</a></div>
+							<div class="event-create"><a href="#">יצירת אירוע</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade show" id="cryptocurrency" aria-labelledby="open-task">
+					<div class="event">
+						<div class="event-cover">
+							<div class="event-date">
+								<div class="event-date__title">זמן תחילת אירוע</div>
+								<div class="event-date__cover">
+									<div class="date">01.01.2019</div>
+									<div class="time">18:13</div>
+									<div class="icon">
+										<i class="flat flaticon-watch"></i>
+										<i class="flat flaticon-calendar"></i>
+									</div>
+								</div>
+							</div>
+	
+							<div class="event-select">
+								<div class="event-select__title">הקצאת מנהל אירוע</div>
+								<div class="select">
+									<select>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+										<option>CITADEL SEM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+	
+						<div class="event-text">
+							<textarea placeholder="יש להזין תיאור אירוע של דלף נתוני אשראי"></textarea>
+						</div>
+	
+						<div class="event-ok">
+							<i class="flat flaticon-check"></i>
+						</div>
+
+						<div class="event-create__cover">
+							<div class="event-cancelation"><a class="cancelation" href="#">ביטול</a></div>
+							<div class="event-create"><a href="#">יצירת אירוע</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Create events end -->
+	
+	<!-- Overlay -->
+	<div class="overlay"></div>
+	<!-- Overlay end -->
+
+	<!-- Permissions -->
+	<div class="permissions">
+		<div class="permissions-header">
+			<div class="permissions-header__button col-2">
+				<a href="#"><i class="flat flaticon-floppy-disk"></i> שמירה</a>
+			</div>
+
+			<div class="permissions-header__title col-8">
+				ניהול הרשאות מערכת
+			</div>
+
+			<div class="permissions-header__icon col-2">
+				<i class="flat flaticon-cross cross"></i>
+			</div>
+		</div>
+
+		<div class="container permissions-groups col-12 col-xl-9">
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל הגנת סייבר
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל הגנת סייבר
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-forbidden no-access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check half-access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="permissions-group">
+				<div class="permissions-group__heading col-12 col-md-11 col-lg-10">
+					מנהל מערכת
+				</div>
+
+				<div class="permissions-group__accesses">
+					<div class="general cover">
+						<div class="title col-12 col-md-1 col-lg-2">כללי</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מתן הרשאות 
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הוספת משתמשים 
+							</li>
+						</ul>
+					</div>
+
+					<div class="event cover">
+						<div class="title col-12 col-md-1 col-lg-2">אירוע</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בכולם
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה אישי
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								פתיחה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								מחיקה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בתחקיר
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עץ
+							</li>
+						</ul>
+					</div>
+
+					<div class="tasks cover">
+						<div class="title col-12 col-md-1 col-lg-2">משימות</div>
+
+						<ul class="items">
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								הקצאה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עריכת משימה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								השהייה
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								צפיה בהערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								עדכון הערכת מצב
+							</li>
+							<li class="item">
+								<span data-description="אני יצרתי/ אני מנהל אירוע  לאירועים שלא יצרתי">
+									<i class="flat flaticon-check access"></i>
+								</span>
+								שליחת מייל
+							</li>
+						</ul>
+					</div>
+
+					<div class="users cover">
+						<div class="title col-12 col-md-1 col-lg-2">משתמשים</div>
+
+						<div class="users-wrap">
+							<div class="users-add">
+								<i class="flat flaticon-plus"></i>
+								הוספת משתמש
+							</div>
+
+							<ul class="users-all">
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									SEM CITADEL
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									צוות SOC
+								</li>
+								<li class="user">
+									<i class="flat flaticon-cross"></i>
+									מנכ”ל המ”מ
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Permissions end -->
+
+	<!-- Blur -->
+	<div class="blur"></div>
+	<!-- Blur end -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>
