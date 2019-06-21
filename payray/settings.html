@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PayRay</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="plugins/form-styler/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="plugins/magnific-popup/css/magnific-popup.min.css">
+	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header logined">
+		<div class="wrapper">
+			<div class="header__logo">
+				<object type="image/svg+xml" data="img/logo_dark.svg"></object>
+			</div>
+
+			<div class="header__wwb">
+				<div class="header__wwb-cover">
+					<img src="img/wwb.png" alt="wwb">
+					<span>World Without <br> Borders</span>
+				</div>
+			</div>
+
+			<div class="header__user">
+				<div class="header__user-img">
+					<img src="img/avatar.png" alt="avatar">
+				</div>
+				<div class="header__user-title">My Account</div>
+
+				<div class="header__user-toolbar">
+					<ul class="user-toolbar__list">
+						<li class="user-toolbar__item"><a href="settings.html">Account Stettings</a></li>
+						<li class="user-toolbar__item"><a href="#">Account Verification</a></li>
+						<li class="user-toolbar__item logout"><a href="#">Logout <i class="flaticon-logout"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header__buttons">
+				<a href="index.html">Sign in</a>
+				<a class="active" href="reg.html">Sign up</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="wrapper">
+			<div class="main__settings">
+				<div class="main__settings-heading">
+					Settings
+				</div>
+
+				<div class="main__settings-wrap">
+					<div class="main__settings-nav">
+						<div class="settings-nav__button">
+							<span></span>
+						</div>
+						<ul class="main__settings-list">
+							<li class="main__settings-item main__settings-item--active">
+								<a href="#profile">Profile</a>
+							</li>
+							<li class="main__settings-item main__settings-item--notice">
+								<a href="#verification">Account Verification</a>
+							</li>
+							<li class="main__settings-item main__settings-item--disable">
+								<a href="#">Devices</a>
+							</li>
+							<li class="main__settings-item main__settings-item--disable">
+								<a href="#">Notifications</a>
+							</li>
+							<li class="main__settings-item main__settings-item--disable">
+								<a href="#">APPI</a>
+							</li>
+							<li class="main__settings-item main__settings-item--disable">
+								<a href="#">My Wallets</a>
+							</li>
+							<li class="main__settings-item main__settings-item--disable">
+								<a href="#">Currency</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="main__settings-info info__profile active" id="profile">
+						<div class="settings-info__head">
+							<div class="settings-info__name">
+								Jamie XX Gosh
+							</div>
+
+							<div class="settings-info__avatar">
+								<span>Avatar</span>
+								<img src="img/avatar2.png" alt="avatar">
+							</div>
+						</div>
+
+						<div class="settings-info__title">
+							Personal details
+						</div>
+
+						<form class="settings-info__form">
+							<div class="info__form-item">
+								<label>First name</label>
+								<input type="text" name="first_name" placeholder="Ashot">
+							</div>
+							<div class="info__form-item">
+								<label>Second name</label>
+								<input type="text" name="second_name" placeholder="Gosh">
+							</div>
+							<div class="info__form-item item_change">
+								<label>Email</label>
+								<input type="text" name="email" placeholder="mileni@sample.com">
+
+								<a class="change" href="#">CHANGE</a>
+							</div>
+							<div class="info__form-item item_change phone">
+								<label>Phone number</label>
+								<input type="text" name="phone" placeholder="055 123 4567">
+
+								<select class="change_select">
+									<option class="flag ua">+38</option>
+									<option class="flag ua">+38</option>
+									<option class="flag ua">+38</option>
+									<option class="flag ua">+38</option>
+								</select>
+								<a class="change" href="#">CHANGE</a>
+							</div>
+							<div class="info__form-item item_change">
+								<label>Password</label>
+								<input type="password" name="password" placeholder="**********">
+
+								<a class="change" href="#">CHANGE</a>
+							</div>
+							<div class="info__form-button">
+								<input class="save" type="submit" value="SAVE CHANGE">	
+							</div>
+						</form>
+					</div>
+
+					<div class="main__settings-info info__verification" id="verification">
+						<div class="info__verification-block-1">
+							<div class="settings-info__title">
+								<span>Account Verification</span>
+
+								<span class="label">In process</span>
+							</div>
+
+							<form class="settings-info__form">
+								<div class="info__form-item">
+									<label>Full name</label>
+									<input type="text" name="full_name" placeholder="Ashot Gurgenov Ramzanovich">
+								</div>
+								<div class="info__form-item">
+									<label>Personal Identification Code</label>
+									<input type="text" name="id" placeholder="675599900">
+								</div>
+								<div class="info__form-item item_date">
+									<label>Date of Birth</label>
+									<input type="date" name="email" placeholder="18.03.1990">
+								</div>
+								<div class="info__form-item select">
+									<label>Country of Residence</label>
+									<select>
+										<option class="flag de">Germany</option>
+										<option class="flag de">Germany</option>
+										<option class="flag de">Germany</option>
+										<option class="flag de">Germany</option>
+									</select>
+								</div>
+								<div class="info__form-item item_change">
+									<label>Address</label>
+									<input type="text" name="address" placeholder="Shvaine street 27">
+
+									<a class="change" href="#">CHANGE</a>
+								</div>
+								<div class="info__form-button">
+									<a class="next" href="#">NEXT</a>	
+								</div>
+							</form>
+						</div>
+
+						<div class="info__verification-block-2">
+							<div class="settings-info__title">
+								<span>Account Verification</span>
+
+								<span class="label">In process</span>
+							</div>
+
+							<form class="settings-info__form">
+								<div class="info__form-item select select_id">
+									<label>Identification Document Type:</label>
+									<select>
+										<option>ID Card</option>
+										<option>ID Card</option>
+										<option>ID Card</option>
+									</select>
+								</div>
+								<div class="info__form-item">
+									<label>Photo of Identification Document Front</label>
+									<input type="file" name="photo_id_front" accept=".pdf, .png, .jpg, .jpeg">
+
+									<span class="format">pdf, png, jpg, jpeg Max. 10MB</span>
+
+									<div class="tooltip">
+										Please take a picture of the front of your Identification Document. Make sure it is not blurred and the text is clearly visible.
+									</div>
+								</div>
+								<div class="info__form-item">
+									<label>Photo of Identification Document Back</label>
+									<input type="file" name="photo_id_back" accept=".pdf, .png, .jpg, .jpeg">
+
+									<span class="format">pdf, png, jpg, jpeg Max. 10MB</span>
+									<div class="tooltip">
+										Please take a picture of the front of your Identification Document. Make sure it is not blurred and the text is clearly visible.
+									</div>
+								</div>
+								<div class="info__form-item">
+									<label>Photo of you holding the same document next to your face</label>
+									<input type="file" name="photo_id_face" accept=".pdf, .png, .jpg, .jpeg">
+
+									<span class="format">pdf, png, jpg, jpeg Max. 10MB</span>
+									<div class="tooltip">
+										Please take a picture of the front of your Identification Document. Make sure it is not blurred and the text is clearly visible.
+									</div>
+								</div>
+
+								<div class="info__form-item">
+									<label>Address</label>
+									<input type="text" name="address" placeholder="Shvaine street 27">
+								</div>
+								<div class="info__form-button">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<!-- <div class="main__settings-info info__verification">
+						<div class="settings-info__title">
+							<span>Account Verification</span>
+					
+							<span class="label">In process</span>
+						</div>
+					
+						<form class="settings-info__form">
+							<div class="info__form-item select select_id">
+								<label>Identification Document Type:</label>
+								<select>
+									<option>ID Card</option>
+									<option>ID Card</option>
+									<option>ID Card</option>
+								</select>
+							</div>
+							<div class="info__form-item">
+								<label>Photo of Identification Document Front</label>
+								<input type="file" name="photo_id_front" accept=".pdf, .png, .jpg, .jpeg">
+					
+								<span class="format">pdf, png, jpg, jpeg Max. 10MB</span>
+					
+								<div class="tooltip">
+									Please take a picture of the front of your Identification Document. Make sure it is not blurred and the text is clearly visible.
+								</div>
+							</div>
+							<div class="info__form-item">
+								<label>Photo of Identification Document Back</label>
+								<input type="file" name="photo_id_back" accept=".pdf, .png, .jpg, .jpeg">
+					
+								<span class="format">pdf, png, jpg, jpeg Max. 10MB</span>
+								<div class="tooltip">
+									Please take a picture of the front of your Identification Document. Make sure it is not blurred and the text is clearly visible.
+								</div>
+							</div>
+							<div class="info__form-item">
+								<label>Photo of you holding the same document next to your face</label>
+								<input type="file" name="photo_id_face" accept=".pdf, .png, .jpg, .jpeg">
+					
+								<span class="format">pdf, png, jpg, jpeg Max. 10MB</span>
+								<div class="tooltip">
+									Please take a picture of the front of your Identification Document. Make sure it is not blurred and the text is clearly visible.
+								</div>
+							</div>
+					
+							<div class="info__form-item">
+								<label>Address</label>
+								<input type="text" name="address" placeholder="Shvaine street 27">
+							</div>
+							<div class="info__form-button">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</main>	
+
+	<footer class="footer">
+		<div class="wrapper">
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a href="#">For developers</a>
+				</li>
+				<li class="footer__item">
+					<a href="#">Help</a>
+				</li>
+				<li class="footer__item">
+					<a href="#">Contact</a>
+				</li>
+				<li class="footer__item">
+					<select>
+						<option>Language</option>
+						<option>Language</option>
+						<option>Language</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- lib -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="plugins/form-styler/js/jquery.formstyler.min.js"></script>
+	<script src="plugins/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

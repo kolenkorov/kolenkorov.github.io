@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PayRay</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="plugins/form-styler/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="plugins/magnific-popup/css/magnific-popup.min.css">
+	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header logined">
+		<div class="wrapper">
+			<div class="header__logo">
+				<object type="image/svg+xml" data="img/logo_dark.svg"></object>
+			</div>
+
+			<div class="header__wwb">
+				<div class="header__wwb-cover">
+					<img src="img/wwb.png" alt="wwb">
+					<span>World Without <br> Borders</span>
+				</div>
+			</div>
+
+			<div class="header__user">
+				<div class="header__user-img">
+					<img src="img/avatar.png" alt="avatar">
+				</div>
+				<div class="header__user-title">My Account</div>
+
+				<div class="header__user-toolbar">
+					<ul class="user-toolbar__list">
+						<li class="user-toolbar__item"><a href="settings.html">Account Stettings</a></li>
+						<li class="user-toolbar__item"><a href="#">Account Verification</a></li>
+						<li class="user-toolbar__item logout"><a href="#">Logout <i class="flaticon-logout"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header__buttons">
+				<a href="index.html">Sign in</a>
+				<a class="active" href="reg.html">Sign up</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="wrapper">
+			<div class="main__billing">
+				<div class="main__billing-wallets">
+					<div class="main__billing-wallet overall">
+						<div class="billing-wallet__title">Overall Balance PRU</div>
+						<div class="billing-wallet__amount">
+							<span class="amount-balance">10 000 250</span>
+							<div class="amount-currency">
+									<span class="currency">usd</span>
+
+									<div class="amount-currency__toolbar">
+										<div class="currency__toolbar-search">
+											<input type="text" name="search">
+										</div>
+										<ul class="currency__toolbar-dropdown">
+											<li class="currency__toolbar-item">
+												<span class="curr active">USD</span>
+												<span class="name">Dollar</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOP</span>
+												<span class="name">Dominican Peso</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOGE</span>
+												<span class="name">Doge Coin</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+						</div>
+					</div>
+
+					<div class="main__billing-wallet main__billing-wallet--main">
+						<div class="billing-wallet__title">Main Wallet</div>
+						<div class="billing-wallet__cover">
+							<div class="billing-wallet__amount">
+								<span class="amount-balance">7 000 254</span>
+								<div class="amount-currency">
+									<span class="currency">usd</span>
+
+									<div class="amount-currency__toolbar">
+										<div class="currency__toolbar-search">
+											<input type="text" name="search">
+										</div>
+										<ul class="currency__toolbar-dropdown">
+											<li class="currency__toolbar-item">
+												<span class="curr active">USD</span>
+												<span class="name">Dollar</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOP</span>
+												<span class="name">Dominican Peso</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOGE</span>
+												<span class="name">Doge Coin</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="billing-wallet__options">
+								<span class="dots"></span>
+
+								<div class="wallet__options-toolbar">
+									<ul class="options-toolbar__list">
+										<li class="options-toolbar__item make_main">
+											<span>Make the main</span> <i class="flaticon-star"></i>
+										</li>
+										<li class="options-toolbar__item delete">
+											<span>Delete Walle</span> <i class="flaticon-cross-circular"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="billing-wallet__buttons">
+							<a class="recieve" href="#"><i class="flaticon-qr-code"></i> <span>Recieve</span></a>
+							<a class="send" href="#"><i class="flaticon-cursor"></i> <span>Send</span></a>
+						</div>
+					</div>
+
+					<div class="main__billing-wallet">
+						<div class="billing-wallet__cover">
+							<div class="billing-wallet__amount">
+								<span class="amount-balance">4 000 254</span>
+								<div class="amount-currency">
+									<span class="currency">eur</span>
+
+									<div class="amount-currency__toolbar">
+										<div class="currency__toolbar-search">
+											<input type="text" name="search">
+										</div>
+										<ul class="currency__toolbar-dropdown">
+											<li class="currency__toolbar-item">
+												<span class="curr active">USD</span>
+												<span class="name">Dollar</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOP</span>
+												<span class="name">Dominican Peso</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOGE</span>
+												<span class="name">Doge Coin</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+							<div class="billing-wallet__number">1,12</div>
+							<div class="billing-wallet__options">
+								<span class="dots"></span>
+
+								<div class="wallet__options-toolbar">
+									<ul class="options-toolbar__list">
+										<li class="options-toolbar__item make_main">
+											<span>Make the main</span> <i class="flaticon-star"></i>
+										</li>
+										<li class="options-toolbar__item delete">
+											<span>Delete Walle</span> <i class="flaticon-cross-circular"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="billing-wallet__buttons">
+							<a class="recieve" href="#"><i class="flaticon-qr-code"></i> <span>Recieve</span></a>
+							<a class="send" href="#"><i class="flaticon-cursor"></i> <span>Send</span></a>
+						</div>
+					</div>
+
+					<div class="main__billing-wallet">
+						<div class="billing-wallet__cover">
+							<div class="billing-wallet__amount">
+								<span class="amount-balance">5 600 345</span>
+								<div class="amount-currency">
+									<span class="currency">rub</span>
+
+									<div class="amount-currency__toolbar">
+										<div class="currency__toolbar-search">
+											<input type="text" name="search">
+										</div>
+										<ul class="currency__toolbar-dropdown">
+											<li class="currency__toolbar-item">
+												<span class="curr active">USD</span>
+												<span class="name">Dollar</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOP</span>
+												<span class="name">Dominican Peso</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOGE</span>
+												<span class="name">Doge Coin</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="billing-wallet__number">0,015</div>
+							<div class="billing-wallet__options">
+								<span class="dots"></span>
+
+								<div class="wallet__options-toolbar">
+									<ul class="options-toolbar__list">
+										<li class="options-toolbar__item make_main">
+											<span>Make the main</span> <i class="flaticon-star"></i>
+										</li>
+										<li class="options-toolbar__item delete">
+											<span>Delete Walle</span> <i class="flaticon-cross-circular"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="billing-wallet__buttons">
+							<a class="recieve" href="#"><i class="flaticon-qr-code"></i> <span>Recieve</span></a>
+							<a class="send" href="#"><i class="flaticon-cursor"></i> <span>Send</span></a>
+						</div>
+					</div>
+
+					<div class="main__billing-wallet disable">
+						<div class="billing-wallet__cover">
+							<div class="billing-wallet__amount">
+								<span class="amount-balance">0</span>
+								<div class="amount-currency">
+									<span class="currency">rub</span>
+
+									<div class="amount-currency__toolbar">
+										<div class="currency__toolbar-search">
+											<input type="text" name="search">
+										</div>
+										<ul class="currency__toolbar-dropdown">
+											<li class="currency__toolbar-item">
+												<span class="curr active">USD</span>
+												<span class="name">Dollar</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOP</span>
+												<span class="name">Dominican Peso</span>
+											</li>
+											<li class="currency__toolbar-item">
+												<span class="curr">DOGE</span>
+												<span class="name">Doge Coin</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="billing-wallet__number">0,015</div>
+							<div class="billing-wallet__options">
+								<span class="dots"></span>
+
+								<div class="wallet__options-toolbar">
+									<ul class="options-toolbar__list">
+										<li class="options-toolbar__item make_main">
+											<span>Make the main</span> <i class="flaticon-star"></i>
+										</li>
+										<li class="options-toolbar__item delete">
+											<span>Delete Walle</span> <i class="flaticon-cross-circular"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="billing-wallet__buttons">
+							<a class="recieve" href="#"><i class="flaticon-qr-code"></i> <span>Recieve</span></a>
+							<a class="send" href="#"><i class="flaticon-cursor"></i> <span>Send</span></a>
+						</div>
+					</div>
+					
+					<div class="main__billing-add">
+						<a href="#">ADD WALLET</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="main__history">
+				<div class="main__history-heading">
+					<span class="title">History of Transactions</span>
+					<span class="all">All currency</span>
+				</div>
+
+				<div class="main__history-table">
+					<ul class="history-table__thead">
+						<li class="thead__item active"><span>Date</span></li>
+						<li class="thead__item"><span>ID</span></li>
+						<li class="thead__item"><span>Recipient</span></li>
+						<li class="thead__item"><span>Total Amount</span></li>
+						<li class="thead__item"><span>Status</span></li>
+						<li class="thead__item"><span>Total Fee</span></li>
+					</ul>
+
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							+ 3 250 USD
+						</li>
+						<li class="list__item list__item-status done">
+							<i class="flaticon-verified"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							09:22:11
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount minus">
+							- 400 USD
+						</li>
+						<li class="list__item list__item-status cancel">
+							<i class="flaticon-cross-circular"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.75% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							10:10:54
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							+ 3 250 EUR
+						</li>
+						<li class="list__item list__item-status pending">
+							<i class="flaticon-watch"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							+ 10 BTC
+						</li>
+						<li class="list__item list__item-status pending">
+							<i class="flaticon-watch"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							- 2 BTC
+						</li>
+						<li class="list__item list__item-status done">
+							<i class="flaticon-verified"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							+ 3 250 USD
+						</li>
+						<li class="list__item list__item-status done">
+							<i class="flaticon-verified"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							+ 3 250 EUR
+						</li>
+						<li class="list__item list__item-status done">
+							<i class="flaticon-verified"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							+ 10 BTC
+						</li>
+						<li class="list__item list__item-status cancel">
+							<i class="flaticon-cross-circular"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							- 2 BTC
+						</li>
+						<li class="list__item list__item-status done">
+							<i class="flaticon-verified"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+					<ul class="history-table__list">
+						<li class="list__item list__item-date">
+							01.11.2017 <br>
+							08:20:23
+						</li>
+						<li class="list__item list__item-id">
+							7314ca053b9d0f40ddf...
+						</li>
+						<li class="list__item list__item-recipient">
+							11979780746801531749
+						</li>
+						<li class="list__item list__item-amount plus">
+							+ 3 250 USD
+						</li>
+						<li class="list__item list__item-status done">
+							<i class="flaticon-verified"></i>
+						</li>
+						<li class="list__item list__item-fee">
+							0.09% <span class="value">(3 <span class="currency">USD</span>)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>	
+
+	<footer class="footer">
+		<div class="wrapper">
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a href="#">For developers</a>
+				</li>
+				<li class="footer__item">
+					<a href="#">Help</a>
+				</li>
+				<li class="footer__item">
+					<a href="#">Contact</a>
+				</li>
+				<li class="footer__item">
+					<select>
+						<option>Language</option>
+						<option>Language</option>
+						<option>Language</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Popup -->
+	
+	<div class="popup__send mfp-hide">
+		<div class="popup__send-header">
+			<div class="popup__send-heading">Send</div>
+			<button class="mfp-close" title="Close (Esc)"><i class="mfp-close flaticon-cross"></i></button>
+		</div>
+		<div class="popup__send-item popup__send-recipient">
+			<label>Recipient</label>
+			<div class="send-recipient__input">
+				<input type="text" name="recipient" placeholder="Enter email, phone number or wallet">
+			</div>
+
+			<div class="send-recipient__dropdown">
+				<div class="recipient__dropdown-current">
+					<div class="dropdown-current__number">
+						11741917411546706099
+					</div>
+					<div class="dropdown-current__button">
+						<a href="#">Add to Favorites</a>
+					</div>
+				</div>
+
+				<ul class="recipient__dropdown-list recipient__dropdown-favorites">
+					<label>You Favorites</label>
+					<li class="dropdown-list__item">
+						<span class="currency">USD</span>
+						<span class="number">1175***6099</span>
+					</li>
+					<li class="dropdown-list__item">
+						<span class="currency">LIR</span>
+						<span class="number">1175***6099</span>
+					</li>
+					<li class="dropdown-list__item">
+						<span class="currency">LIR</span>
+						<span class="number">1175***6099</span>
+					</li>
+				</ul>
+
+				<ul class="recipient__dropdown-list recipient__dropdown-wallets">
+					<label>You Favorites</label>
+					<li class="dropdown-list__item">
+						<div class="amount">
+							<span class="balance">7 000 254</span>
+							<span class="currency">USD</span>
+						</div>
+						<span class="number">1175***6099</span>
+					</li>
+					<li class="dropdown-list__item">
+						<div class="amount">
+							<span class="balance">4 000 254</span>
+							<span class="currency">EUR</span>
+						</div>
+						<span class="number">1175***6099</span>
+					</li>
+					<li class="dropdown-list__item">
+						<div class="amount">
+							<span class="balance">4 000 254</span>
+							<span class="currency">EUR</span>
+						</div>
+						<span class="number">1175***6099</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="popup__send-item popup__send-amount">
+			<label>Amount</label>
+			<div class="send-amount__exchange">
+				<div class="exchange__currency exchange__currency-1">
+					<input type="text">
+					<span>USD</span>
+				</div>
+				
+				<div class="send-amount__swap"></div>
+
+				<div class="exchange__currency exchange__currency-2">
+					<input type="text">
+					<span>EUR</span>
+				</div>
+			</div>
+		</div>
+		<div class="popup__send-item popup__send-message">
+			<label>Whithdraw From</label>
+			<div class="send-message__input">
+				<textarea placeholder="Write an optional message"></textarea>
+			</div>
+		</div>
+		<div class="popup__send-continue">
+			<a href="#">CONTINUE</a>
+		</div>
+	</div>
+
+	<div class="popup__recieve mfp-hide">
+		<div class="popup__recieve-header">
+			<div class="popup__recieve-heading">Recieve</div>
+			<button class="mfp-close" title="Close (Esc)"><i class="mfp-close flaticon-cross"></i></button>
+		</div>
+		
+		<div class="popup__recieve-code">
+			<div class="recieve-code__img">
+				<img src="img/qr.png" alt="QR Code">
+			</div>
+			<div class="recieve-code__number">
+				<span>11741917411546706099</span>
+			</div>
+		</div>
+
+		<div class="popup__recieve-replenishment replenishment-options">
+			<div class="breadcrumbs"><span>Replenishment options</span></div>
+
+			<div class="recieve-replenishment__items">
+				<div class="recieve-replenishment__item fiat-block">
+					<div class="replenishment__item-title">
+						Fiat money
+					</div>
+					<div class="replenishment__item-icon">
+						<i class="flaticon-dollar-symbol"></i>
+					</div>
+				</div>
+				<div class="recieve-replenishment__item crypto-block">
+					<div class="replenishment__item-title">
+						Crypto money
+					</div>
+					<div class="replenishment__item-icon">
+						<i class="flaticon-bitcoin-logo"></i>
+					</div>
+				</div>
+				<div class="recieve-replenishment__item electronic-block">
+					<div class="replenishment__item-title">
+						Electronic money
+					</div>
+					<div class="replenishment__item-icon">
+						<i class="flaticon-paypal"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup__recieve-replenishment fiat-money">
+			<div class="breadcrumbs"><span class="back_options">Replenishment options</span> <i class="flaticon-next"></i> <span>Fiat money</span></div>
+
+			<div class="recieve-replenishment__items">
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Pay Pal
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/paypal.png" alt="paypal">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Webmoney
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/webmoney.png" alt="webmoney">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Skrill
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/skrill.png" alt="skrill">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Яндекс Деньги
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/yandex.png" alt="yandex money">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Qiwi wallet
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/qiwi.png" alt="qiwi">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup__recieve-replenishment crypto-money">
+			<div class="breadcrumbs"><span class="back_options">Replenishment options</span> <i class="flaticon-next"></i> <span>Crypto money</span></div>
+
+			<div class="recieve-replenishment__items">
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Pay Pal
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/paypal.png" alt="paypal">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Webmoney
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/webmoney.png" alt="webmoney">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Skrill
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/skrill.png" alt="skrill">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Яндекс Деньги
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/yandex.png" alt="yandex money">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Qiwi wallet
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/qiwi.png" alt="qiwi">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup__recieve-replenishment electronic-money">
+			<div class="breadcrumbs"><span class="back_options">Replenishment options</span> <i class="flaticon-next"></i> <span>Electronic money</span></div>
+
+			<div class="recieve-replenishment__items">
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Pay Pal
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/paypal.png" alt="paypal">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Webmoney
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/webmoney.png" alt="webmoney">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Skrill
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/skrill.png" alt="skrill">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Яндекс Деньги
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/yandex.png" alt="yandex money">
+					</div>
+				</div>
+				<div class="recieve-replenishment__item">
+					<div class="replenishment__item-title">
+						Qiwi wallet
+					</div>
+					<div class="replenishment__item-logo">
+						<img src="img/qiwi.png" alt="qiwi">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- lib -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="plugins/form-styler/js/jquery.formstyler.min.js"></script>
+	<script src="plugins/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
