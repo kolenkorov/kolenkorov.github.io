@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Инфокурс</title>
+	
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="payment">
+		<div class="wrapper">
+			<a href="/" class="payment__close">
+				<span></span>
+			</a>
+			<div class="payment__heading">
+				Интернет - маркетинг
+			</div>
+			<div class="payment__steps">
+				<span>Шаг 1. Оплата</span>
+			</div>
+
+			<div class="payment__price">
+				<div class="payment__price-number">
+					<div class="number__title">Итого</div>
+					<div class="number__value"><span>5000</span> ₴</div>
+				</div>
+				<div class="payment__price-variants">
+					<input type="radio" data-value="5000" id="full" name="payment" checked>
+					<label for="full">Оплатить курс целиком 5 000 грн.</label>
+					<input type="radio" data-value="1000" id="prepayment" name="payment">
+					<label for="prepayment">Внести предоплату 1 000 грн.</label>
+				</div>
+			</div>
+
+			<div class="payment__description">
+				<div class="payment__description-icon">
+					<img src="img/gift.png" alt="icon">
+				</div>
+				<div class="payment__description-text">
+					После внесения оплаты или предоплаты курса вам придёт письмо с инструкциями и материалами для подготовки.
+				</div>
+			</div>
+
+			<div class="payment__button">
+				<a href="#">Оплатить</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- lib -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
