@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 19/06/2019 21:14
+  	Creation date: 22/07/2019 19:50
   	*/
 
 @font-face {
@@ -25,28 +25,29 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-  font-style: normal;
+font-style: normal;
 }
 
 .flaticon-down-arrow:before { content: "\f100"; }
 .flaticon-qr-code:before { content: "\f101"; }
 .flaticon-cursor:before { content: "\f102"; }
-.flaticon-arrow:before { content: "\f103"; }
-.flaticon-logout:before { content: "\f104"; }
-.flaticon-verified:before { content: "\f105"; }
-.flaticon-cross-circular:before { content: "\f106"; }
-.flaticon-watch:before { content: "\f107"; }
-.flaticon-coin:before { content: "\f108"; }
-.flaticon-bitcoin:before { content: "\f109"; }
-.flaticon-bitcoin-1:before { content: "\f10a"; }
-.flaticon-cross:before { content: "\f10b"; }
-.flaticon-play-arrow:before { content: "\f10c"; }
-.flaticon-check-symbol:before { content: "\f10d"; }
-.flaticon-star:before { content: "\f10e"; }
-.flaticon-magnifying-glass:before { content: "\f10f"; }
-.flaticon-right-arrow-forward:before { content: "\f110"; }
-.flaticon-bitcoin-logo:before { content: "\f111"; }
-.flaticon-paypal:before { content: "\f112"; }
-.flaticon-dollar-symbol:before { content: "\f113"; }
-.flaticon-next:before { content: "\f114"; }
-.flaticon-calendar:before { content: "\f115"; }
+.flaticon-logout:before { content: "\f103"; }
+.flaticon-verified:before { content: "\f104"; }
+.flaticon-cross-circular:before { content: "\f105"; }
+.flaticon-watch:before { content: "\f106"; }
+.flaticon-coin:before { content: "\f107"; }
+.flaticon-bitcoin:before { content: "\f108"; }
+.flaticon-bitcoin-1:before { content: "\f109"; }
+.flaticon-close-1:before { content: "\f10a"; }
+.flaticon-play:before { content: "\f10b"; }
+.flaticon-check:before { content: "\f10c"; }
+.flaticon-star:before { content: "\f10d"; }
+.flaticon-search:before { content: "\f10e"; }
+.flaticon-next-1:before { content: "\f10f"; }
+.flaticon-bitcoin-logo:before { content: "\f110"; }
+.flaticon-paypal:before { content: "\f111"; }
+.flaticon-dollar-symbol:before { content: "\f112"; }
+.flaticon-calendar:before { content: "\f113"; }
+.flaticon-bank-1:before { content: "\f114"; }
+.flaticon-bank:before { content: "\f115"; }
+.flaticon-next:before { content: "\f116"; }

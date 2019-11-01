@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Aortis</title>
+	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="plugins/magnific-popup/css/magnific-popup.min.css">
+</head>
+<body>
+	<header class="header inner">
+		<div class="header__block">
+			<div class="wrapper">
+				<div class="header__menu-icon">
+					<span></span>
+				</div>
+				<div class="header__logo">
+					<img src="img/logo.png" alt="logo">
+				</div>
+
+				<div class="header__catalog">
+					<span></span>
+					КАТАЛОГ
+					<i class="flaticon-next"></i>
+				</div>
+
+				<div class="header__phone">
+					<a href="tel:+74991617754">+7 (499) 161-77-54</a>
+				</div>
+
+				<div class="header__button button">
+					<a href="#" class="call"><i class="flaticon-call"></i><span>ПЕРЕЗВОНИТЬ МНЕ</span></a>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="catalog.html">Каталог</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">Сервис</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">Сотрудничество</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">О компании</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="header__search"><i class="flaticon-search"></i></a>
+				<a href="basket.html" class="header__basket">
+					<i class="flaticon-sell"></i>
+					<span class="header__basket-title">Корзина:</span>
+					<span class="header__basket-quantity">12 товара</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="header__menu">
+			<div class="wrapper">
+				<ul class="header__menu-list">
+					<li class="header__menu-item">
+						<a href="#">ОТСАСЫВАТЕЛИ</a>
+						<a href="#">ИНГАЛЯТОРЫ</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#">ТЕХСРЕДСВА</a>
+						<a href="#">КРЕСЛА</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#">ТУАЛЕТЫ</a>
+						<a href="#">СТУЛЬЯ</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#">НАСАДКИ</a>
+						<a href="#">ХОДУНКИ</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#">СКУТЕРА</a>
+						<a href="#">ЗАПЧАСТИ</a>
+					</li>
+				</ul>
+
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="catalog.html">Каталог</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">Сервис</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">Сотрудничество</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">О компании</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="header__phone">
+					<a href="tel:+74991617754">+7 (499) 161-77-54</a>
+				</div>
+
+				<div class="header__button button">
+					<a href="#" class="call"><i class="flaticon-call"></i><span>ПЕРЕЗВОНИТЬ МНЕ</span></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="wrapper">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item">
+					<a href="#">Главная</a>
+				</li>
+				<span>/</span>
+				<li class="breadcrumbs__item active">
+					<a href="#">Каталог товаров</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrapper catalog">
+		<div class="main">
+			<div class="main__heading heading">
+				<h1>КАТАЛОГ ТОВАРОВ</h1>
+				<div class="filter-button">
+					<button><i class="flaticon-filter"></i><span></span>ФИЛЬТРЫ</button>
+				</div>
+			</div>
+
+			<div class="catalog__filter">
+				<form class="catalog__filter-list">
+					<div class="catalog__filter-item row">
+						<div class="filter-item__heading">Цена Р.</div>
+						<div class="filter-item__par">
+							<label for="priceMin">от</label>
+							<input type="text" name="priceMin" id="priceMin" placeholder="2.990">
+							<label for="priceMax">до</label>
+							<input type="text" name="priceMax" id="priceMax" placeholder="254.000">
+						</div>
+					</div>
+					<div class="catalog__filter-item">
+						<div class="filter-item__heading">Параметры</div>
+						<div class="filter-item__par">
+							<input type="checkbox" id="glass">
+							<label for="glass">Стекло</label>
+							<input type="checkbox" id="iron">
+							<label for="iron">Железо</label>
+							<input type="checkbox" id="aluminium">
+							<label for="aluminium">Алюминий</label>
+							<input type="checkbox" id="plastic">
+							<label for="plastic">Пластмасса</label>
+						</div>
+					</div>
+					<div class="catalog__filter-item">
+						<div class="filter-item__heading">Цвет</div>
+						<div class="filter-item__par">
+							<input type="checkbox" id="white">
+							<label for="white">Белый</label>
+							<input type="checkbox" id="black">
+							<label for="black">Черный</label>
+							<input type="checkbox" id="blue">
+							<label for="blue">Синий</label>
+							<input type="checkbox" id="red">
+							<label for="red">Красный</label>
+							<input type="checkbox" id="gray">
+							<label for="gray">Серый</label>
+							<input type="checkbox" id="green">
+							<label for="green">Зеленый</label>
+						</div>
+					</div>
+					<div class="catalog__filter-item row">
+						<div class="filter-item__heading">Длинна</div>
+						<div class="filter-item__par">
+							<label for="lengthMin">от</label>
+							<input type="text" name="lengthMin" id="priceMin" placeholder="2.990">
+							<label for="lengthMax">до</label>
+							<input type="text" name="lengthMax" id="priceMax" placeholder="254.000">
+						</div>
+					</div>
+					<div class="catalog__filter-item">
+						<div class="filter-item__heading">Параметры</div>
+						<div class="filter-item__par">
+							<input type="checkbox" id="glass2">
+							<label for="glass2">Стекло</label>
+							<input type="checkbox" id="iron2">
+							<label for="iron2">Железо</label>
+							<input type="checkbox" id="aluminium2">
+							<label for="aluminium2">Алюминий</label>
+							<input type="checkbox" id="plastic2">
+							<label for="plastic2">Пластмасса</label>
+						</div>
+					</div>
+					<div class="catalog__filter-item">
+						<div class="filter-item__heading">Цвет</div>
+						<div class="filter-item__par">
+							<input type="checkbox" id="white2">
+							<label for="white2">Белый</label>
+							<input type="checkbox" id="black2">
+							<label for="black2">Черный</label>
+							<input type="checkbox" id="blue2">
+							<label for="blue2">Синий</label>
+							<input type="checkbox" id="red2">
+							<label for="red2">Красный</label>
+							<input type="checkbox" id="gray2">
+							<label for="gray2">Серый</label>
+							<input type="checkbox" id="green2">
+							<label for="green2">Зеленый</label>
+						</div>
+					</div>
+					<div class="catalog__filter-button button">
+						<button class="filter-clear"><span></span>ОЧИСТИТЬ</button>
+						<button type="submit">ПОДОБРАТЬ</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="products">
+				<div class="sort__cover">
+					<div class="filter-button">
+						<button><i class="flaticon-filter"></i><span></span>ФИЛЬТРЫ</button>
+					</div>
+					<div class="sort">
+						<div class="sort__heading">Сортировка:</div>
+						<div class="sort__variant">
+							<a href="#">по цене</a>
+							<a href="#" class="active">по скидке</a>
+							<a href="#">по новизне</a>
+							<a href="#">по популярности</a>
+							<select>
+								<option>по цене</option>
+								<option>по скидке</option>
+								<option>по новизне</option>
+								<option>по популярности</option>
+							</select>
+						</div>
+						<div class="sort__view">
+							<a href="#" class="view-blocks active">
+								<span></span><span></span>
+							</a>
+							<a href="#" class="view-line"><span></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="products__items">
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+							<div class="products__item-title">
+								Микроскоп медицинский для
+								биохимических исследований
+								XS-90
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>4.280 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-2.png" alt="product">
+
+								<div class="products__item-mark recomend">РЕКОМЕНДУЕМ</div>
+							</div>
+							<div class="products__item-title">
+								Глюкометр IME-DC <br> iDia
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>3.480 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-3.png" alt="product">
+
+								<div class="products__item-mark discount">-10%</div>
+							</div>
+							<div class="products__item-title">
+								Светильник хирургический Armed LED650
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>5.600 Р</span>
+								<span class="old-price">6.100 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-4.png" alt="product">
+
+								<div class="products__item-mark new">Новинка</div>
+							</div>
+							<div class="products__item-title">
+								Концентратор кислорода 7F-5L
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>4.280 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+							<div class="products__item-title">
+								Микроскоп медицинский для
+								биохимических исследований
+								XS-90
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>4.280 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-2.png" alt="product">
+
+								<div class="products__item-mark recomend">РЕКОМЕНДУЕМ</div>
+							</div>
+							<div class="products__item-title">
+								Глюкометр IME-DC <br> iDia
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>3.480 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+							<div class="products__item-title">
+								Микроскоп медицинский для
+								биохимических исследований
+								XS-90
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>4.280 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-2.png" alt="product">
+
+								<div class="products__item-mark recomend">РЕКОМЕНДУЕМ</div>
+							</div>
+							<div class="products__item-title">
+								Глюкометр IME-DC <br> iDia
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>3.480 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-3.png" alt="product">
+
+								<div class="products__item-mark discount">-10%</div>
+							</div>
+							<div class="products__item-title">
+								Светильник хирургический Armed LED650
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>5.600 Р</span>
+								<span class="old-price">6.100 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-4.png" alt="product">
+
+								<div class="products__item-mark new">Новинка</div>
+							</div>
+							<div class="products__item-title">
+								Концентратор кислорода 7F-5L
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>4.280 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+							<div class="products__item-title">
+								Микроскоп медицинский для
+								биохимических исследований
+								XS-90
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>4.280 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-2.png" alt="product">
+
+								<div class="products__item-mark recomend">РЕКОМЕНДУЕМ</div>
+							</div>
+							<div class="products__item-title">
+								Глюкометр IME-DC <br> iDia
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>3.480 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+							<div class="products__item-title">
+								Микроскоп медицинский для
+								биохимических исследований
+								XS-90
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>4.280 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-2.png" alt="product">
+
+								<div class="products__item-mark recomend">РЕКОМЕНДУЕМ</div>
+							</div>
+							<div class="products__item-title">
+								Глюкометр IME-DC <br> iDia
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>3.480 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="products__item">
+						<a href="product.html">
+							<div class="products__item-img">
+								<img src="img/products/product-3.png" alt="product">
+
+								<div class="products__item-mark discount">-10%</div>
+							</div>
+							<div class="products__item-title">
+								Светильник хирургический Armed LED650
+							</div>
+						</a>
+						<div class="products__item-cover">
+							<div class="item-price">
+								<span>5.600 Р</span>
+								<span class="old-price">6.100 Р</span>
+							</div>
+							<div class="products__item-buy">
+								<a href="#"><i class="flaticon-sell"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__pagination">
+					<div class="catalog__pagination-list">
+						<div class="catalog__pagination-item">
+							<a href="#" class="pagination-prev"><i class="flaticon-back"></i></a>
+						</div>
+						<div class="catalog__pagination-item">
+							<a href="#">1</a>
+						</div>
+						<div class="catalog__pagination-item">
+							<a href="#">2</a>
+						</div>
+						<div class="catalog__pagination-item active">
+							<a href="#">3</a>
+						</div>
+						<div class="catalog__pagination-item">
+							<a href="#">...</a>
+						</div>
+						<div class="catalog__pagination-item">
+							<a href="#">12</a>
+						</div>
+						<div class="catalog__pagination-item">
+							<a href="#">13</a>
+						</div>
+						<div class="catalog__pagination-item">
+							<a href="#" class="pagination-next"><i class="flaticon-next"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="recomend">
+		<div class="wrapper">
+			<div class="recomend__heading heading">
+				<h1>РЕКОМЕНДУЕМ</h1>
+
+				<div class="sort__variant">
+					<a href="#">Случайные товары</a>
+					<a href="#">Кресла</a>
+					<a href="#" class="active">Стулья</a>
+					<a href="#">Ходунки</a>
+					<a href="#">Туалеты</a>
+				</div>
+
+				<div class="slick-arrows"></div>
+			</div>
+
+			<div class="products__items recomend__slider">
+				<div class="products__item">
+					<a href="#" class="products__item-title">
+						Микроскоп медицинский для
+						биохимических исследований
+						XS-90
+					</a>
+					<div class="products__item-cover">
+						<div class="item-price">
+							<span>4.280 Р</span>
+						</div>
+						<div class="products__item-buy">
+							<a href="#"><i class="flaticon-sell"></i></a>
+						</div>
+					</div>
+					<div class="products__item-img">
+						<img src="img/products/product-1.png" alt="product">
+					</div>
+				</div>
+
+				<div class="products__item">
+					<a href="#" class="products__item-title">
+						Глюкометр IME-DC <br> iDia
+					</a>
+					<div class="products__item-cover">
+						<div class="item-price">
+							<span>3.480 Р</span>
+						</div>
+						<div class="products__item-buy">
+							<a href="#"><i class="flaticon-sell"></i></a>
+						</div>
+					</div>
+					<div class="products__item-img">
+						<img src="img/products/product-2.png" alt="product">
+
+						<div class="products__item-mark recomend">РЕКОМЕНДУЕМ</div>
+					</div>
+				</div>
+
+				<div class="products__item">
+					<a href="#" class="products__item-title">
+						Светильник хирургический Armed LED650
+					</a>
+					<div class="products__item-cover">
+						<div class="item-price">
+							<span>5.600 Р</span>
+							<span class="old-price">6.100 Р</span>
+						</div>
+						<div class="products__item-buy">
+							<a href="#"><i class="flaticon-sell"></i></a>
+						</div>
+					</div>
+					<div class="products__item-img">
+						<img src="img/products/product-3.png" alt="product">
+
+						<div class="products__item-mark discount">-10%</div>
+					</div>
+				</div>
+
+				<div class="products__item">
+					<a href="#" class="products__item-title">
+						Концентратор кислорода 7F-5L
+					</a>
+					<div class="products__item-cover">
+						<div class="item-price">
+							<span>4.280 Р</span>
+						</div>
+						<div class="products__item-buy">
+							<a href="#"><i class="flaticon-sell"></i></a>
+						</div>
+					</div>
+					<div class="products__item-img">
+						<img src="img/products/product-4.png" alt="product">
+
+						<div class="products__item-mark recomend">РЕКОМЕНДУЕМ</div>
+					</div>
+				</div>
+
+				<div class="products__item">
+					<a href="#" class="products__item-title">
+						Микроскоп медицинский для
+						биохимических исследований
+						XS-90
+					</a>
+					<div class="products__item-cover">
+						<div class="item-price">
+							<span>4.280 Р</span>
+						</div>
+						<div class="products__item-buy">
+							<a href="#"><i class="flaticon-sell"></i></a>
+						</div>
+					</div>
+					<div class="products__item-img">
+						<img src="img/products/product-1.png" alt="product">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__items">
+				<div class="footer__item">
+					<div class="footer__item-heading">СКУТЕРА</div>
+					<ul class="footer__item-list">
+						<li>
+							<a href="#">Где купить</a>
+						</li>
+						<li>
+							<a href="#">Сервисные центры</a>
+						</li>
+						<li>
+							<a href="#">Информация о доставке​</a>
+						</li>
+						<li>
+							<a href="#">Инструкция по применению</a>
+						</li>
+						<li>
+							<a href="#">Гарантия</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__item">
+					<div class="footer__item-heading">О НАС</div>
+					<ul class="footer__item-list">
+						<li>
+							<a href="#">Cоблюдение требований</a>
+						</li>
+						<li>
+							<a href="#">Политика Конфиденциальности</a>
+						</li>
+						<li>
+							<a href="#">Условия продажи</a>
+						</li>
+						<li>
+							<a href="#">Конакты</a>
+						</li>
+						<li>
+							<a href="#">Показать на карте</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__item">
+					<div class="footer__item-heading">НАШ АДРЕС</div>
+					<ul class="footer__item-list">
+						<li class="address">
+							г.Санкт-Петербург, ул.Торжковская<br> д. 5, оф. 428
+						</li>
+					</ul>
+	
+					<div class="footer__item-heading">НАПИСАТЬ НАМ</div>
+					<ul class="footer__item-list">
+						<li>
+							<a href="mailto:info@cir-spb.ru">info@cir-spb.ru</a>
+						</li>
+					</ul>
+				</div>
+	
+				<div class="footer__item footer__info">
+					<div class="footer__info-phone">
+						<a href="tel:+74991617754">+7 (499) 161-77-54</a>
+					</div>
+					<div class="footer__info-button button callme">
+						<a href="#">ПЕРЕЗВОНИТЬ МНЕ</a>
+					</div>
+					<div class="footer__info-button button youtube">
+						<a href="#">НАШ YOUTUBE КАНАЛ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__copy">
+			&copy; 2019 Драйв Медика. Все права защищены
+		</div>
+	</footer>
+
+	<div class="popup__call popup mfp-hide">
+		<div class="mfp-close">
+			<span></span>
+		</div>
+		<div class="popup__heading">
+			ПЕРЕЗВОНИТЬ МНЕ
+		</div>
+		<form class="popup__form">
+			<div class="popup__form-item">
+				<input type="text" name="name" placeholder="Ваше имя">
+			</div>
+			<div class="popup__form-item">
+				<input type="text" name="phone" placeholder="Ваш телефон">
+			</div>
+			<div class="popup__form-item button">
+				<button type="submit">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="popup__thank thank popup mfp-hide">
+		<div class="mfp-close">
+			<span></span>
+		</div>
+		<div class="thank__text">
+			Спасибо что вы выбрали нас! <br>
+			Наши операторы свяжутся с вами
+			в течении <span>15 минут.</span>
+
+			<div class="thank__text-sub">
+				Удачного дня!
+			</div>
+		</div>
+		<div class="thank__button button">
+			<a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+		</div>
+	</div>
+
+	<!-- lib -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="plugins/slick/slick.min.js"></script>
+	<script src="plugins/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="plugins/masked-input/jquery.maskedinput.min.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
@@ -59,8 +59,9 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="sign__main">
-				<div class="sign__main-block">
+				<div class="sign__main-block signin">
 					<div class="sign__main-heading">Sign in to PayRay.</div>
 					<div class="sign__main-sub">Enter your details below.</div>
 
@@ -71,7 +72,7 @@
 						</div>
 						<div class="main-form__input">
 							<label for="pass"><span>Password</span> <a class="repass" href="#">Forgot password?</a></label>
-							<input id="pass" type="text" placeholder="Enter yor password">
+							<input id="pass" type="password" placeholder="Enter yor password">
 						</div>
 						<div class="main-form__submit">
 							<div class="form__submit-remember">
@@ -84,6 +85,46 @@
 						</div>
 					</form>
 				</div>
+				<!-- FORGOT PASSWORD -->
+				<div class="sign__main-block forgot-pass forgot-pass__email">
+					<div class="sign__main-heading">Forgot your password?</div>
+					<div class="sign__main-sub">We’ll help you reset it and get back on track.</div>
+
+					<form class="sign__main-form">
+						<div class="main-form__input">
+							<label for="">Email Adress</label>
+							<input type="email" placeholder="sammichel@com.ua">
+						</div>
+						<div class="main-form__submit">
+							<div class="form__submit-button">
+								<a class="back" href="#">Back</a>
+								<input class="reset-pass" type="submit" value="Reset password">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="sign__main-block forgot-pass forgot-pass__password">
+					<div class="sign__main-heading">Forgot your password?</div>
+					<div class="sign__main-sub">We’ll help you reset it and get back on track.</div>
+
+					<form class="sign__main-form">
+						<div class="main-form__input">
+							<label for="">New password</label>
+							<input type="password" placeholder="Enter yor password">
+						</div>
+						<div class="main-form__input">
+							<label for="pass"><span>New password again</span> <a class="repass" href="#">Forgot password?</a></label>
+							<input id="pass" type="password"placeholder="Enter again yor password">
+						</div>
+						<div class="main-form__submit">
+							<div class="form__submit-button">
+								<input type="submit" value="Change">
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- FORGOT PASSWORD END -->
 			</div>
 		</div>
 		<footer class="footer">
