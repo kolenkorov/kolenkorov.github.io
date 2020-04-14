@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Orlov Capital</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="plugins/form-styler/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper-full section">
+		<aside class="aside">
+			<div class="aside__logo">
+				ORLOV CAPITAL
+			</div>
+			<div class="aside__menu">
+				<ul class="aside__menu-list">
+					<li class="aside__menu-item">
+						<a href="index.html" class="aside__menu-link">
+							<i class="flaticon-home"></i>
+							<span>Главная</span>
+						</a>
+					</li>
+					<li class="aside__menu-item">
+						<a href="#" class="aside__menu-link">
+							<i class="flaticon-career"></i>
+							<span>Карьера</span>
+						</a>
+					</li>
+					<li class="aside__menu-item">
+						<a href="store.html" class="aside__menu-link">
+							<i class="flaticon-shop"></i>
+							<span>Магазин</span>
+						</a>
+					</li>
+					<li class="aside__menu-item">
+						<a href="analytics.html" class="aside__menu-link">
+							<i class="flaticon-analytics"></i>
+							<span>Аналитика</span>
+						</a>
+					</li>
+					<li class="aside__menu-item">
+						<a href="#" class="aside__menu-link">
+							<i class="flaticon-icon-149338"></i>
+							<span>Образование и материалы</span>
+						</a>
+					</li>
+					<li class="aside__menu-item">
+						<a href="#" class="aside__menu-link">
+							<i class="flaticon-exit"></i>
+							<span>Выход</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<main class="main">
+			<header class="header">
+				<div class="header__title">
+					Личный кабинет
+				</div>
+			</header>
+
+			<div class="main__form">
+				<form>
+					<div class="main__form-file">
+						<div class="form-file__block">
+							<i class="flaticon-down-arrow-1"></i>
+							<span>Загрузите фото</span>
+						</div>
+
+							<div class="form-file__upload">
+								<input type="file" name="pic[]" class="photo" id="imgInput" />
+								
+								<img id="image" src="#" alt=""/>			
+							</div>
+
+					</div>
+					<div class="main__form-item">
+						<div class="form-item__icon">
+							<i class="flaticon-user"></i>
+						</div>
+						<input type="text" name="name" placeholder="Имя">
+					</div>
+					<div class="main__form-item">
+						<div class="form-item__icon">
+							<i class="flaticon-user"></i>
+						</div>
+						<input type="text" name="secondName" placeholder="Фамилия">
+					</div>
+					<div class="main__form-item">
+						<div class="form-item__icon">
+							<i class="flaticon-email"></i>
+						</div>
+						<input type="email" name="email" placeholder="Email">
+					</div>
+					<div class="main__form-item">
+						<div class="form-item__icon">
+							<i class="flaticon-password"></i>
+						</div>
+						<input type="password" name="oldPass" placeholder="Сменить пароль">
+					</div>
+					<div class="main__form-item">
+						<div class="form-item__icon">
+							<i class="flaticon-password"></i>
+						</div>
+						<input type="password" name="newPass" placeholder="Повторить пароль">
+					</div>
+
+					<div class="main__form-submit">
+						<button type="submit">Сохранить изменения</button>
+					</div>
+				</form>
+
+				<div class="main__form-authentication">
+					<a href="#">Подключить двохфакторную аутентификацию</a>
+				</div>
+			</div>
+		</main>
+	</div>
+	
+	<!-- lib -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="plugins/form-styler/js/jquery.formstyler.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
