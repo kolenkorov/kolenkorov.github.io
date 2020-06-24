@@ -10,8 +10,8 @@ $(window).on('load', function(){
 		$('.container').css({transform: 'scale(0.8)',width: '125%',});
 		$('.container').css('transform-origin', '0 100%');*/
 
-		let mt = -($('html').outerHeight() / 100 * 20);
-		$('.container').css('margin-top', mt);
+		/*let mt = -($('html').outerHeight() / 100 * 20);
+		$('.container').css('margin-top', mt);*/
 
 		/*$('html').css('scroll-behavior', 'smooth');
 		$('html').css('scroll-padding-top', '85px');*/
