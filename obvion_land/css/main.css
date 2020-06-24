@@ -172,7 +172,7 @@ body {
   overflow-x: hidden;
 }
 
-@-moz-document url-prefix()  {
+/*@-moz-document url-prefix()  {
 @media only screen and (min--moz-device-pixel-ratio: 0.8333333333333334), only screen and (min-resolution: 80dpi) {
     html {
       scroll-behavior: smooth;
@@ -195,7 +195,7 @@ body {
       margin-top: 10px !important;
     }
 }
-}
+}*/
 
 .heading {
   margin-bottom: 46px;
