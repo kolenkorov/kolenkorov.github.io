@@ -8,8 +8,167 @@
 	<!-- css -->
 	<link rel="stylesheet" href="plugins/magnific-popup/css/magnific-popup.min.css">
 	<link rel="stylesheet" href="plugins/form-styler/css/jquery.formstyler.css">
-	<link rel="stylesheet" href="plugins/owl-carousel/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+
+	<style>
+		@keyframes rocket {
+			0% {
+				top: 68%;
+				width: 45%;
+				left: 0;
+			}
+
+			100% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+		}
+
+		@keyframes reverse {
+			0% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+
+			100% {
+				top: 68%;
+				width: 45%;
+				left: 0;
+			}
+		}
+
+		@-webkit-keyframes rocket {
+			0% {
+				top: 68%;
+				width: 45%;
+				left: 0;
+			}
+
+			100% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+		}
+
+		@-webkit-keyframes reverse {
+			0% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+
+			100% {
+				top: 68%;
+				width: 45%;
+				left: 0;
+			}
+		}
+
+		@keyframes sat {
+			0%, 100% {
+				bottom: 10%;
+				transform: scale(1);
+			}
+
+			50% {
+				bottom: 90%;
+				transform: translateY(100%) scale(0.7);
+			}
+		}
+
+		@keyframes rot {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+
+		@keyframes unrot {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+
+		@-webkit-keyframes sat {
+			0%, 100% {
+				bottom: 10%;
+				transform: scale(1);
+			}
+
+			50% {
+				bottom: 90%;
+				transform: translateY(100%) scale(0.7);
+			}
+		}
+
+		@-webkit-keyframes rot {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+
+		@-webkit-keyframes unrot {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+
+		@keyframes loading {
+			0% {
+				transform: translateY(-50%)  rotate(0deg);
+			}
+
+			100% {
+				transform: translateY(-50%) rotate(360deg);
+			}
+		}
+
+
+		.main__anim.animate {
+			animation: 4s ease-in-out 0s normal none running;
+			animation-name: rocket;
+			animation-fill-mode: forwards;
+		}
+
+		.main__anim.reverse {
+			animation: 1.5s ease-in-out 0s normal none running;
+			animation-name: reverse;
+		}
+
+		.architecture__img-anim {
+			animation: 7s linear 0s normal none infinite running;
+			animation-name: sat;
+		}
+
+		.marketing__img-anim {
+			animation: 25s linear 0s normal none infinite running;
+			animation-name: rot;
+		}
+
+		.marketing__img-anim img {
+			animation: 25s linear 0s normal none infinite running;
+			animation-name: unrot;
+		}
+	</style>
+
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -113,7 +272,7 @@
 									<a href="#"><span>Презентация pdf<i class="flaticon-adobe-reader-symbol"></i></span></a>
 								</div>
 								<div class="button-cover">
-									<a href="#" class="video"><span></i>Видео презентация<i class="flaticon-video-camera"></i></span></a>
+									<a href="#" class="video"><span>Видео презентация<i class="flaticon-video-camera"></i></span></a>
 									<div class="developing">Видео презентация <br> находится в разработке</div>
 								</div>
 							</div>
@@ -528,9 +687,17 @@
 
 	<!-- lib -->
 	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	<script>
+		$('.token__more-button').on('click', function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass('active');
+		$('.token__more-block').slideToggle(350);
+	});
+	</script>
+
 	<script src="plugins/magnific-popup/js/jquery.magnific-popup.min.js"></script>
 	<script src="plugins/form-styler/js/jquery.formstyler.min.js"></script>
-	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
