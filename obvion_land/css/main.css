@@ -2,6 +2,7 @@
   src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Thin.ttf');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -9,6 +10,7 @@
   src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -16,6 +18,7 @@
   src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -23,6 +26,7 @@
   src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -30,6 +34,7 @@
   src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -37,6 +42,7 @@
   src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.ttf');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 body,
