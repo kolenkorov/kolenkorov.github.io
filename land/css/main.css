@@ -198,6 +198,7 @@ section {
 .button {
   display: inline-block;
   margin-top: 30px;
+  width: 100%;
 }
 
 .button a {
@@ -226,6 +227,7 @@ section {
   position: relative;
   background-color: #2b4465;
   max-width: 267px;
+  width: 100%;
 }
 
 .button a:before {
@@ -436,7 +438,7 @@ section {
   transition: 0.25s ease all;
   color: #2a3d5e;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.07em;
 }
 
@@ -659,8 +661,8 @@ section {
 .main__item-img:after {
   position: absolute;
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-image: url('../img/b1.svg');
   background-size: 100% 100%;
   bottom: 34%;
@@ -1722,10 +1724,12 @@ section {
   background: #1f2c3d;
   padding-bottom: 25px;
   min-height: inherit;
+  max-height: 650px;
 }
 
 .footer > .wrapper {
   padding-top: 80px;
+  padding-bottom: 90px;
 }
 
 .footer .cover {
@@ -2385,6 +2389,12 @@ section {
 
   .footer {
     min-height: inherit;
+    max-height: inherit;
+  }
+
+  .footer > .wrapper {
+    padding-bottom: 0;
+    padding-top: 60px;
   }
 
   .footer .cover .footer__img {
@@ -2563,10 +2573,6 @@ section {
   .token__more-block .more-block__img .table__text span {
     font-size: 7px;
   }
-
-  .footer > .wrapper {
-    padding-top: 60px;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -2581,6 +2587,12 @@ section {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+    width: calc(100% - 30px);
+  }
+
+  .button a {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header__burger {
@@ -2946,6 +2958,7 @@ section {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
+    width: 100%;
   }
 
   .token__more-block {
