@@ -2481,10 +2481,7 @@ i.icon:before {
 }*/
 
 @media screen and (min-width: 960px) {
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 70px;
-  }
+
 }
 
 @media screen and (max-width: 1600px) {
