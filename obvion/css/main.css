@@ -1818,6 +1818,7 @@ html {
   box-sizing: border-box;
   padding-left: 2px;
   max-width: 300px;
+  width: 100%;
 }
 
 .main__top-item > a:before,
@@ -4041,6 +4042,11 @@ html {
   .main__top-item .top-item__button a {
     width: 100%;
     max-width: inherit;
+  }
+
+  .main__top-input {
+    width: 100%;
+    max-width: 100%;
   }
 
   .token .main__top-block:first-child {
