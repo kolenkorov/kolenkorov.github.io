@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Obvion</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="plugins/magnific-popup/css/magnific-popup.min.css">
+	<link rel="stylesheet" href="plugins/form-styler/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="plugins/owl-carousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<style>
+		@keyframes rocket {
+			0% {
+				top: 69%;
+				width: 45%;
+				left: 0;
+			}
+
+			100% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+		}
+
+		@keyframes reverse {
+			0% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+
+			100% {
+				top: 69%;
+				width: 45%;
+				left: 0;
+			}
+		}
+
+		@-webkit-keyframes rocket {
+			0% {
+				top: 69%;
+				width: 45%;
+				left: 0;
+			}
+
+			100% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+		}
+
+		@-webkit-keyframes reverse {
+			0% {
+				top: 20%;
+				width: 80%;
+				left: 10%;
+			}
+
+			100% {
+				top: 69%;
+				width: 45%;
+				left: 0;
+			}
+		}
+
+		@keyframes sat {
+			0%, 100% {
+				bottom: 10%;
+				transform: scale(1);
+			}
+
+			50% {
+				bottom: calc(100% - 57%);
+				transform: scale(0.7);
+			}
+		}
+
+		@keyframes rot {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+
+		@keyframes unrot {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+
+		@-webkit-keyframes sat {
+			0%, 100% {
+				bottom: 10%;
+				transform: scale(1);
+			}
+
+			50% {
+				bottom: calc(100% - 57%);
+				transform: scale(0.7);
+			}
+		}
+
+		@-webkit-keyframes rot {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+
+		@-webkit-keyframes unrot {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(-360deg);
+			}
+		}
+
+		@keyframes loading {
+			0% {
+				transform: translateY(-50%)  rotate(0deg);
+			}
+
+			100% {
+				transform: translateY(-50%) rotate(360deg);
+			}
+		}
+
+
+		.main__anim.animate {
+			animation: 4s ease-in-out 0s normal none running;
+			animation-name: rocket;
+			animation-fill-mode: forwards;
+			backface-visibility: hidden;
+			will-change: width, top, left;
+		}
+
+		.main__anim.reverse {
+			animation: 1.5s ease-in-out 0s normal none running;
+			animation-name: reverse;
+			backface-visibility: hidden
+		}
+
+		.architecture__img-anim {
+			animation: 7s linear 0s normal none infinite running;
+			animation-name: sat;
+			backface-visibility: hidden
+		}
+
+		.marketing__img-anim {
+			animation: 25s linear 0s normal none infinite running;
+			animation-name: rot;
+			backface-visibility: hidden
+		}
+
+		.marketing__img-anim img {
+			animation: 25s linear 0s normal none infinite running;
+			animation-name: unrot;
+			backface-visibility: hidden
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__cover">
+				<div class="header__logo">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 232.29 73.86"><defs><style>.cls-11_1{fill:url(#Безымянный_градиент_10);}.cls-21_1{fill:url(#Безымянный_градиент_10-2);}.cls-31_1{fill:url(#Безымянный_градиент_10-3);}.cls-41_1{fill:url(#Безымянный_градиент_10-4);}.cls-51_1{fill:#1f2c3d;}.cls-61_1{fill:url(#Безымянный_градиент_10-5);}.cls-71_1{fill:url(#Безымянный_градиент_10-6);}</style><linearGradient id="Безымянный_градиент_10" x1="378.49" y1="297.64" x2="334.91" y2="297.64" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#50b4ee"/><stop offset="1" stop-color="#315e9b"/></linearGradient><linearGradient id="Безымянный_градиент_10-2" x1="341.78" y1="297.64" x2="304.8" y2="297.64" xlink:href="#Безымянный_градиент_10"/><linearGradient id="Безымянный_градиент_10-3" x1="360.01" y1="297.64" x2="339.84" y2="297.64" xlink:href="#Безымянный_градиент_10"/><linearGradient id="Безымянный_градиент_10-4" x1="341.27" y1="297.64" x2="325.07" y2="297.64" xlink:href="#Безымянный_градиент_10"/><linearGradient id="Безымянный_градиент_10-5" x1="516.47" y1="296.3" x2="484.2" y2="296.3" xlink:href="#Безымянный_градиент_10"/><linearGradient id="Безымянный_градиент_10-6" x1="537.05" y1="296.3" x2="514.31" y2="296.3" xlink:href="#Безымянный_градиент_10"/></defs><title>ObviON 2</title><g id="Слой_1" data-name="Слой 1"><path class="cls-11_1" d="M341.56,260.71a35.36,35.36,0,0,0-6.65.61,36.89,36.89,0,0,1,30,31.66c.05.29.09.6.12.9.11,1.13.17,2.29.17,3.45a2.49,2.49,0,0,1,0,.31A36.91,36.91,0,0,1,334.91,334a35.37,35.37,0,0,0,6.65.61,36.93,36.93,0,1,0,0-73.86Z" transform="translate(-304.8 -260.71)"/><path class="cls-21_1" d="M341.78,328.46a31.33,31.33,0,0,1,0-61.64,30.6,30.6,0,0,0-5.64-.52,31.34,31.34,0,0,0,0,62.68A30.6,30.6,0,0,0,341.78,328.46Z" transform="translate(-304.8 -260.71)"/><path class="cls-31_1" d="M360,297.64a16.2,16.2,0,0,0-16.21-16.21,16.45,16.45,0,0,0-4,.49,16.22,16.22,0,0,1,0,31.44,16.44,16.44,0,0,0,4,.49A16.21,16.21,0,0,0,360,297.64Z" transform="translate(-304.8 -260.71)"/><path class="cls-41_1" d="M341.27,285a13.43,13.43,0,0,0-3.19-.39,13,13,0,1,0,0,26,13.42,13.42,0,0,0,3.19-.39,13,13,0,0,1,0-25.24Z" transform="translate(-304.8 -260.71)"/><path class="cls-51_1" d="M393.21,296.3c0-7.53,5.65-12.95,13.58-12.95s13.54,5.39,13.54,12.95-5.63,12.95-13.54,12.95S393.21,303.83,393.21,296.3Zm20,0a6.49,6.49,0,1,0-6.47,6.63A6.32,6.32,0,0,0,413.25,296.3Z" transform="translate(-304.8 -260.71)"/><path class="cls-51_1" d="M442.13,295.61a6.48,6.48,0,0,1,3.78,6c0,4-3.45,7-8,7H423.79V284h13.9c4.37,0,7.56,2.67,7.56,6.31a6.28,6.28,0,0,1-3.12,5.32Zm-3.33-4.2a2.08,2.08,0,0,0-2.3-2.15h-6.2v4.29h6.2a2.08,2.08,0,0,0,2.3-2.15Zm.39,9.39a2.22,2.22,0,0,0-2.43-2.23h-6.46V303h6.46A2.22,2.22,0,0,0,439.2,300.8Z" transform="translate(-304.8 -260.71)"/><path class="cls-51_1" d="M471.68,284l-9.43,24.65h-6.32L446.29,284H454l5,13.93L464,284Z" transform="translate(-304.8 -260.71)"/><path class="cls-51_1" d="M474.16,284l6.88,3v21.65h-6.88Z" transform="translate(-304.8 -260.71)"/><path class="cls-61_1" d="M484.52,296.3c0-7.53,5.65-12.95,13.58-12.95s13.54,5.39,13.54,12.95S506,309.25,498.1,309.25,484.52,303.83,484.52,296.3Zm20,0a6.49,6.49,0,1,0-6.47,6.63A6.32,6.32,0,0,0,504.56,296.3Z" transform="translate(-304.8 -260.71)"/><path class="cls-71_1" d="M537.09,284v24.65h-5.62l-9.79-13.37v13.37H515.1V284H521l9.46,12.93V284Z" transform="translate(-304.8 -260.71)"/><polygon class="cls-51_1" points="176.24 21.2 169.35 18.2 169.35 13.32 176.24 13.32 176.24 21.2"/></g></svg>
+				</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<div class="header__menu">
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="#project" class="header__menu-link">О проекте</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#arch" class="header__menu-link">Архитектура</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#contract" class="header__menu-link">Cмарт-контракт</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#advantages" class="header__menu-link">Преимущества</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#marketing" class="header__menu-link">Маркетинг</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#token" class="header__menu-link">Токеномика OBI</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__rates">
+					TRX <span></span> $0.0264
+				</div>
+				<div class="header__bot">
+					<a href="#"><span>Чат-бот</span> <i class="flaticon-telegram"></i></a>
+				</div>
+				<div class="header__lang">
+					<select>
+						<option class="ru">Ru</option>
+						<option class="en">En</option>
+						<option class="es">Es</option>
+						<option class="de">De</option>
+						<option class="it">It</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+		<main class="main">
+			<div class="wrapper">
+				<div class="main__slider">
+					<div class="main__item">
+						<div class="main__item-img">
+							<img src="img/main_img.svg" alt="img">
+
+							<div class="main__anim">
+								<img src="img/main_rocket.svg" alt="img">
+							</div>
+						</div>
+						<div class="main__item-text">
+							<div class="item-text__title">
+								Ваш гид в мире <br> 
+								<span>финансовых технологий</span>
+							</div>
+							<div class="item-text__button">
+								<a href="#">ЛОгин/Регистрация <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.2 150.2"><linearGradient id="a11" gradientUnits="userSpaceOnUse" x1="65.55" y1="65.868" x2="41.68" y2="79.406"><stop offset="0" stop-color="#2bb1e9"></stop><stop offset="1" stop-color="#2295d1"></stop></linearGradient><path d="M20.9 11.8c28.8 5.5 57.6 10.9 86.5 16.4 9.8 7.8 19.6 15.7 29.5 23.5L71.2 142C54.5 98.6 37.7 55.2 20.9 11.8z" fill="url(#a11)"></path><linearGradient id="b11" gradientUnits="userSpaceOnUse" x1="89.343" y1="-15.827" x2="40.72" y2="55.399"><stop offset="0" stop-color="#33beff"></stop><stop offset="1" stop-color="#6deefe"></stop></linearGradient><path d="M20.9 11.8c19 20.6 37.9 41.2 56.9 61.9 9.9-15.2 19.7-30.3 29.6-45.5-28.9-5.4-57.7-10.9-86.5-16.4z" fill="url(#b11)"></path><linearGradient id="c11" gradientUnits="userSpaceOnUse" x1="112.689" y1="44.519" x2="91.314" y2="54.851"><stop offset="0" stop-color="#33beff"></stop><stop offset="1" stop-color="#6deefe"></stop></linearGradient><path d="M77.8 73.7c19.7-7.3 39.3-14.6 59-22-9.8-7.8-19.6-15.7-29.5-23.5-9.8 15.2-19.7 30.3-29.5 45.5z" fill="url(#c11)"></path><linearGradient id="d11" gradientUnits="userSpaceOnUse" x1="117.982" y1="30.037" x2="90.648" y2="113.616"><stop offset="0" stop-color="#36abea"></stop><stop offset="1" stop-color="#48cff2"></stop></linearGradient><path d="M77.8 73.7c-2.2 22.8-4.4 45.5-6.5 68.3 21.9-30.1 43.7-60.2 65.6-90.3-19.8 7.4-39.4 14.7-59.1 22z" fill="url(#d11)"></path><path d="M136.8 51.7l-.2-.2c-20 7-39.9 14-59.9 21 .3.4.7.7 1 1.1 19.8-7.2 39.4-14.5 59.1-21.9z" fill="#6cedfd"></path><path d="M77.8 73.7c-33.3-35.8-49.9-53.8-49.7-54 .2-.2 17.1 17.2 50.7 52.4-.3.5-.7 1.1-1 1.6z" fill="#83f6ff"></path><linearGradient id="e11" gradientUnits="userSpaceOnUse" x1="116.34" y1="19.866" x2="106.352" y2="67.175"><stop offset="0" stop-color="#6cedfd"></stop><stop offset="1" stop-color="#b1f5fd"></stop></linearGradient><path d="M107.4 28.2c-9.9 15.2-19.7 30.3-29.6 45.5 19.7-7.3 39.3-14.6 59-22-9.8-7.8-19.6-15.6-29.4-23.5z" fill="url(#e11)"></path><path d="M71.2 142c4.1-45.6 6.3-68.3 6.5-68.3.2 0-1.4 22-4.8 66-.5.7-1.1 1.5-1.7 2.3z" fill="#71d4ff"></path></svg> TronLink</a>
+								<div class="item-text__browsers">
+									<a href="https://www.google.com/intl/ru/chrome/">Chrome</a> |
+									<a href="https://brave.com/">Brave</a> |
+									<a href="https://opera.com/">Opera</a> |
+									<a href="https://yandex.ru/">Yandex</a> |
+									<a href="https://www.apple.com/ru/ios/app-store/">iOS</a> |
+									<a href="https://play.google.com/store">Android</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section class="project" id="project">
+			<div class="wrapper">			
+				<div class="cover">
+					<div class="project__block block">
+						<div class="project__heading heading">
+							<h2>О проекте</h2>
+						</div>
+						<p>
+							<span>Obvion</span> - это современная открытая финансовая система без скрытых денежных потоков, комиссий, блокировок и незамеченных выводов из системы.
+							Проект&nbsp;построен на алгоритме, заложенном в открытом смарт-контракте, созданном на <span>Blockchain TRON</span>.
+						</p>
+						<p>
+							Такой подход абсолютно исключает возможность любого стороннего вмешательства в систему, даже со стороны его создателей, что обеспечивает максимальную прозрачность проекта.
+						</p>
+
+						<div class="project__button button">
+							<div class="button-cover">
+								<a href="#"><span><i class="flaticon-adobe-reader-symbol"></i>Презентация pdf</span></a>
+							</div>
+							<div class="button-cover">
+								<a href="#" class="video"><span><i class="flaticon-video-camera"></i>Видео презентация</span></a>
+								<div class="developing">Видео презентация <br> находится в разработке</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="project__img">
+						<div class="img-cover">
+							<img src="img/project.svg" alt="img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="architecture" id="arch">
+			<div class="wrapper">			
+				<div class="cover">
+					<div class="architecture__img">
+						<div class="architecture__img-cover">
+							<div class="img-cover">
+								<img src="img/arch.svg" alt="img">
+							</div>
+							<div class="architecture__img-anim">
+								<img src="img/arch_capsule.svg" alt="img">
+							</div>
+						</div>
+					</div>
+
+					<div class="architecture__block block">
+						<div class="architecture__heading heading">
+							<h2>Архитектура</h2>
+						</div>
+						<p>
+							В открытом исходном коде смарт-контракта заложен механизм, в&nbsp;котором все <span class="dark">100% средств остаются внутри системы:</span>
+						</p>
+						
+						<div class="architecture__progress">
+							<div class="architecture__progress-item">
+								<div class="architecture__progress-bar" style="width: 77%; background-image: linear-gradient(0deg, rgb(30,92,128) 0%, rgb(70,129,202) 100%)"></div>
+								<div class="architecture__progress-text"><span style="color: #2a6796;">70<sub>%</sub></span>Пассивный доход</div>
+							</div>
+							<div class="architecture__progress-item">
+								<div class="architecture__progress-bar" style="width: 42%; background-image: linear-gradient(0deg, rgb(117,208,246) 0%, rgb(86,232,242) 50%, rgb(132,245,222) 100%);"></div>
+								<div class="architecture__progress-text"><span style="color: #66d3d2;">25<sub>%</sub></span>Маркетинг</div>
+							</div>
+							<div class="architecture__progress-item">
+								<div class="architecture__progress-bar" style="width: 16%; background-image: linear-gradient(0deg, rgb(0,167,246) 0%, rgb(37,202,253) 100%)"></div>
+								<div class="architecture__progress-text"><span style="color: #00befa;">5<sub>%</sub></span>Токеномика</div>
+							</div>
+						</div>
+
+						<p>
+							Архитектура проекта <span class="dark">Obvion</span> заложена в 5 смарт-контрактов: <span class="dark">основной <span class="line">|</span> маркетинг <span class="line">|</span> уровни <span class="line">|</span> OBI токен <span class="line">|</span> токеномика OBI</span>. Со&nbsp;всеми исходными кодами смарт-контрактов Вы можете ознакомиться&nbsp;далее.
+						</p>
+
+						<div class="architecture__button button">
+							<a href="#"><span><i class="icon"></i> Основной</span></a>
+							<a href="#"><span><i class="icon"></i> Маркетинг</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contract" id="contract">
+			<div class="wrapper">			
+				<div class="cover">
+					<div class="contract__block block">
+						<div class="project__heading heading">
+							<h2>Смарт-контракт</h2>
+						</div>
+						<p>
+							<span>Смарт-контракт</span> - это программный код, реализованный на базе Blockchain, который функционирует системно и автоматически, независимо от чьего-либо желания. Основная идея смарт-контракта - исключить расхождения трактовок условий договора участников этого смарт-контракта.
+						</p>
+						<p>
+							Таким образом в проекте <span>Obvion</span> заложены все преимущества <span>Blockchain</span> технологий, что не позволяет ни одному из участников проекта вмешаться в работу алгоритма и изменить направление финансовых потоков.
+						</p>
+					
+						<div class="contract__button button">
+							<a href="#"><span><i class="icon"></i> Уровни</span></a>
+							<a href="#"><span><i class="icon"></i> OBI токен</span></a>
+						</div>
+					</div>
+
+					<div class="project__img">
+						<div class="img-cover">
+							<img src="img/contract.svg" alt="img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages" id="advantages">
+			<div class="wrapper">
+				<div class="advantages__heading heading">
+					<h2>Преимущества</h2>
+				</div>
+				<div class="advantages__items">
+					<div class="advantages__item">
+						<div class="advantages__item-icon">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="218 160 55 55" xml:space="preserve"><style></style><path d="M222.1 162.6c-1.2 0-2 .8-2 2v15.6c0 1.2.8 2 2 2h5.9v3.9h3.9v-3.9h5.9c1.2 0 2-.8 2-2v-5.9h3.9v-3.9h-3.9v-5.9c0-1.2-.8-2-2-2l-15.7.1zm31.2 0c-1.2 0-2 .8-2 2v5.9h-3.9v3.9h3.9v5.9c0 1.2.8 2 2 2h5.9v3.9h3.9v-3.9h5.9c1.2 0 2-.8 2-2v-15.6c0-1.2-.8-2-2-2l-15.7-.1zm-29.3 4h11.7v11.7H224v-11.7zm31.3 0H267v11.7h-11.7v-11.7zM227.9 190v3.9H222c-1.2 0-2 .8-2 2v15.6c0 1.2.8 2 2 2h15.6c1.2 0 2-.8 2-2v-5.9h3.9v-3.9h-3.9v-5.9c0-1.2-.8-2-2-2h-5.9V190h-3.8zm31.3 0v3.9h-5.9c-1.2 0-2 .8-2 2v5.9h-3.9v3.9h3.9v5.9c0 1.2.8 2 2 2h15.6c1.2 0 2-.8 2-2V196c0-1.2-.8-2-2-2H263v-4h-3.8zm-35.2 7.8h11.7v11.7H224v-11.7zm31.3 0H267v11.7h-11.7v-11.7z" fill="#fff"/></svg>
+						</div>
+						<div class="advantages__item-text">
+							<span>Obvion</span> построен на технологии Blockchain, что сделало возможным создать проект открытым и прозрачным.
+						</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__item-icon">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="218 160 55 55" xml:space="preserve"><style></style><path d="M246.1 160.5c-5.9 0-14.5 2-19.2 3.1-2.3.8-4.3 3.1-4.3 5.9V182c0 9.8 5.9 18 11.4 23.9s11 9.4 11 9.4l1.2.4 1.2-.8s5.5-3.5 11-9.4 11.4-14.1 11.4-23.5v-12.5c0-2.7-2-5.1-4.3-5.9-4.9-1.1-13.5-3.1-19.4-3.1zm0 3.9c5.1 0 13.7 2 18 3.1.8 0 1.6.8 1.6 2V182c0 7.8-5.1 15.3-10.2 20.8-4.7 5.1-8.6 7.4-9.4 7.8-.8-.4-4.7-2.7-9.4-7.8-5.1-5.1-10.2-12.5-10.2-20.8v-12.5c0-1.2.4-2 1.6-2 4.3-1.1 12.9-3.1 18-3.1zm14.1 9.1l-16.4 16.4-9-8.6-2.8 2.7 11.7 11.7 19.6-19.6-3.1-2.6z" fill="#fff"/></svg>
+						</div>
+						<div class="advantages__item-text">
+							<span>Смарт-контракт</span> позволил поместить этот алгоритм в замкнутую систему, в которую не может вмешаться ни один человек.
+						</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__item-icon">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="218 160 55 55" xml:space="preserve"><style></style><path d="M244.9 160.5h-2.1l.5 5.3h1.6c14.4 0 26.6 10.7 28.8 24.5l5.3-1.1c-2.7-16.4-17.1-28.7-34.1-28.7zm-11.7 2.2c-13.3 4.8-22.9 17.6-22.9 32.5h5.3c0-12.8 8-23.4 19.7-27.7l-2.1-4.8zm11.7 8.5c-11.2 0-20.8 7.5-23.4 18.1l5.3 1.6c2.1-8.5 9.6-14.4 18.1-14.4 3.7 0 6.9 1.1 9.6 2.7l2.7-4.3c-3.3-2.1-7.5-3.7-12.3-3.7zm19.2 10.1l-4.3 3.2c2.7 2.7 3.7 6.4 3.7 10.7 0 5.9-1.6 11.7-4.3 17.6l4.8 2.1c3.2-6.4 4.8-13.3 4.8-19.7.1-5.4-1.5-10.2-4.7-13.9zm-19.2.5c-2.1 0-4.3.5-5.9 1.6l2.1 4.8c1.6-.5 2.7-1.1 3.7-1.1 4.3 0 8 3.7 8 8h5.3c.1-7.4-5.8-13.3-13.2-13.3zm-12.8 9.1c-.5 1.6-.5 3.2-.5 4.3 0 .5-.5 3.2-1.6 4.8s-2.7 3.2-3.7 3.7c-1.6.5-3.2.5-5.9 1.1l1.1 5.3c2.1-.5 4.3-1.1 5.9-1.1 3.7-.5 5.9-3.7 7.5-5.9 1.1-3.2 2.1-5.9 2.1-8 0-.5 0-1.6.5-2.7l-5.4-1.5zm12.8 1.6c-1.6 0-2.7 1.1-2.7 2.7s-.5 5.3-2.1 8c-1.6 3.2-3.7 6.4-6.9 8l2.7 4.3c4.3-2.7 6.9-6.4 8.5-10.1 2.1-3.2 3.2-6.9 3.2-9.6v-.5c0-1.7-1.1-2.8-2.7-2.8zm29.3 5.3c-.5 4.8-1.6 10.1-3.2 15.4l4.8 2.1c2.1-5.3 3.2-11.2 3.7-16.5l-5.3-1zm-22.4 4.8c-1.1 3.2-2.7 6.9-4.8 10.1l4.3 3.2c2.7-3.7 4.3-7.5 5.3-11.2l-4.8-2.1z" fill="#fff"/></svg>
+						</div>
+						<div class="advantages__item-text">
+							Идентификация через <span>TronLink</span> сохранила конфиденциальность каждого пользователя.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="marketing" id="marketing">
+			<div class="wrapper">			
+				<div class="cover">
+					<div class="marketing__img">
+						<div class="img-cover">
+							<img src="img/marketing.svg" alt="img">
+						
+							<div class="marketing__img-anim">
+
+								<img src="img/marketing_sattelite.svg" alt="img">
+							</div>
+							<div class="marketing__img-anim2">
+
+								<img src="img/marketing_rocket.svg" alt="img">
+							</div>
+						</div>
+					</div>
+
+					<div class="marketing__block block">
+						<div class="marketing__heading heading">
+							<h2>Маркетинг</h2>
+						</div>
+						<p>
+							Наиболее эффективным методом продвижения любого продукта является личная рекомендация, поэтому в <span>Obvion</span> разработана <span>многоуровневая программа</span> поощрения своих пользователей за развитие проекта.
+						</p>
+						<p>
+							Поделитесь с друзьями информацией о проекте, в который инвестируете сами, и получайте <span>моментальные вознаграждения</span> TRX&nbsp;на Ваш кошелек TronLink
+						</p>
+
+						<div class="marketing__button button">
+							<div class="button-cover">
+								<a href="#"><span><i class="flaticon-adobe-reader-symbol"></i>Маркетинг pdf</span></a>
+							</div>
+							<div class="button-cover">
+								<a href="#" class="video"><span><i class="flaticon-video-camera"></i>Видео маркетинг</span></a>
+								<div class="developing">Видео маркетинг <br> находится в разработке</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="token" id="token">
+			<div class="wrapper">			
+				<div class="cover">
+					<div class="token__graph">
+						<img src="img/token_graph.svg" alt="img">
+					</div>
+					<div class="token__block block">
+						<div class="token__heading heading">
+							<h2>Токеномика OBI</h2>
+						</div>
+						<p>
+							В проекте <span class="dark">Obvion</span> разработан <span class="dark">токен OBI</span> на <span class="dark">Blockchain TRON</span> стандарта <span class="dark">TRC20</span> с ограниченной эмиссией в 10,000,000 токенов, которые будут распределены между участниками проекта в 3 этапа. Алгоритм и временной интервал спроектированы таким образом, что <span class="dark">токен OBI</span> всегда будет расти в цене и 100% токенов будут обеспечены ликвидностью.
+						</p>
+
+						<div class="token__button button">
+							<a href="#"><span><i class="icon"></i> Токеномика OBI</span></a>
+						</div>
+					</div>
+					<div class="token__img">
+						<div class="img-cover">
+							<img src="img/token.svg" alt="img">
+						</div>
+					</div>
+				</div>
+				<div class="token__more">
+					<div class="token__more-button button">
+						<span class="icon"><i class="flaticon-down-arrow-1"></i></span>
+						<span>Узнайте больше о токене OBI</span>
+						<span class="icon"><i class="flaticon-down-arrow-1"></i></span>
+					</div>
+					<div class="token__more-block">
+						<div class="more-block__top">
+							<div class="more-block__cover">
+								<div class="more-block__text">
+									<h2>Токеномика OBI</h2>
+
+									<ul>
+										<li>
+											Токен OBI разработан на платформе Blockchain TRON стандарта&nbsp;TRC-&nbsp;20;
+										</li>
+										<li>
+											Токен OBI обеспечивается 5% от всех TRX, поступающих в проект;
+										</li>
+										<li>
+											Начисление OBI токенов на кошельки участников проекта происходит автоматически смарт-контрактом при подтверждении входящей транзакции в TRX;
+										</li>
+										<li>
+											Каждый OBI токен на 100% ликвиден, так как все токены обеспечены TRX&nbsp;на&nbsp;адресе смарт-контракта;
+										</li>
+										<li>
+											Продажа OBI токенов осуществляется путем перевода OBI токенов 
+											на адрес смарт-контракта, в этом случае пользователь получает на свой кошелек пропорциональное количество ETH в пуле, а его токены OBI сжигаются и больше 
+											никогда не участвуют в оценке капитализации.
+										</li>
+									</ul>
+								</div>
+								<div class="more-block__img">
+
+									<img src="img/token_more_1.svg" alt="img">
+								</div>
+							</div>
+							<div class="more-block__sub">
+								<h3>Распределение токенов OBI между участниками проекта происходит по <span>двум принципам:</span> </h3>
+							</div>
+						</div>
+
+						<div class="more-block__step">
+							<div class="block-step__title">
+								<span class="icon">1</span> 
+								<span>5,000,000 OBI токенов распределяются по партнерской программе проекта:</span> 
+							</div>
+							<p>
+								Все <span class="dark">5,000,000 OBI</span> токенов  распределяются между всеми партнерами согласно маркетинг-плана проекта (т.е. в такой же пропорции в глубину 12 линий). 
+								Поскольку все <span class="dark">5,000,000 OBI</span> токенов распределяются по условиям 25%-ого маркетинг-плана, то <span class="dark">все реферальные начисления умножаются на 4.</span>
+							</p>
+							<h4>Тогда получим:</h4>
+
+							<div class="more-block__cover">
+								<div class="more-block__img table">
+									<div class="table__text">
+										<span>Личный оборот, TRX</span>
+										<span>Общий оборот, TRX</span>
+									</div>
+
+									<svg id="Таблица_копия" data-name="Таблица копия" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 577 473.56">
+									  <defs>
+									    <style>
+									      .cls-1 {
+									        fill: #fff;
+									        opacity: 0.28;
+									      }
+
+									      .cls-2 {
+									        fill: #8bc3ea;
+									        opacity: 0.23;
+									      }
+
+									      .cls-2, .cls-5 {
+									        fill-rule: evenodd;
+									      }
+
+									      .cls-3, .cls-4 {
+									        font-size: 16px;
+									        fill: #203a5b;
+									        font-family: "AvenirNextCyr";
+									        font-weight: 700;
+									      }
+
+									      .cls-4 {
+									        text-anchor: middle;
+									      }
+
+									      .cls-5 {
+									        fill: #a6abcc;
+									      }
+									    </style>
+									  </defs>
+									  <rect id="Прямоугольник_3_копия_2" data-name="Прямоугольник 3 копия 2" class="cls-1" y="77.56" width="577" height="36"/>
+									  <rect id="Прямоугольник_3_копия_3" data-name="Прямоугольник 3 копия 3" class="cls-1" y="149.56" width="577" height="36"/>
+									  <rect id="Прямоугольник_3_копия_4" data-name="Прямоугольник 3 копия 4" class="cls-1" y="221.56" width="577" height="36"/>
+									  <rect id="Прямоугольник_3_копия_5" data-name="Прямоугольник 3 копия 5" class="cls-1" y="293.56" width="577" height="36"/>
+									  <rect id="Прямоугольник_3_копия_6" data-name="Прямоугольник 3 копия 6" class="cls-1" y="365.56" width="577" height="36"/>
+									  <rect id="Прямоугольник_3_копия_7" data-name="Прямоугольник 3 копия 7" class="cls-1" y="437.56" width="577" height="36"/>
+									  <path id="Фигура_1" data-name="Фигура 1" class="cls-2" d="M441,3469v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия" data-name="Фигура 1 копия" class="cls-2" d="M441,3506v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_2" data-name="Фигура 1 копия 2" class="cls-2" d="M441,3541v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_3" data-name="Фигура 1 копия 3" class="cls-2" d="M441,3578v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_4" data-name="Фигура 1 копия 4" class="cls-2" d="M441,3613v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_5" data-name="Фигура 1 копия 5" class="cls-2" d="M441,3650v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_6" data-name="Фигура 1 копия 6" class="cls-2" d="M441,3685v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_7" data-name="Фигура 1 копия 7" class="cls-2" d="M441,3722v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_8" data-name="Фигура 1 копия 8" class="cls-2" d="M441,3757v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_9" data-name="Фигура 1 копия 9" class="cls-2" d="M441,3794v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <path id="Фигура_1_копия_10" data-name="Фигура 1 копия 10" class="cls-2" d="M441,3829v-1H997v1H441Z" transform="translate(-431 -3391.44)"/>
+									  <text id="_1_линия_2_линия_3_линия_4_линия_5_линия_6_линия_7_линия_" data-name=" 1 линия  2 линия  3 линия  4 линия  5 линия  6 линия  7 линия " class="cls-3" x="24.101" y="64.658"> 1 линия<tspan x="21.001" dy="36"> 2 линия</tspan><tspan x="21.001" dy="36"> 3 линия</tspan><tspan x="21.001" dy="36"> 4 линия</tspan><tspan x="21.001" dy="36"> 5 линия</tspan><tspan x="21.001" dy="36"> 6 линия</tspan><tspan x="21.001" dy="36"> 7 линия</tspan><tspan x="21.001" dy="36"> 8 линия</tspan><tspan x="21.001" dy="36"> 9 линия</tspan><tspan x="21.001" dy="36">10 линия</tspan><tspan x="21.001" dy="36">11 линия</tspan><tspan x="21.001" dy="36">12 линия</tspan></text>
+									  <text id="_10_15_20_30_50_100_150_200_500_1000" data-name="  10 15 20 30 50 100 150 200 500 1000" class="cls-4" x="380.5" y="64.658"><tspan dy="72">100,000</tspan><tspan x="380.5" dy="36">150,000</tspan><tspan x="380.5" dy="36">200,000</tspan><tspan x="380.5" dy="36">300,000</tspan><tspan x="380.5" dy="36">500,000</tspan><tspan x="380.5" dy="36">1,000,000</tspan><tspan x="380.5" dy="36">1,500,000</tspan><tspan x="380.5" dy="36">2,000,000</tspan><tspan x="380.5" dy="36">5,000,000</tspan><tspan x="380.5" dy="36">10,000,000</tspan></text>
+									  <text id="_LV_1_LV_2_LV_3_LV_4_LV_5_LV_6_LV_7_LV_8_LV_9_LV_10" data-name="  LV 1 LV 2 LV 3 LV 4 LV 5 LV 6 LV 7 LV 8 LV 9 LV 10" class="cls-3" x="220.999" y="64.658"><tspan dy="72">LV 1</tspan><tspan x="220.999" dy="36">LV 2</tspan><tspan x="220.999" dy="36">LV 3</tspan><tspan x="220.999" dy="36">LV 4</tspan><tspan x="220.999" dy="36">LV 5</tspan><tspan x="220.999" dy="36">LV 6</tspan><tspan x="220.999" dy="36">LV 7</tspan><tspan x="220.999" dy="36">LV 8</tspan><tspan x="220.999" dy="36">LV 9</tspan><tspan x="220.999" dy="36">LV 10</tspan></text>
+									  <text id="_32_20_12_8_4_4_4_4_4_4_2_2_" data-name="32% 20% 12% 8% 4% 4% 4% 4% 4% 4% 2% 2%" class="cls-4"x="150.001" y="64.658">32%<tspan x="150.001" dy="36">20%</tspan><tspan x="150.001" dy="36">12%</tspan><tspan x="150.001" dy="36">8%</tspan><tspan x="150.001" dy="36">4%</tspan><tspan x="150.001" dy="36">4%</tspan><tspan x="150.001" dy="36">4%</tspan><tspan x="150.001" dy="36">4%</tspan><tspan x="150.001" dy="36">4%</tspan><tspan x="150.001" dy="36">4%</tspan><tspan x="150.001" dy="36">2%</tspan><tspan x="150.001" dy="36">2%</tspan></text>
+									  <text id="_20_40_80_150_300_750_1500_3000_10_000_25_000" data-name="  20 40 80 150 300 750 1500 3000 10 000 25 000" class="cls-4" x="506.5" y="64.658"><tspan dy="72">200,000</tspan><tspan x="506.5" dy="36">400,000</tspan><tspan x="506.5" dy="36">800,000</tspan><tspan x="506.5" dy="36">1,500,000</tspan><tspan x="506.5" dy="36">3,000,000</tspan><tspan x="506.5" dy="36">7,500,000</tspan><tspan x="506.5" dy="36">15,000,000</tspan><tspan x="506.5" dy="36">30,000,000</tspan><tspan x="506.5" dy="36">100,000,000</tspan><tspan x="506.5" dy="36">250,000,000</tspan></text>
+									</svg>
+								</div>
+								<div class="more-block__img">
+									<img src="img/token_more_2.svg" alt="img">
+								</div>
+							</div>
+							
+							<h3>
+								При инвестиции в проект <span>100 TRX</span> в сети распределяется <span>1 OBI</span> токен.
+							</h3>
+
+							<h4>Приведем пример:</h4>
+							<p>
+								Участник инвестирует в проект <span class="dark">100,000 TRX</span>, по партнерской сети распределяется 100,000/100=<span class="dark">1000 OBI</span> токенов. При этом участник, зарегистрировавший данного партнера на 100,000 TRX, получает 1000*0,32=320 OBI токенов, а его вышестоящий партнер получит 1000*0,2=200 OBI токенов и так далее, пока все 1000 OBI токенов не будут распределены по сети согласно открытым уровням по Маркетинг-плану (LV 1-10). 
+							</p>
+						</div>
+
+						<div class="more-block__step">
+							<div class="block-step__title">
+								<span class="icon">2</span> 
+								<span>5,000,000 OBI токенов распределяются в III этапа согласно инвестициям:</span>  
+							</div>
+
+							<div class="more-block__cover">
+								<div class="more-block__text">
+									<h3>Этап I</h3>
+									<p>
+										На первом этапе будет распределен <span class="dark">1,000,000 OBI</span> токенов между всеми участниками проекта в соотношении <span class="dark">100&nbsp;TRX&nbsp;=&nbsp;10&nbsp;OBI</span>
+									</p>
+									<p>
+										Первый этап будет завершен после распределения <span class="dark">1,000,000&nbsp;OBI</span>&nbsp;токенов.
+									</p>
+
+									<h3>Этап II</h3>
+									<p>
+										На втором этапе будет распределено <span class="dark">2,000,000 OBI</span> токенов:
+									</p>
+									<ul>
+										<li>
+											<span class="dark">1,000,000 OBI</span> токенов будет распределен между участниками, проинвестировавшими от 10,000 до 100,000 TRX в соотношении <span class="dark">100&nbsp;TRX = 0.4&nbsp;OBI.</span>
+										</li>
+										<li>
+											<span class="dark">1,000,000 OBI</span> токенов будет распределен между участниками, проинвестировавшими от 100,000&nbsp;TRX в соотношении <span class="dark">100&nbsp;TRX&nbsp;=&nbsp;2&nbsp;OBI.</span>
+										</li>
+									</ul>
+									<p>
+										Второй этап будет завершен после распределения <span class="dark">2,000,000&nbsp;OBI</span>&nbsp;токенов.
+									</p>
+
+									<h3>Этап III</h3>
+									<p>
+										На третьем этапе будет распределено <span class="dark">2,000,000 OBI</span> токенов:
+									</p>
+									<ul>
+										<li>
+											<span class="dark">1,000,000 OBI</span> токенов будет распределен между участниками, проинвестировавшими от 20,000 до 200,000&nbsp;TRX в соотношении <span class="dark">100&nbsp;TRX = 0.2&nbsp;OBI.</span>
+										</li>
+										<li>
+											<span class="dark">1,000,000 OBI</span> токенов будет распределен между участниками, проинвестировавшими от 200,000&nbsp;TRX в соотношении <span class="dark">100&nbsp;TRX&nbsp;=&nbsp;1&nbsp;OBI</span>.
+										</li>
+									</ul>
+									<p>
+										Третий этап будет завершен после распределения <span class="dark">2,000,000&nbsp;OBI</span>&nbsp;токенов.
+									</p>
+									<h3>
+										Начисления OBI токенов по партнерской программе и согласно инвестиции происходит <span>одновременно</span>.
+									</h3>
+								</div>
+								<div class="more-block__img">
+									<img src="img/token_more_3.svg" alt="img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="wrapper">			
+				<div class="cover">
+					<div class="footer__img">
+						<div class="img-cover">
+							<img src="img/footer.svg" alt="img">
+						</div>
+					</div>
+
+					<div class="footer__block block">
+						<div class="footer__block-text">
+							<span class="name">Obvion</span> <span class="light">- стань частью</span> <br>
+							честной финансовой <br>
+							системы 
+						</div>
+						<div class="footer__button button">
+							 <a href="#" class="reg"><span>Остались вопросы? <i class="flaticon-telegram"></i></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="wrapper">
+					<div class="footer__bottom-text">
+						Все права защищены © 2020
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="up">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.2 150.2" style="/*! transform: rotate(180deg); */"><linearGradient id="a11" gradientUnits="userSpaceOnUse" x1="65.55" y1="65.868" x2="41.68" y2="79.406"><stop offset="0" stop-color="#2bb1e9"></stop><stop offset="1" stop-color="#2295d1"></stop></linearGradient><path d="M20.9 11.8c28.8 5.5 57.6 10.9 86.5 16.4 9.8 7.8 19.6 15.7 29.5 23.5L71.2 142C54.5 98.6 37.7 55.2 20.9 11.8z" fill="url(#a11)"></path><linearGradient id="b11" gradientUnits="userSpaceOnUse" x1="89.343" y1="-15.827" x2="40.72" y2="55.399"><stop offset="0" stop-color="#33beff"></stop><stop offset="1" stop-color="#6deefe"></stop></linearGradient><path d="M20.9 11.8c19 20.6 37.9 41.2 56.9 61.9 9.9-15.2 19.7-30.3 29.6-45.5-28.9-5.4-57.7-10.9-86.5-16.4z" fill="url(#b11)"></path><linearGradient id="c11" gradientUnits="userSpaceOnUse" x1="112.689" y1="44.519" x2="91.314" y2="54.851"><stop offset="0" stop-color="#33beff"></stop><stop offset="1" stop-color="#6deefe"></stop></linearGradient><path d="M77.8 73.7c19.7-7.3 39.3-14.6 59-22-9.8-7.8-19.6-15.7-29.5-23.5-9.8 15.2-19.7 30.3-29.5 45.5z" fill="url(#c11)"></path><linearGradient id="d11" gradientUnits="userSpaceOnUse" x1="117.982" y1="30.037" x2="90.648" y2="113.616"><stop offset="0" stop-color="#36abea"></stop><stop offset="1" stop-color="#48cff2"></stop></linearGradient><path d="M77.8 73.7c-2.2 22.8-4.4 45.5-6.5 68.3 21.9-30.1 43.7-60.2 65.6-90.3-19.8 7.4-39.4 14.7-59.1 22z" fill="url(#d11)"></path><path d="M136.8 51.7l-.2-.2c-20 7-39.9 14-59.9 21 .3.4.7.7 1 1.1 19.8-7.2 39.4-14.5 59.1-21.9z" fill="#6cedfd"></path><path d="M77.8 73.7c-33.3-35.8-49.9-53.8-49.7-54 .2-.2 17.1 17.2 50.7 52.4-.3.5-.7 1.1-1 1.6z" fill="#83f6ff"></path><linearGradient id="e11" gradientUnits="userSpaceOnUse" x1="116.34" y1="19.866" x2="106.352" y2="67.175"><stop offset="0" stop-color="#6cedfd"></stop><stop offset="1" stop-color="#b1f5fd"></stop></linearGradient><path d="M107.4 28.2c-9.9 15.2-19.7 30.3-29.6 45.5 19.7-7.3 39.3-14.6 59-22-9.8-7.8-19.6-15.6-29.4-23.5z" fill="url(#e11)"></path><path d="M71.2 142c4.1-45.6 6.3-68.3 6.5-68.3.2 0-1.4 22-4.8 66-.5.7-1.1 1.5-1.7 2.3z" fill="#71d4ff"></path></svg>
+		<span>Подняться вверх</span>
+	</div>
+
+	<!-- lib -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="plugins/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="plugins/form-styler/js/jquery.formstyler.min.js"></script>
+	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
