@@ -345,6 +345,13 @@ html {
   display: inline-flex;
 }
 
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(68.75% - 30px);
+}
+
 .header__rates {
   font-weight: 700;
   font-size: 19px;
@@ -359,6 +366,31 @@ html {
 }
 
 .header__rates span {
+  display: inline-block;
+  width: 1px;
+  height: 40px;
+  background-color: #3a4d5f;
+  margin: 0 17px;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto 0 0;
+}
+
+.header__links a {
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__links span {
   display: inline-block;
   width: 1px;
   height: 40px;
@@ -1947,7 +1979,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 15px;
-  background-color: #2b4465;
+  background-color: #212f41;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -2861,6 +2893,10 @@ html {
   margin-bottom: 10px;
 }
 
+.popup__item b {
+  color: #fff;
+}
+
 .popup__item:last-child {
   margin-bottom: 0;
 }
@@ -3436,6 +3472,10 @@ html {
     margin: 0;
   }
 
+  .header__wrap {
+    width: 75%;
+  }
+
   .page {
     margin-top: 0;
   }
@@ -3571,6 +3611,13 @@ html {
     margin-left: 15px;
   }
 
+  .header__wrap {
+    width: auto;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
   .header__rates {
     margin-right: 25px;
     font-size: 16px;
@@ -3578,6 +3625,20 @@ html {
 
   .header__rates span {
     height: 30px;
+    margin: 0 10px;
+  }
+
+  .header__links a {
+    font-size: 16px;
+  }
+
+  .header__links {
+    margin-right: 25px;
+  }
+
+  .header__links span {
+    height: 30px;
+    margin: 0 10px;
   }
 
   .header__lang {
@@ -3851,7 +3912,18 @@ html {
 
   .header__rates span {
     height: 25px;
-    margin: 0 12px;
+  }
+
+  .header__links a {
+    font-size: 12px;
+  }
+
+  .header__links {
+    margin-right: 20px;
+  }
+
+  .header__links span {
+    height: 25px;
   }
 
   .header__bot a {
@@ -4234,6 +4306,20 @@ html {
   }
 
   .header__rates span {
+    height: 20px;
+    margin: 0 8px;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__links {
+    margin-right: 10px;
+    padding-top: 1px;
+  }
+
+  .header__links span {
     height: 20px;
     margin: 0 8px;
   }
