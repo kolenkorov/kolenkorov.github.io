@@ -2079,7 +2079,7 @@ i.icon:before {
   font-size: 38px;
   font-weight: 100;
   font-family: inherit;
-  line-height: normal;
+  line-height: 10px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2091,7 +2091,7 @@ i.icon:before {
           justify-content: center;
   background-color: #fff;
   border-radius: 50px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .popup__heading {
@@ -2109,6 +2109,18 @@ i.icon:before {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: -0.01em;
+}
+
+.popup__heading a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+}
+
+.popup__heading a:hover {
+  color: #3568a5;
 }
 
 .popup__img {
@@ -2143,21 +2155,37 @@ i.icon:before {
   height: 50px;
 }
 
-.popup__wallet-text {
-  font-size: 20px;
+.popup__wallet-text a {
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
   color: #3568a5;
-  font-weight: 600;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+}
+
+.popup__wallet-text a:hover {
+  color: #6f9cd1;
 }
 
 .popup__bottom {
   color: #7f7f7f;
   font-size: 18px;
+  font-weight: 700;
   margin-top: 29px;
 }
 
 .popup__bottom a {
   color: #3467a2;
   margin-left: 15px;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+}
+
+.popup__bottom a:hover {
+  color: #6f9cd1;
 }
 
 @media screen and (max-width: 1600px) {
@@ -3137,7 +3165,7 @@ i.icon:before {
     height: 35px;
   }
 
-  .popup__wallet-text {
+  .popup__wallet-text a {
     font-size: 16px;
   }
 
