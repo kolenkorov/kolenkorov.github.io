@@ -516,7 +516,7 @@ i.icon:before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 0.1em;
+  width: 1px;
   height: 40px;
   background-color: #3a4d5f;
   margin: 0 17px;
@@ -539,7 +539,7 @@ i.icon:before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 0.1em;
+  width: 1px;
   height: 40px;
   background-color: #3a4d5f;
   margin: 0 17px;
@@ -2058,7 +2058,7 @@ i.icon:before {
 .popup {
   position: inherit;
   top: 0;
-  max-width: 960px;
+  max-width: 840px;
   width: calc(100% - 30px);
   background-color: #fff;
   -webkit-box-sizing: border-box;
@@ -2136,7 +2136,7 @@ i.icon:before {
 }
 
 .popup__img img {
-  max-width: 420px;
+  max-width: 380px;
   width: 70%;
 }
 
@@ -2254,6 +2254,7 @@ i.icon:before {
 
   .header__links > span {
     height: 30px;
+    width: 2px;
   }
 
   .header__rates {
@@ -2263,6 +2264,7 @@ i.icon:before {
 
   .header__rates span {
     height: 30px;
+    width: 2px;
   }
 
   .developing {

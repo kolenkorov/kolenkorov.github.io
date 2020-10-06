@@ -373,7 +373,7 @@ html {
 
 .header__rates span {
   display: inline-block;
-  width: 0.1em;
+  width: 1px;
   height: 40px;
   background-color: #3a4d5f;
   margin: 0 17px;
@@ -402,7 +402,7 @@ html {
 
 .header__links > span {
   display: inline-block;
-  width: 0.1em;
+  width: 1px;
   height: 40px;
   background-color: #3a4d5f;
   margin: 0 17px;
@@ -2701,6 +2701,10 @@ html {
   padding: 60px 50px;
 }
 
+.popup .mfp-close {
+  color: #fff;
+}
+
 .popup__warning .popup__list:first-of-type {
   padding-right: 33%;
 }
@@ -3487,6 +3491,14 @@ html {
 
   .header__wrap {
     width: auto;
+  }
+
+  .header__rates span {
+    width: 2px;
+  }
+
+  .header__links > span {
+    width: 2px;
   }
 
   .page {
