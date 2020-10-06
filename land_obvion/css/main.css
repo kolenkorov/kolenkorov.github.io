@@ -499,10 +499,17 @@ i.icon:before {
   font-size: 19px;
   color: #2a3d5e;
   text-decoration: none;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
 }
 
 .header__links a .mob {
   display: none;
+}
+
+.header__links a:hover {
+  color: #4aa0da;
 }
 
 .header__links > span {
