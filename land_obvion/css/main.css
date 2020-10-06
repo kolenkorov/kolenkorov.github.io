@@ -2058,7 +2058,7 @@ i.icon:before {
 .popup {
   position: inherit;
   top: 0;
-  max-width: 780px;
+  max-width: 730px;
   width: calc(100% - 30px);
   background-color: #fff;
   -webkit-box-sizing: border-box;
