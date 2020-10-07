@@ -2105,7 +2105,7 @@ i.icon:before {
   background-image: -webkit-gradient(linear, left top, right top, from(#50b1eb), to(#325a97));
   background-image: -o-linear-gradient(left, #50b1eb 0%, #325a97 100%);
   background-image: linear-gradient(90deg, #50b1eb 0%, #325a97 100%);
-  padding: 28px 50px 32px;
+  padding: 27px 50px 27px;
   border-radius: 8px;
   margin: 0 -50px;
 }
@@ -2155,7 +2155,7 @@ i.icon:before {
           box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.19);
   background-color: #fff;
   border-radius: 30px;
-  padding: 30px 60px 30px 56px;
+  padding: 27px 60px 27px 56px;
   text-decoration: none;
   -webkit-transition: 0.25s ease all;
   -o-transition: 0.25s ease all;
