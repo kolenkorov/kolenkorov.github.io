@@ -516,7 +516,7 @@ i.icon:before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1px;
+  padding-right: 1px;
   height: 40px;
   background-color: #3a4d5f;
   margin: 0 17px;
@@ -539,7 +539,7 @@ i.icon:before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1px;
+  padding-right: 1px;
   height: 40px;
   background-color: #3a4d5f;
   margin: 0 17px;
@@ -2255,7 +2255,6 @@ i.icon:before {
 
   .header__links > span {
     height: 30px;
-    width: 2px;
   }
 
   .header__rates {
@@ -2265,7 +2264,6 @@ i.icon:before {
 
   .header__rates span {
     height: 30px;
-    width: 2px;
   }
 
   .developing {
