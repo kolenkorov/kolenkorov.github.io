@@ -2077,9 +2077,9 @@ i.icon:before {
 .popup .mfp-close {
   width: 40px;
   height: 40px;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(39%);
+      -ms-transform: translateY(39%);
+          transform: translateY(39%);
   right: 15px;
   color: #3568a4;
   opacity: 1;
