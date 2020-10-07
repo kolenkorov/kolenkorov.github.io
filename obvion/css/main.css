@@ -2688,7 +2688,7 @@ html {
 
 .popup {
   position: inherit;
-  background-color: #1a2533;
+  background-color: #1f2c3d;
   max-width: 996px;
   width: calc(100% - 30px);
   -webkit-box-sizing: border-box;
