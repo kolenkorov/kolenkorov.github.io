@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PewPew</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="auth">
+	<header class="header">
+		<div class="header__logo">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 77 28"><defs/><g filter="url(#filter0_d)"><path fill="url(#paint0_linear)" d="M4.2 8.5l-.1-.7a10.7 10.7 0 010-1.6l.1-.9.4-.7c.2-.3.5-.4.8-.5.5-.2 1-.1 1.5 0a12.3 12.3 0 012.8 1.3 17.5 17.5 0 002 1.1l.6.4.4.6.3.8c0 .3 0 .6-.2 1l-.4.8a20.2 20.2 0 01-4 5.8c-.5.4-1.1.7-1.7.8a65.4 65.4 0 001 6 1 1 0 01-.6.4 1 1 0 01-.7-.1A49.4 49.4 0 014.2 9.3V9v-.5zM6 6.2a6.7 6.7 0 000 1.6l.1.4.1 1.4a90.9 90.9 0 01.3 5.2h.3l.2-.2.2-.2 1-.9a14.4 14.4 0 002.2-3.2l.2-.4a15 15 0 00.6-1.4v-.3l-.6-.2a51.4 51.4 0 01-4.3-2.1H6V6l-.1.2z"/><path fill="url(#paint1_linear)" d="M13.9 13a5.3 5.3 0 012.4-1.8l1.4-.3c.5 0 1 0 1.5.3.5.2 1 .4 1.4.8l.9 1.2.3 1.2c0 .4-.1.8-.4 1.2-.2.3-.5.6-.8.7a4 4 0 01-1.1.4l-1.2.1a26 26 0 01-3.5-.2c0 .7.3 1.3.7 1.9a3.5 3.5 0 002 1.4h1.1a2.4 2.4 0 001-.5 6.1 6.1 0 00.7-.8c.2-.2.4-.4.6-.4h.7l.4.6v.7a7 7 0 01-1.7 1.6 4.2 4.2 0 01-4 .4c-.6-.3-1-.7-1.5-1.1a6.2 6.2 0 01-2-4.1l-.2-.4-.1-.5c0-.2 0-.3.2-.5l.4-.3c.2-.6.4-1.1.8-1.6zm5.6.6c-.1-.3-.4-.5-.8-.6-.3-.2-.6-.2-1-.2s-.8 0-1 .2a3.7 3.7 0 00-1.6 1.7l1 .2h3l.3-.1h.2l.2-.1.1-.4v-.1l-.1-.2-.1-.2-.2-.2z"/><path fill="url(#paint2_linear)" d="M37.8 13a20.2 20.2 0 01-2.5 6.3l-.6 1.2a33 33 0 01-1 2c-.2.2-.3.3-.5.3h-.5l-.4-.3a1 1 0 01-.2-.4c-.3-.7-.5-1.4-.6-2.2a23.2 23.2 0 00-.8-3.5l-.5 1.1a20 20 0 01-1.6 3.3 6 6 0 01-.6 1l-.8.7c-.3.2-.6.2-.9 0a1 1 0 01-.5-.5 33.4 33.4 0 01-1.2-4.3 71.2 71.2 0 00-1.2-5c.1-.2.3-.4.6-.5l.7.1.4.6a159.9 159.9 0 002 6.8l.1-.3a58 58 0 002.3-5.4l.2-1.1c0-.3.1-.5.3-.7l.5-.2h.6l.4.6a105.3 105.3 0 001.5 5.7l.3 1 .5-1.1.7-1.1a17 17 0 001.5-4.5c0-.3.2-.5.4-.6.3-.1.5-.2.7 0 .3 0 .5.1.6.4.1.2.2.4.1.7z"/><path fill="url(#paint3_linear)" d="M39.4 8.5l-.2-.7a10.7 10.7 0 010-1.6l.1-.9.5-.7c.2-.3.4-.4.7-.5.5-.2 1-.1 1.6 0a12.2 12.2 0 012.7 1.3 17.5 17.5 0 002 1.1l.6.4.5.6.2.8c0 .3 0 .6-.2 1l-.3.8a20.2 20.2 0 01-4.1 5.8c-.5.4-1 .7-1.7.8a65.3 65.3 0 001 6 1 1 0 01-.6.4 1 1 0 01-.6-.1c-.3 0-.4-.3-.5-.6a49.4 49.4 0 01-1.7-13.1V9v-.5zM41 6.2a6.7 6.7 0 00.1 1.6v.4l.1 1.4a91 91 0 01.4 5.2h.3l.2-.2.2-.2 1-.9a14.5 14.5 0 002.1-3.2l.2-.4a14.7 14.7 0 00.6-1.4v-.3c-.3 0-.4-.2-.5-.2a51.3 51.3 0 01-4.4-2.1h-.1L41 6v.2z"/><path fill="url(#paint4_linear)" d="M49 13a5.3 5.3 0 012.4-1.8l1.5-.3c.5 0 1 0 1.5.3.5.2.9.4 1.3.8.4.3.7.7.9 1.2l.3 1.2c0 .4 0 .8-.3 1.2-.3.3-.6.6-1 .7a4 4 0 01-1 .4l-1.2.1a26 26 0 01-3.5-.2c.1.7.4 1.3.7 1.9a3.5 3.5 0 002 1.4h1.1a2.4 2.4 0 001-.5 6.1 6.1 0 00.8-.8c.1-.2.3-.4.5-.4h.7c.2.2.4.4.4.6v.7a7 7 0 01-1.7 1.6c-.6.4-1.3.7-2 .7s-1.3 0-2-.3L50 20.4a6.2 6.2 0 01-1.9-4.1l-.3-.4v-.5l.1-.5.4-.3.8-1.6zm5.7.6c-.2-.3-.5-.5-.8-.6-.3-.2-.7-.2-1.1-.2-.4 0-.7 0-1 .2a3.7 3.7 0 00-1.6 1.7l1 .2h3.1l.2-.1h.3v-.1h.2v-.4-.1-.2l-.2-.2-.1-.2z"/><path fill="url(#paint5_linear)" d="M73 13a20.1 20.1 0 01-2.5 6.3l-.6 1.2a33 33 0 01-1.1 2c-.2.2-.3.3-.5.3H68c-.2 0-.3-.1-.4-.3a1 1 0 01-.3-.4c-.3-.7-.5-1.4-.6-2.2a23.2 23.2 0 00-.8-3.5l-.4 1.1a20 20 0 01-1.7 3.3 6 6 0 01-.6 1l-.8.7c-.3.2-.5.2-.8 0a1 1 0 01-.6-.5 33.4 33.4 0 01-1.2-4.3 71.2 71.2 0 00-1.2-5l.6-.5.7.1c.2.2.4.3.4.6.5 1.1.8 2.2 1.1 3.4l.9 3.4.1-.3a58.8 58.8 0 002.3-5.4l.2-1.1c0-.3.1-.5.3-.7l.5-.2h.7l.4.6a105.3 105.3 0 001.5 5.7l.2 1 .6-1.1.6-1.1a17 17 0 001.5-4.5c0-.3.2-.5.5-.6.2-.1.4-.2.7 0 .2 0 .4.1.5.4.2.2.2.4.1.7z"/></g><defs><linearGradient id="paint0_linear" x1="73" x2="39" y1="13.7" y2="-20.8" gradientUnits="userSpaceOnUse"><stop stop-color="#5957F0"/><stop offset="1" stop-color="#8EA1FF"/></linearGradient><linearGradient id="paint1_linear" x1="73" x2="39" y1="13.7" y2="-20.8" gradientUnits="userSpaceOnUse"><stop stop-color="#5957F0"/><stop offset="1" stop-color="#8EA1FF"/></linearGradient><linearGradient id="paint2_linear" x1="73" x2="39" y1="13.7" y2="-20.8" gradientUnits="userSpaceOnUse"><stop stop-color="#5957F0"/><stop offset="1" stop-color="#8EA1FF"/></linearGradient><linearGradient id="paint3_linear" x1="73" x2="39" y1="13.7" y2="-20.8" gradientUnits="userSpaceOnUse"><stop stop-color="#5957F0"/><stop offset="1" stop-color="#8EA1FF"/></linearGradient><linearGradient id="paint4_linear" x1="73" x2="39" y1="13.7" y2="-20.8" gradientUnits="userSpaceOnUse"><stop stop-color="#5957F0"/><stop offset="1" stop-color="#8EA1FF"/></linearGradient><linearGradient id="paint5_linear" x1="73" x2="39" y1="13.7" y2="-20.8" gradientUnits="userSpaceOnUse"><stop stop-color="#5957F0"/><stop offset="1" stop-color="#8EA1FF"/></linearGradient><filter id="filter0_d" width="77" height="27.1" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0.47451 0 0 0 0 0.517647 0 0 0 0 0.976471 0 0 0 0.4 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+
+		</div>
+	</header>
+
+	<main class="main reg">
+		<div class="wrapper">
+			<div class="main__form">
+				<div class="main__heading heading">
+					<h1>Регистрация</h1>
+				</div>
+				<div class="main__sub sub">
+					Зарегистрируйтесь, чтобы увидеть ваших друзей и общаться с ними!
+				</div>
+
+				<div class="main__form-block step_1" style="display: ;">
+					<div class="main__form-step">
+						Шаг 1/2
+					</div>
+
+					<form class="form">
+						<div class="form__item">
+							<label>Никнейм</label>
+							<div class="form__item-input">
+								<input type="text" placeholder="Введите никнейм">
+							</div>
+						</div>
+
+						<div class="form__item valid">
+							<label>Игры</label>
+							<div class="form__item-input">
+								<a href="#" class="choose-games"><span>Выберите игры в которые играете</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><defs/><path fill="#fff" d="M.3 8.2L3.5 5 .3 1.8A.8.8 0 111.4.6l3.9 3.8c.3.3.3.9 0 1.2L1.4 9.4c-.3.3-.8.3-1.1 0a.8.8 0 010-1.2z"/></svg></a>
+							</div>
+
+							<div class="games__items">
+								<div class="games__item">
+									<div class="games__item-img">
+										<img src="img/game_2.png" alt="img">
+									</div>
+									<div class="games__item-title">Fortnite</div>
+								</div>
+								<div class="games__item">
+									<div class="games__item-img">
+										<img src="img/game_8.png" alt="img">
+									</div>
+									<div class="games__item-title">CS:GO</div>
+								</div>
+								<div class="games__item">
+									<div class="games__item-img">
+										<img src="img/game_4.png" alt="img">
+									</div>
+									<div class="games__item-title">Dota 2</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__submit next">
+							<div class="form__submit-button button disable">
+								<a href="#">Продолжить</a>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="main__form-block step_2" style="display: none;">
+					<div class="main__form-step">
+						Шаг 2/2
+					</div>
+
+					<form class="form">
+						<div class="form__item invalid">
+							<label>Email</label>
+							<div class="form__item-warning">Введите правильный Email</div>
+							<div class="form__item-input">
+								<input type="email" placeholder="Введите Email">
+							</div>
+						</div>
+
+						<div class="form__item">
+							<label>Пароль</label>
+							<div class="form__item-input">
+								<input type="password" placeholder="Введите ваш пароль">
+								<span class="visibility show"></span>
+							</div>
+						</div>
+
+						<div class="form__submit next">
+							<div class="form__submit-button button disable">
+								<button type="submit">Регистрация</button>
+							</div>
+						</div>
+
+						<div class="or"><span>Или</span></div>
+
+						<div class="form__button">
+							<a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 20"><defs/><path fill="#fff" d="M2.2 3.9v2.7H0V10h2.2v10h4.4V10h3s.3-1.6.4-3.4H6.6V4.3c0-.3.5-.8 1-.8H10V0H6.7C2.1 0 2.2 3.4 2.2 3.9z"/></svg> Facebook</a>
+							
+							<a href="#" class="google"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 18"><defs/><path fill="#fff" fill-rule="evenodd" d="M8.9 7.2h8.5C18 11.5 16.2 18 9 18A9 9 0 010 9c0-5 4-9 8.9-9 2.3 0 4.4.9 6 2.3C13 4.1 13 4.3 12.3 5A5 5 0 009 3.7C5.9 3.7 3.7 6 3.7 9s2.3 5.3 5.2 5.3c2.9 0 4-1.2 4.8-3.5H8.9V7.2zM25 7.4h3v2.2h-3v3.2h-2.3V9.6h-3.2V7.4h3.2V4.3H25v3.1z" clip-rule="evenodd"/></svg> Google</a>
+						</div>
+					</form>
+
+					<div class="main__form-agreement">
+						Регистрируясь, вы соглашаетесь с <a href="#">пользовательским соглашением</a>
+					</div>	
+				</div>
+
+				<div class="main__form-bottom">
+					Уже есть аккаунт? <a href="login.html">Вход</a> 
+				</div>
+			</div>	
+		</div>
+
+		<div class="popup popup__games" style="display: none;">
+			<div class="popup__content-cover">
+				<div class="popup__content">
+					<div class="popup__close">
+						<button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"><defs/><path fill="#fff" d="M16 1.6L14.4 0 8 6.4 1.6 0 0 1.6 6.4 8 0 14.4 1.6 16 8 9.6l6.4 6.4 1.6-1.6L9.6 8 16 1.6z"/></svg></button>
+					</div>
+					<div class="popup__back">
+						<a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><defs/><path fill="#fff" d="M5.2 7.9L2 4.7l3.2-3.3A.8.8 0 104.1.2L.2 4.1c-.3.3-.3.8 0 1.1l3.9 3.9c.3.3.8.3 1.1 0 .4-.4.4-.9 0-1.2z"/></svg> Регистрация</a>
+					</div>
+
+					<div class="popup__heading heading">
+						<h1>Игры</h1>
+					</div>
+
+					<div class="popup__sub sub">
+						Выберите игры в которые играете
+					</div>
+
+					<div class="games__items">
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_1">
+							<label for="game_1">
+								<div class="games__item-img">
+									<img src="img/game_1.png" alt="img">
+								</div>
+								<div class="games__item-title">LOL</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_2">
+							<label for="game_2">
+								<div class="games__item-img">
+									<img src="img/game_2.png" alt="img">
+								</div>
+								<div class="games__item-title">Fortnite</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_3">
+							<label for="game_3">
+								<div class="games__item-img">
+									<img src="img/game_3.png" alt="img">
+								</div>
+								<div class="games__item-title">Call of Duty</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_4">
+							<label for="game_4">
+								<div class="games__item-img">
+									<img src="img/game_4.png" alt="img">
+								</div>
+								<div class="games__item-title">Dota 2</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_5">
+							<label for="game_5">
+								<div class="games__item-img">
+									<img src="img/game_5.png" alt="img">
+								</div>
+								<div class="games__item-title">Fifa</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_6">
+							<label for="game_6">
+								<div class="games__item-img">
+									<img src="img/game_6.png" alt="img">
+								</div>
+								<div class="games__item-title">Among us</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_7">
+							<label for="game_7">
+								<div class="games__item-img">
+									<img src="img/game_7.png" alt="img">
+								</div>
+								<div class="games__item-title">Hearthstone</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_8">
+							<label for="game_8">
+								<div class="games__item-img">
+									<img src="img/game_8.png" alt="img">
+								</div>
+								<div class="games__item-title">CS:GO</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_9">
+							<label for="game_9">
+								<div class="games__item-img">
+									<img src="img/game_9.png" alt="img">
+								</div>
+								<div class="games__item-title">Valorant</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_10">
+							<label for="game_10">
+								<div class="games__item-img">
+									<img src="img/game_10.png" alt="img">
+								</div>
+								<div class="games__item-title">Wow</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_11">
+							<label for="game_11">
+								<div class="games__item-img">
+									<img src="img/game_11.png" alt="img">
+								</div>
+								<div class="games__item-title">Genshin</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_12">
+							<label for="game_12">
+								<div class="games__item-img">
+									<img src="img/game_12.png" alt="img">
+								</div>
+								<div class="games__item-title">Phasmophobia</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_13">
+							<label for="game_13">
+								<div class="games__item-img">
+									<img src="img/game_13.png" alt="img">
+								</div>
+								<div class="games__item-title">Apex</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_14">
+							<label for="game_14">
+								<div class="games__item-img">
+									<img src="img/game_14.png" alt="img">
+								</div>
+								<div class="games__item-title">GTA</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_15">
+							<label for="game_15">
+								<div class="games__item-img">
+									<img src="img/game_15.png" alt="img">
+								</div>
+								<div class="games__item-title">Overwatch</div>
+							</label>
+						</div>
+						<div class="games__item">
+							<input type="checkbox" name="games" id="game_16">
+							<label for="game_16">
+								<div class="games__item-img">
+									<img src="img/game_16.png" alt="img">
+								</div>
+								<div class="games__item-title">Minecraft</div>
+							</label>
+						</div>
+					</div>
+
+					<div class="popup__button button">
+						<a href="#">Продолжить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="bg_popup"></div>
+
+	<!-- lib -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
