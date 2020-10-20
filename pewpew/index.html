@@ -464,8 +464,14 @@
 							</div>
 
 							<div class="edit-item__input">
-								<input type="text" value="C 18:00">
-								<input type="text" value="До 21:00">
+								<div class="item-input__cover">
+									<input type="text" value="18:00" class="timepicker">
+									<span>C</span>
+								</div>
+								<div class="item-input__cover">
+									<input type="text" value="21:00" class="timepicker">
+									<span>До</span>
+								</div>
 							</div>
 
 							<div class="edit-item__button button">
@@ -560,8 +566,13 @@
 						</div>
 					</div>
 
-					<div class="popup__edit-item exit">
-						<a href="#"><span>Выйти из аккаунта</span></a>
+					<div class="edit-item__cover">
+						<div class="popup__edit-item save">
+							<a href="#"><span>Сохранить</span></a>
+						</div>
+						<div class="popup__edit-item exit">
+							<a href="#"><span>Выйти из аккаунта</span></a>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -749,6 +760,13 @@
 
 	<!-- lib -->
 	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script src="plugins/jquery.timepicker.min.js"></script>
+
 	<script src="js/main.js"></script>
+
+	<script>
+		$('.timepicker').timepicker({ 'timeFormat': 'H:i' });
+	</script>
 </body>
 </html>
