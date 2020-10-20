@@ -2279,11 +2279,11 @@ body.my_profile .header__connect {
 }
 
 .popup__friends .popup__item-button a:before {
-  border-top-color: #0e0e0e;
+  border-top-color: #212121;
 }
 
 .popup__friends .popup__item-button a:after {
-  border-bottom-color: #0e0e0e;
+  border-bottom-color: #212121;
 }
 
 .popup__account .popup__items {
@@ -3153,6 +3153,14 @@ body.my_profile .header__connect {
 
   .popup__friends .popup__content-cover {
     max-width: 450px;
+  }
+
+  .popup__friends .popup__item-button a:before {
+    border-top-color: #0e0e0e;
+  }
+
+  .popup__friends .popup__item-button a:after {
+    border-bottom-color: #0e0e0e;
   }
 
   .popup__account .popup__heading {
