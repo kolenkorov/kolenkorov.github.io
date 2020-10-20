@@ -2764,6 +2764,17 @@ html {
   -webkit-transition: 0.25s ease all;
   -o-transition: 0.25s ease all;
   transition: 0.25s ease all;
+  /*&:after {
+					display: inline-block;
+					position: absolute;
+					content: "";
+					width: 20px;
+					height: 20px;
+					background-image: url(../img/loading.svg);
+					background-size: cover;
+					margin-top: 12px;
+					animation: 4s linear 0s normal none infinite running loading;
+				}*/
 }
 
 .popup__partner .popup__bottom-notification.active {
@@ -3435,7 +3446,7 @@ html {
   right: 60px;
   font-size: 18px;
   background-color: #1f3148;
-  padding: 15px 50px 12px 20px;
+  padding: 20px 50px 15px 25px;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3445,7 +3456,7 @@ html {
   -webkit-transition: 0.25s ease all;
   -o-transition: 0.25s ease all;
   transition: 0.25s ease all;
-  min-width: 320px;
+  min-width: 365px;
 }
 
 .status.active {
@@ -3475,7 +3486,7 @@ html {
 }
 
 .status__info {
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 .status__info.pending {
@@ -3484,10 +3495,34 @@ html {
 
 .status__info.confirm {
   color: #00ff00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.status__info.confirm svg {
+  fill: #00ff00;
+  margin-right: 5px;
+  width: 18px;
 }
 
 .status__info.refused {
-  color: #ff0000;
+  color: #ff1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.status__info.refused svg {
+  fill: #ff1a1a;
+  margin-right: 5px;
+  width: 15px;
 }
 
 .status__track a {
