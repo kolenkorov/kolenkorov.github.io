@@ -2736,8 +2736,42 @@ html {
   flex-wrap: wrap;
 }
 
+.popup__partner .popup__bottom-cover {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
 .popup__partner .popup__bottom .main__top-input {
   margin: 0 0 15px auto;
+}
+
+.popup__partner .popup__bottom-notification {
+  min-height: 60px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  opacity: 0;
+  z-index: -5;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+}
+
+.popup__partner .popup__bottom-notification.active {
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
 }
 
 .popup__wallet {
@@ -3393,6 +3427,47 @@ html {
 
 .defi + .developing {
   text-transform: none;
+}
+
+.status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #1f3148;
+  padding: 12px 25px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  opacity: 0;
+  z-index: -10;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+  min-width: 290px;
+}
+
+.status.active {
+  z-index: 9999;
+  opacity: 1;
+}
+
+.status__info {
+  margin: 5px 0;
+}
+
+.status__info.confirm {
+  color: #9cee90;
+}
+
+.status__info.refused {
+  color: #ff4c5b;
+}
+
+.status__track a {
+  display: inline-block;
+  text-decoration: none;
+  color: #5ae2f4;
 }
 
 @-webkit-keyframes loading {
@@ -4258,6 +4333,25 @@ html {
     display: none;
   }
 
+  .popup__partner .popup__bottom-cover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .popup__partner .popup__bottom-notification {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: inherit;
+    margin-top: 15px;
+  }
+
   .popup__wallet {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -4320,6 +4414,11 @@ html {
   .developing {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+
+  .status {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.55);
   }
 }
 

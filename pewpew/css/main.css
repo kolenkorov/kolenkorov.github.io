@@ -153,6 +153,10 @@ img {
   margin: 0 auto;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto";
   background-color: #212121;
@@ -690,6 +694,11 @@ body.auth .games__items {
   margin-top: 4px;
 }
 
+body.auth .popup__games .popup__content {
+  top: 70px;
+  padding-top: 30px;
+}
+
 body.chat .header .nav {
   display: none;
 }
@@ -1197,7 +1206,7 @@ body.chat .header .nav {
 
 .main .profile__info {
   background: #0E0E0E;
-  padding: 20px 20px 50px;
+  padding: 20px 20px 80px;
   margin: 20px -20px 0;
   border-top: 1px solid #333333;
   -webkit-box-flex: 1;
@@ -1368,6 +1377,7 @@ body.chat .header .nav {
   max-width: 580px;
   margin: 0 auto;
   margin-top: 20px;
+  padding-bottom: 80px;
 }
 
 .main__block.first {
@@ -1705,6 +1715,10 @@ body.chat .header .nav {
   background-image: linear-gradient(90deg, rgba(142, 161, 255, 0) 0%, #8EA1FF 13.86%, #5A58F0 80.73%, rgba(90, 88, 240, 0) 100%);
 }
 
+.main .notifications__items {
+  padding-bottom: 90px;
+}
+
 .main .notifications__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1934,26 +1948,28 @@ body.chat .header .nav {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: 92;
   min-height: 100vh;
+  overflow: auto;
 }
 
 .popup__content {
   padding: 20px;
   padding-top: 0;
   position: relative;
+  padding-bottom: 85px;
+  background-color: #212121;
 }
 
 .popup__content-cover {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #212121;
   position: relative;
   height: 100%;
 }
@@ -2790,6 +2806,7 @@ body.chat .header .nav {
 
   .main__block {
     margin-top: 40px;
+    padding-bottom: 0;
   }
 
   .main__block.first {
@@ -2863,6 +2880,7 @@ body.chat .header .nav {
     width: 100%;
     max-width: 335px;
     margin: 0 auto;
+    padding-bottom: 10px;
   }
 
   .main.chat .main__top {
@@ -2902,6 +2920,7 @@ body.chat .header .nav {
 
   .popup__content {
     padding: 40px;
+    background-color: #0e0e0e;
   }
 
   .popup__content-cover {
@@ -2913,7 +2932,6 @@ body.chat .header .nav {
     box-sizing: border-box;
     height: auto;
     max-height: 100%;
-    background-color: #0E0E0E;
     border: 1px solid #333;
     border-radius: 2px;
   }
