@@ -465,8 +465,7 @@
 
 							<div class="edit-item__input">
 								<div class="item-input__cover">
-									<input type="text" value="18:00" class="timepicker">
-									<span>C</span>
+									<input type="text" value="18:00" class="timepicker"> <span>C</span>
 								</div>
 								<div class="item-input__cover">
 									<input type="text" value="21:00" class="timepicker">
@@ -766,7 +765,10 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		$('.timepicker').timepicker({ 'timeFormat': 'H:i' });
+		$('.timepicker').timepicker({ 
+			'timeFormat': 'H:i',
+			'disableTouchKeyboard': true
+		});
 	</script>
 </body>
 </html>
