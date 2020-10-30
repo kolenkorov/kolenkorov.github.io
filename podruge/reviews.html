@@ -688,64 +688,76 @@
 		<h2 class="reviews__title title">Отзывы</h2>
 
 		<div class="filter">
-			<div class="filter__top">
-				<div class="filter__top-item filter-item">
-					<span>Город:</span>
-					<a href="#" class="open-modal" data-modal="#modal">Петропавловск-Камчатский</a>
-				</div>
-				<div class="filter__top-item filter-item">
-					<span>Клиника:</span>
-					<a href="#">ул. Маршака, д 88, ТЦ «Олимп»</a>
-				</div>
-			</div>
-			<div class="filter__category">
-				<div class="filter__category-item filter-item">
-					<input type="checkbox" id="epilation">
-					<label for="epilation">Лазерная эпиляция</label>
-				</div>
-				<div class="filter__category-item filter-item">
-					<input type="checkbox" id="cosmetology">
-					<label for="cosmetology">Косметология и уход</label>
-				</div>
-				<div class="filter__category-item filter-item">
-					<input type="checkbox" id="injection">
-					<label for="injection">Инъекционная косметология</label>
-				</div>
-				<div class="filter__category-item filter-item">
-					<input type="checkbox" id="correction">
-					<label for="correction">Коррекция фигуры</label>
-				</div>
-			</div>
-			<div class="filter__bottom">
-				<div class="filter__bottom-item filter-item">
-					<span>Процедура:</span>
-					<div class="select">
-						<input class="select__input" type="hidden" name="">
-						<div class="select__head">Все процедуры</div>
-						<ul class="select__list">
-							<li class="select__item">Процедура 1</li>
-							<li class="select__item">Процедура 2</li>
-							<li class="select__item">Процедура 3</li>
-							<li class="select__item">Процедура 4</li>
-						</ul>
-					</div>
-				</div>
-				<div class="filter__bottom-item filter-item">
-					<span>Аппарат:</span>
-					<div class="select">
-						<input class="select__input" type="hidden" name="">
-						<div class="select__head">Все аппараты</div>
-						<ul class="select__list">
-							<li class="select__item">Аппарат 1</li>
-							<li class="select__item">Аппарат 2</li>
-							<li class="select__item">Аппарат 3</li>
-							<li class="select__item">Аппарат 4</li>
-						</ul>
-					</div>
-				</div>
+			<div class="filter__button">
+				<a href="#" class="toggle-filter btn-pink">
+					<span class="show">Показать фильтр</span>
+					<span class="hide">Скрыть фильтр</span>
+				</a>
 
 				<div class="filter__clear">
-					<a href="#"><img src="img/icons/close-btn.png" alt="img">Сбросить<span> фильтр</span></a>
+					<a href="#"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs/><path d="M2 12L12 2M12 12L2 2" stroke="#8B66BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Сбросить</a>
+				</div>
+			</div>
+			<div class="filter__block">
+				<div class="filter__top">
+					<div class="filter__top-item filter-item">
+						<span>Город:</span>
+						<a href="#" class="open-modal" data-modal="#modal">Петропавловск-Камчатский</a>
+					</div>
+					<div class="filter__top-item filter-item">
+						<span>Клиника:</span>
+						<a href="#">ул. Маршака, д 88, ТЦ «Олимп»</a>
+					</div>
+				</div>
+				<div class="filter__category">
+					<div class="filter__category-item filter-item">
+						<input type="checkbox" id="epilation">
+						<label for="epilation">Лазерная эпиляция</label>
+					</div>
+					<div class="filter__category-item filter-item">
+						<input type="checkbox" id="cosmetology">
+						<label for="cosmetology">Косметология и уход</label>
+					</div>
+					<div class="filter__category-item filter-item">
+						<input type="checkbox" id="injection">
+						<label for="injection">Инъекционная косметология</label>
+					</div>
+					<div class="filter__category-item filter-item">
+						<input type="checkbox" id="correction">
+						<label for="correction">Коррекция фигуры</label>
+					</div>
+				</div>
+				<div class="filter__bottom">
+					<div class="filter__bottom-item filter-item">
+						<span>Процедура:</span>
+						<div class="select">
+							<input class="select__input" type="hidden" name="">
+							<div class="select__head">Все процедуры</div>
+							<ul class="select__list">
+								<li class="select__item">Процедура 1</li>
+								<li class="select__item">Процедура 2</li>
+								<li class="select__item">Процедура 3</li>
+								<li class="select__item">Процедура 4</li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter__bottom-item filter-item">
+						<span>Аппарат:</span>
+						<div class="select">
+							<input class="select__input" type="hidden" name="">
+							<div class="select__head">Все аппараты</div>
+							<ul class="select__list">
+								<li class="select__item">Аппарат 1</li>
+								<li class="select__item">Аппарат 2</li>
+								<li class="select__item">Аппарат 3</li>
+								<li class="select__item">Аппарат 4</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="filter__clear">
+						<a href="#"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs/><path d="M2 12L12 2M12 12L2 2" stroke="#8B66BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Сбросить<span> фильтр</span></a>
+					</div>
 				</div>
 			</div>
 		</div>	
@@ -1100,7 +1112,7 @@
 				<a class="close" href="#"><img src="img/icons/close-btn.png" alt="img"></a>
 			</div>
 
-			<form class="write__form">
+			<form class="write__form" id="form">
 				<div class="write__form-img">
 					<div class="form-img__file">
 						<div class="form-img__block">
@@ -1189,7 +1201,7 @@
 					</div>
 
 					<div class="write__form-agreement">
-						Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+						Нажимая на кнопку, вы даете согласие на&nbsp;обработку персональных данных и&nbsp;соглашаетесь c <a href="#">политикой конфиденциальности</a>
 					</div>
 
 					<div class="write__form-submit">
@@ -1736,9 +1748,38 @@
 					</div>
 				</div>
 			</div>
+
+			<div class='modal-clinics ' id='modal'>
+				<div class='modal-conent'>
+					<div class="modal-content__top">
+						<h3 class='modal-title'>Выберите клинику</h3>
+						<a class='btn close-modal' data-modal="#modal" href="#"> <img src="img/icons/close-btn.png" alt="img"> </a>
+					</div>
+					<div class="modal-content__wrapper ">
+						<div class="modal-clinics__block">
+							<div class="modal-clinics__content">
+								<div class="modal-clinics__map">
+									<div class="yandex-map" id="map"></div>
+								</div>
+
+								<div class="modal-clinics__items">
+									<div class="scroll-container content mCustomScrollbar">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- </div> -->
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+
+
 	<script src="js/slick.min.js"></script>
 	<script src="js/accordion.js"></script>
 	<script src="js/maskedinput.min.js"></script>
