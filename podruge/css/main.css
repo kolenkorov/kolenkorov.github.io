@@ -2559,7 +2559,7 @@ body {
   max-height: 100vh;
   overflow-y: auto;
 }
-.overlay .modal-city {
+.overlay .modal {
   background: #fff;
   -webkit-box-shadow: 0px 4px 10px rgba(175, 182, 190, 0.5);
   box-shadow: 0px 4px 10px rgba(175, 182, 190, 0.5);
@@ -2573,7 +2573,7 @@ body {
   width: 100%;
   overflow-y: auto;
 }
-.overlay .modal-city .content {
+.overlay .modal .content {
   -webkit-transform: translate(0, -10px);
   -ms-transform: translate(0, -10px);
   transform: translate(0, -10px);
@@ -2582,14 +2582,22 @@ body {
   -o-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
 }
-.overlay .modal-city .modal-title {
+.overlay .modal .modal-title {
   margin-top: 0;
 }
-.overlay .modal-city.open {
+.overlay .modal-clinics {
+  height: 670px;
+}
+@media screen and (max-width: 640px) {
+  .overlay .modal-clinics {
+    height: 514px;
+  }
+}
+.overlay .modal.open {
   opacity: 1;
   pointer-events: inherit;
 }
-.overlay .modal-city.open .content {
+.overlay .modal.open .content {
   -webkit-transform: translate(0, 0px);
   -ms-transform: translate(0, 0px);
   transform: translate(0, 0px);
@@ -2605,6 +2613,11 @@ body {
   font-size: 40px;
   line-height: 47px;
   font-weight: 700;
+}
+@media screen and (max-width: 640px) {
+  .modal-title {
+    font-size: 24px !important;
+  }
 }
 .modal-content__top {
   display: -webkit-box;
@@ -2644,6 +2657,124 @@ body {
 }
 .modal-regions__right {
   width: 46%;
+}
+.modal-clinics__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+}
+.modal-clinics__map {
+  min-height: 482px;
+  width: 50%;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__map {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+.modal-clinics__map #map {
+  height: 100%;
+}
+.modal-clinics__items {
+  width: 50%;
+  margin-left: 40px;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__items {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.modal-clinics__items .content {
+  margin-top: 0;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__items .content {
+    margin-top: 20px;
+  }
+}
+.modal-clinics__items .scroll-container {
+  height: auto;
+  max-height: 482px;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__items .scroll-container {
+    max-height: 200px;
+  }
+}
+.modal-clinics__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 63px;
+  border-bottom: 1px solid #F5F7F9;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__item {
+    min-height: 53px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__item:first-child {
+    margin-top: -9px;
+  }
+}
+.modal-clinics__item input {
+  display: none;
+}
+.modal-clinics__item label {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  padding-left: 44px;
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__item label {
+    font-size: 14px;
+    line-height: 16.8px;
+    padding-left: 29px;
+  }
+}
+.modal-clinics__item label:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: #F5F7F9;
+}
+@media screen and (max-width: 640px) {
+  .modal-clinics__item label:before {
+    width: 18px;
+    height: 18px;
+  }
+}
+.modal-clinics__item input:checked + label {
+  color: #57C2C9;
+}
+.modal-clinics__item input:checked + label:before {
+  background-image: url(../img/icons/icon-check.svg);
+  background-size: cover;
 }
 .close-modal {
   background-color: inherit;
@@ -3109,7 +3240,7 @@ body {
     margin-top: 20px;
   }
   .modal-content__wrapper {
-    padding: 10px 15px 10px 18px;
+    padding: 10px 14px 20px 20px;
   }
   .modal-content__top {
     height: 54px;
