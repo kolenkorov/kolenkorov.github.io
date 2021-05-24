@@ -1626,30 +1626,6 @@ textarea {
   margin-left: 6px;
 }
 
-.products__item-stats .item-stats__favorites {
-  cursor: pointer;
-}
-
-.products__item-stats .item-stats__favorites.active {
-  color: #1cc9cf;
-}
-
-.products__item-stats .item-stats__favorites.active i:before {
-  content: '\f11d';
-}
-
-.products__item-stats .item-stats__likes {
-  cursor: pointer;
-}
-
-.products__item-stats .item-stats__likes.active i {
-  color: #ff0000;
-}
-
-.products__item-stats .item-stats__count {
-  color: #1cc9cf;
-}
-
 .products__item-price {
   font-family: 'SFProDisplay';
   font-weight: 700;
@@ -1706,6 +1682,30 @@ textarea {
 
 .products__item.round .products__item-buy {
   opacity: 1;
+}
+
+.item-stats__favorites {
+  cursor: pointer;
+}
+
+.item-stats__favorites.active {
+  color: #1cc9cf;
+}
+
+.item-stats__favorites.active i:before {
+  content: '\f11d';
+}
+
+.item-stats__likes {
+  cursor: pointer;
+}
+
+.item-stats__likes.active i {
+  color: #ff0000;
+}
+
+.item-stats__count {
+  color: #1cc9cf;
 }
 
 .gallery {
