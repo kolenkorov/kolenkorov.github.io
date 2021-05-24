@@ -6,6 +6,10 @@
 	<title>NFT</title>
 	<link rel="stylesheet" href="plugins/form-styler/css/jquery.formstyler.css">
 	<link rel="stylesheet" href="plugins/owl-carousel/css/owl.carousel.min.css">
+
+	<link rel="stylesheet" href="plugins/slick/css/slick.css">
+	<!-- <link rel="stylesheet" href="plugins/slick/css/slick-theme.css"> -->
+
 	<link rel="stylesheet" href="fonts/flaticon/flaticon.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -58,8 +62,7 @@
 						<div class="header__lang">
 							<select>
 								<option>Ru</option>
-								<option>Ru</option>
-								<option>Ru</option>
+								<option>Eng</option>
 							</select>
 						</div>
 					</div>
@@ -142,7 +145,7 @@
 		</div>
 
 		<div class="gallery">
-			<div class="gallery__items owl-carousel galery__slider">
+			<div class="gallery__items galery__slider">
 				<div class="gallery__item">
 					<img src="img/thumb.png" alt="img">
 					<div class="gallery__item-mark">
@@ -193,13 +196,15 @@
 			<aside class="aside artist">
 				<div class="aside__heading heading">
 					<h3><i class="flaticon-businessman"></i> Артисты</h3>
-
-					<div class="artist__burger">
-						<span></span>
-					</div>
 				</div>
 
 				<ul class="artist__list">
+					<div class="artist__list-heading heading">
+						<h3><i class="flaticon-businessman"></i> Артисты</h3>
+						<div class="artist__list-close">
+							<i class="flaticon-letter-x"></i>
+						</div>
+					</div>
 					<li class="artist__item">
 						<h4 class="artist__item-title">Lee Aaker</h4>
 						<ul class="artist__sublist">
@@ -840,7 +845,817 @@
 			</aside>
 
 			<main class="main fineart">
-				<div class="fineart__overview owl-carousel overview__slider">
+				<div class="fineart__overview overview__slider">
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
+					<div class="fineart__item products__item">
+						<div class="products__item-info">
+							<div class="item-info__icon">
+								<i class="flaticon-information"></i>
+								<i class="flaticon-letter-x cross"></i>
+							</div>
+
+							<div class="item-info__dropdown">
+								<div class="info__dropdown-item artist">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Артист</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+								<div class="info__dropdown-item owner">
+									<div class="dropdown-item__img">
+										<img src="img/artist.png" alt="img">
+									</div>
+									<div class="dropdown-item__cover">
+										<div class="dropdown-item__status">Владелец</div>
+										<div class="dropdown-item__title">Assassin7</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item-img">
+							<div class="item-img__cover">
+								<img src="img/artist_item.png" alt="img">
+							</div>
+							<div class="products__item-mark">
+								<img src="img/mark.png" alt="mark">
+							</div>
+						</div>
+						<div class="products__item-title">
+							Nicolas Aron
+						</div>
+						<div class="products__item-name">
+							Foreign Collective - Liminal Spaces
+						</div>
+						<div class="products__item-stats">
+							<div class="item-stats__views">
+								<i class="flaticon-eye"></i> <span>3063</span>
+							</div>
+							<div class="item-stats__favorites">
+								<i class="flaticon-star"></i>
+							</div>
+							<div class="item-stats__likes">
+								<i class="flaticon-heart"></i> <span>128</span>
+							</div>
+							<div class="item-stats__count">1/1</div>
+						</div>
+						<div class="products__item-price">
+							$ 699.00
+						</div>
+						<div class="products__item-buy button">
+							<a href="#" class="rate btn_blank"><span>Сделать ставку</span></a>
+							<a href="#" class="buy fill btn_fill"><span>Купить</span></a>
+						</div>
+					</div>
 					<div class="fineart__item products__item">
 						<div class="products__item-info">
 							<div class="item-info__icon">
@@ -1066,6 +1881,9 @@
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="plugins/form-styler/js/jquery.formstyler.min.js"></script>
 	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<script src="plugins/slick/js/slick.min.js"></script>
+
 	<script src="js/main.js"></script>
 </body>
 </html>
