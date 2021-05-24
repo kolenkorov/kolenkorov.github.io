@@ -189,7 +189,7 @@ button {
 
 input,
 textarea {
-  -webkit-appearence: initial;
+  -webkit-appearence: initial !important;
 }
 
 .button a,
