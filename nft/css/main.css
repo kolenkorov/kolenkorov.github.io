@@ -3843,6 +3843,8 @@ textarea {
 
   .hidden {
     overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
   }
 
   .button a,
