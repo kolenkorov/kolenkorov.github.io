@@ -3132,7 +3132,7 @@ textarea {
   box-sizing: border-box;
   padding: 15px 26px;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 16px;
   border: none;
   border-radius: 8px;
   -webkit-box-shadow: 0px 10px 21px 0px rgba(0, 0, 0, 0.16);
@@ -4338,6 +4338,10 @@ textarea {
     margin-bottom: 10px;
   }
 
+  .products__item-img .item-img__cover {
+    height: auto;
+  }
+
   .products__item-stats > div {
     margin: 0 5px;
   }
@@ -4682,7 +4686,6 @@ textarea {
   .popup__form-item input,
   .popup__form-item textarea {
     padding: 10px 15px;
-    font-size: 14px;
   }
 
   .popup__button {
