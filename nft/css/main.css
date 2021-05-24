@@ -448,7 +448,7 @@ textarea {
   justify-content: center;
   font-size: 0;
   border: none;
-  z-index: 99;
+  z-index: 9;
 }
 
 .slick-prev:hover,
@@ -957,7 +957,7 @@ textarea {
 }
 
 .header__lang .jq-selectbox {
-  width: 56px;
+  width: 62px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-right: -8px;
@@ -1916,11 +1916,7 @@ textarea {
   color: #1cc9cf;
 }
 
-.artist {
-  position: relative;
-}
-
-.artist:before {
+.aside.artist:before {
   position: fixed;
   content: "";
   background-color: #000;
@@ -1929,10 +1925,14 @@ textarea {
   left: -100%;
   width: 100%;
   bottom: 0;
-  z-index: 5;
+  z-index: 10;
   -webkit-transition: 0.15s ease all;
   -o-transition: 0.15s ease all;
   transition: 0.15s ease all;
+}
+
+.artist {
+  position: relative;
 }
 
 .artist__list {
@@ -4038,12 +4038,12 @@ textarea {
     width: calc(100% - 31px);
   }
 
-  .artist {
-    position: static;
+  .aside.artist.active:before {
+    left: 0;
   }
 
-  .artist.active:before {
-    left: 0;
+  .artist {
+    position: static;
   }
 
   .artist .aside__heading {
@@ -4342,7 +4342,7 @@ textarea {
     margin: 0 5px;
   }
 
-  .artist.active:before {
+  .aside.artist.active:before {
     display: none;
   }
 
@@ -4452,10 +4452,6 @@ textarea {
     width: calc(16.666666666666668% - 31px);
   }
 
-  .header__connect a i {
-    margin-right: 0;
-  }
-
   .header__user {
     margin-right: 0px;
   }
@@ -4552,7 +4548,6 @@ textarea {
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-top: 48px;
   }
 
   .fineart__overview .slick-prev {
