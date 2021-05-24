@@ -3037,6 +3037,11 @@ textarea {
   opacity: 0.5;
 }
 
+.mfp-zoom-out-cur {
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
 .mfp-zoom-out-cur .mfp-bg {
   opacity: 1;
   background-color: #fff;
@@ -4443,11 +4448,11 @@ textarea {
   }
 
   .slick-prev {
-    right: calc(100% - 25px);
+    right: calc(100% - 30px);
   }
 
   .slick-next {
-    left: calc(100% - 25px);
+    left: calc(100% - 30px);
   }
 
   .heading h1 {
