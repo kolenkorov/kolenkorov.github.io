@@ -177,6 +177,7 @@ img {
 
 body {
   font-family: "SFUIText";
+  overflow-x: hidden;
 }
 
 a {
