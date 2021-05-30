@@ -644,21 +644,27 @@ textarea {
   padding: 18px 0;
   z-index: 999;
   background-color: #fff;
-  -webkit-transition: 0.25s ease all;
-  -o-transition: 0.25s ease all;
-  transition: 0.25s ease all;
-  top: -100%;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  top: -200px;
 }
 
 .header.sticky {
+  -webkit-transition: 0.6s ease all;
+  -o-transition: 0.6s ease all;
+  transition: 0.6s ease all;
   position: -webkit-sticky;
   position: sticky;
+}
+
+.header.fixed {
   top: 0;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 0.25s ease all;
-  -o-transition: 0.25s ease all;
-  transition: 0.25s ease all;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
 }
 
 .header__top {
@@ -3674,6 +3680,14 @@ textarea {
 
   .fineart {
     padding-top: 45px;
+  }
+
+  .content .fineart {
+    padding-top: 20px;
+  }
+
+  .fineart__overview {
+    width: calc(56% - 31px) !important;
   }
 }
 
