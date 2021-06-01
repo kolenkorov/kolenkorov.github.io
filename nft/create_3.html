@@ -82,27 +82,77 @@
 
 	<div class="wrapper">
 		<div class="heading center">
-			<h1>Создать NFT</h1>
+			<h1>Создать несколько экземпляров</h1>
 		</div>
-		
-		<div class="create_blocks flex">
-			<div class="create_block">
-				<a class="create_block_img" href="create_2.html">
-					<picture><source srcset="img/logo.png" type="image/webp"><img src="images/logo_2.svg" alt></picture>
-				</a>
-				<div class="create_block_title heading"><h3>Единичный экземпляр</h3></div>
-				<div class="create_block_i"><i class="flaticon-information"></i></div>
-				<div class="create_block_text">Если вы хотите создать уникальный <br>NFT-токен</div>
+
+		<form class="create_form">
+			<label for="download" class="fill create_download btn btn_sea icon icon-download">
+				<input type="file" id="download">
+				<span>Загрузить файл</span>
+			</label>
+			<span>Формать файла: png, gif, WEBp, MPEG4, MP3 (максимально до 30mb)</span>
+			<label for="download_2" class="create_download_canvas icon icon-file">
+				<input type="file" id="download_2">
+			</label>
+			<div class="create_check active">
+				<label for="check">
+					<input type="radio" name="type" id="check" checked>
+					<span class="icon icon-check_sea"></span>
+					<span class="title">Аукцион</span>
+				</label>
+				<div class="create_check_info create_inputs grid grid_twoo">
+					<div class="create_input">
+						<span>Начальная ставка:</span>
+						<input type="number">
+						<span class="icon icon-eth"></span>
+					</div>
+					<div class="create_input">
+						<span>Дата начала аукциона:</span>
+						<input id="datepicker">
+						<span class="icon icon-calendar"></span>
+					</div>
+				</div>
 			</div>
-			<div class="create_block">
-				<a class="create_block_img" href="create_3.html">
-					<picture><source srcset="img/logo.png" type="image/webp"><img src="images/logo_3.svg" alt></picture>
-				</a>
-				<div class="create_block_title heading"><h3>Несколько копий</h3></div>
-				<div class="create_block_i"><i class="flaticon-information"></i></div>
-				<div class="create_block_text">Если вы хотите продать NFT-токен <br>несколько раз</div>
+			<div class="create_check inactive">
+				<label for="check-3">
+					<input type="radio" name="type" id="check-3">
+					<span class="icon icon-check_sea"></span>
+					<span class="title">Фиксированная продажа</span>
+				</label>
+				<div class="create_check_info">
+					<div class="create_input">
+						<span>Укажите стоимость:</span>
+						<input type="number">
+						<span class="icon icon-eth"></span>
+					</div>
+				</div>
 			</div>
-		</div>
+			<div class="create_input">
+				<span>Создать оригинальный хештег:</span>
+				<input type="text">
+				<span class="icon icon-sharp"></span>
+			</div>
+			<div class="create_input">
+				<span>Название NFT-токена:</span>
+				<input type="text">
+			</div>
+			<div class="create_input">
+				<span>Описание:</span>
+				<textarea></textarea>
+			</div>
+			<div class="create_inputs grid grid_twoo">
+				<div class="create_input">
+					<span>Роялти:</span>
+					<input type="number">
+					<span class="icon icon-persent"></span>
+				</div>
+				<div class="create_input">
+					<span>Количество NFT:</span>
+					<input type="number">
+				</div>
+			</div>
+			<button class="fill btn btn_sea"><span>Создать NFT</span></button>
+		</form>
 
 		<div class="footer">
 			<div class="footer__logo">
@@ -161,6 +211,8 @@
 
 	<!-- lib -->
 	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
 	<script src="plugins/form-styler/js/jquery.formstyler.min.js"></script>
 	<script src="plugins/slick/js/slick.min.js"></script>
 	<script src="plugins/magnific-popup/js/jquery.magnific-popup.min.js"></script>
