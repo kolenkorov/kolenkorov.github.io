@@ -1317,6 +1317,7 @@ textarea {
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-text-size-adjust: 100%;
 }
 
 .bunner__item-title {
@@ -1330,10 +1331,6 @@ textarea {
   color: #fff;
   width: calc(42.5% - 31px);
   margin-top: 27px;
-}
-
-.bunner__item-text p {
-  -webkit-text-size-adjust: 100%;
 }
 
 .bunner__item-more {
@@ -1392,6 +1389,7 @@ textarea {
   padding-left: 52px;
   margin-left: 26px;
   margin-top: 8px;
+  -webkit-text-size-adjust: 100%;
 }
 
 .bunner__item-button span:before {
