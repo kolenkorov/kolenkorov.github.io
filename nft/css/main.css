@@ -1332,6 +1332,10 @@ textarea {
   margin-top: 27px;
 }
 
+.bunner__item-text p {
+  -webkit-text-size-adjust: 80%;
+}
+
 .bunner__item-more {
   margin-top: 31px;
 }
@@ -2207,7 +2211,7 @@ textarea {
 .main__sort {
   margin: 0 0 0 auto;
   position: relative;
-  z-index: 999;
+  z-index: 101;
 }
 
 .main__sort .jq-selectbox {
@@ -4394,6 +4398,7 @@ textarea {
 .create_form input[type=file] {
   visibility: hidden;
   position: absolute;
+  left: 0;
 }
 
 .create_form input[type=number] {
@@ -6992,6 +6997,10 @@ a.ui-button:active,
     margin-top: 0;
   }
 
+  .content.marketplace .aside__heading {
+    width: calc(50% - 10px);
+  }
+
   .aside {
     width: calc(100% - 31px);
   }
@@ -7013,7 +7022,9 @@ a.ui-button:active,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 42px;
+    height: 44px;
+    position: relative;
+    z-index: 110;
   }
 
   .artist .aside__heading:hover {
@@ -7097,6 +7108,14 @@ a.ui-button:active,
     margin-top: 15px;
   }
 
+  .main__sort {
+    width: calc(50% - 10px);
+  }
+
+  .main__sort .jq-selectbox {
+    width: 100%;
+  }
+
   .main__sort .jq-selectbox__trigger {
     padding-bottom: 5px;
   }
@@ -7115,6 +7134,10 @@ a.ui-button:active,
 
   .main.connect {
     margin-bottom: 0;
+  }
+
+  .main.marketplace {
+    margin-top: -55px;
   }
 
   .fineart__overview {
@@ -7370,16 +7393,12 @@ a.ui-button:active,
     left: -110%;
   }
 
-  .main__sort {
-    width: 100%;
-  }
-
-  .main__sort .jq-selectbox {
-    width: 100%;
-  }
-
   .main.marketplace .marketplace__item {
     width: calc(100% - 31px);
+  }
+
+  .main.marketplace .marketplace__item .products__item-img .item-img__cover {
+    height: auto;
   }
 
   .fineart__overview {
