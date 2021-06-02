@@ -1333,7 +1333,7 @@ textarea {
 }
 
 .bunner__item-text p {
-  -webkit-text-size-adjust: 80%;
+  -webkit-text-size-adjust: 100%;
 }
 
 .bunner__item-more {
