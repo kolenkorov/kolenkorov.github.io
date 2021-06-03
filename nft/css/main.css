@@ -4584,6 +4584,7 @@ textarea {
 
 .create_input .icon-persent:before {
   background-size: 16px;
+  width: 46px;
 }
 
 .create_inputs {
