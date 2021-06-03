@@ -4582,11 +4582,6 @@ textarea {
   margin-left: 0;
 }
 
-.create_input .icon-persent:before {
-  background-size: 16px;
-  width: 46px;
-}
-
 .create_inputs {
   display: -webkit-box;
   display: -ms-flexbox;
