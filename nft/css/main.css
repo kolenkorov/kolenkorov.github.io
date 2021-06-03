@@ -2212,16 +2212,6 @@ textarea {
   z-index: 101;
 }
 
-.main__sort .jq-selectbox {
-  width: 252px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.main__sort .jq-selectbox select {
-  display: none;
-}
-
 .main__sort .jq-selectbox.up .jq-selectbox__select-text:after,
 .main__sort .jq-selectbox.down .jq-selectbox__select-text:after {
   background-image: url(../images/icon/arroww.svg);
@@ -2231,22 +2221,6 @@ textarea {
   -webkit-transform: rotate(180deg) translateY(50%);
   -ms-transform: rotate(180deg) translateY(50%);
   transform: rotate(180deg) translateY(50%);
-}
-
-.main__sort .jq-selectbox__select {
-  width: 100%;
-  height: 46px;
-  padding: 0 24px;
-  border: 1px solid #000;
-  border-radius: 8px;
-}
-
-.main__sort .jq-selectbox__select-text {
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: -3px;
-  color: #000;
-  position: relative;
 }
 
 .main__sort .jq-selectbox__select-text:after {
@@ -2261,39 +2235,9 @@ textarea {
   margin-left: 15px;
 }
 
-.main__sort .jq-selectbox__trigger {
-  position: absolute;
-  top: 0;
-  right: 24px;
-  width: 10px;
-  height: 100%;
-  z-index: 10;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.main__sort .jq-selectbox__trigger:before {
-  font-size: 8px;
-  color: #000;
-}
-
-.main__sort .jq-selectbox__dropdown {
-  top: calc(100% + 10px) !important;
-  border: 1px solid #000;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 .main__sort .jq-selectbox__dropdown li {
-  font-size: 16px;
-  font-weight: 300;
-  color: #000;
-  padding: 10px 24px;
-  -webkit-transition: 0.25s ease all;
-  -o-transition: 0.25s ease all;
-  transition: 0.25s ease all;
   position: relative;
+  padding: 7px 0;
 }
 
 .main__sort .jq-selectbox__dropdown li:after {
@@ -2317,14 +2261,6 @@ textarea {
   -webkit-transform: rotate(180deg) translateY(50%);
   -ms-transform: rotate(180deg) translateY(50%);
   transform: rotate(180deg) translateY(50%);
-}
-
-.main__sort .jq-selectbox__dropdown li:hover {
-  background-color: #ddd;
-}
-
-.main__sort .jq-selectbox__dropdown li.sel {
-  font-weight: 300 !important;
 }
 
 .main.product {
@@ -3827,6 +3763,10 @@ textarea {
   background-image: url("../images/icon/persent.svg");
 }
 
+.icon-eth:before {
+  background-image: url("../images/icon/eth.svg");
+}
+
 .flex_start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4528,7 +4468,7 @@ textarea {
   margin-left: 20px;
 }
 
-.create_check > label {
+.create_check label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4536,9 +4476,10 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
-.create_check > label .icon {
+.create_check label .icon {
   --icon_width: 32px;
   --icon_height: var(--icon_width);
   display: inline-block;
@@ -4551,7 +4492,7 @@ textarea {
   box-shadow: 0 12px 38px rgba(0, 0, 0, 0.32);
 }
 
-.create_check > label .icon:before {
+.create_check label .icon:before {
   background-size: 16px;
   opacity: 0;
   -webkit-transition: opacity 0.23s;
@@ -4595,9 +4536,9 @@ textarea {
   padding: 0 16px;
 }
 
-.create_input input[type="radio"] {
-  width: 0;
-  padding: 0;
+.create_input input[type="radio"],
+.create_input input[type="checkbox"] {
+  display: none;
 }
 
 .create_input input[type="number"] + .icon {
@@ -4629,6 +4570,22 @@ textarea {
   box-shadow: 0 12px 38px rgba(0, 0, 0, 0.32);
 }
 
+.create_input label {
+  width: 100%;
+}
+
+.create_input label .icon {
+  top: calc(50% - 8px);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 0;
+}
+
+.create_input .icon-persent:before {
+  background-size: 16px;
+}
+
 .create_inputs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4636,10 +4593,16 @@ textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .create_inputs .create_input {
   width: 50%;
+}
+
+.create_inputs .create_input.w100 {
+  width: 100%;
 }
 
 /* Create. */
@@ -4866,13 +4829,13 @@ textarea {
 
 .cabinet_blocks .slick-list {
   margin: 0 -40px;
-  padding: 0 20px 30px;
+  padding: 0 0 30px;
 }
 
 .cabinet_block {
   margin-top: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .cabinet_block .marketplace__item {
@@ -6775,6 +6738,16 @@ a.ui-button:active,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
+  .create_form {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .create_download_canvas {
+    margin-left: -90px;
+    margin-right: -90px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7031,7 +7004,7 @@ a.ui-button:active,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 44px;
+    height: 48px;
     position: relative;
     z-index: 110;
   }
@@ -7125,14 +7098,6 @@ a.ui-button:active,
     width: 100%;
   }
 
-  .main__sort .jq-selectbox__trigger {
-    padding-bottom: 5px;
-  }
-
-  .main__sort .jq-selectbox__dropdown {
-    min-height: 58px;
-  }
-
   .main.settings {
     margin-bottom: 0;
   }
@@ -7146,7 +7111,7 @@ a.ui-button:active,
   }
 
   .main.marketplace {
-    margin-top: -55px;
+    margin-top: -59px;
   }
 
   .fineart__overview {
@@ -7401,9 +7366,21 @@ a.ui-button:active,
     display: none;
   }
 
+  .artist .aside__heading {
+    height: 40px;
+  }
+
   .artist__list {
     max-width: 100%;
     left: -110%;
+  }
+
+  .main__sort {
+    margin: 0 0 0 auto;
+  }
+
+  .main.marketplace {
+    margin-top: -51px;
   }
 
   .main.marketplace .marketplace__item {
@@ -7494,11 +7471,6 @@ a.ui-button:active,
 
   .create_download_canvas {
     height: 252px;
-  }
-
-  .create_inputs {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
 
   .create_inputs .create_input {
@@ -7912,7 +7884,7 @@ a.ui-button:active,
     height: 220px;
   }
 
-  .create_check > label .heading h3 {
+  .create_check label .heading h3 {
     font-size: 18px;
   }
 
@@ -7927,13 +7899,13 @@ a.ui-button:active,
 
   .cabinet_blocks .slick-list {
     margin: 0 -10px;
-    padding: 0 10px 30px;
+    padding: 0 0 30px;
   }
 
   .cabinet_block {
     margin-top: 40px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .cabinet_block .marketplace__item {

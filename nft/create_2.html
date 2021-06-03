@@ -103,15 +103,25 @@
 					<span class="icon icon-check_sea"></span>
 					<span class="heading"><h3>Аукцион</h3></span>
 				</label>
-				<div class="create_check_info create_inputs grid grid_twoo">
-					<div class="create_input">
+				<div class="create_check_info create_inputs">
+					<div class="create_input w100">
 						<span>Начальная ставка:</span>
 						<input type="number">
 						<span class="icon icon-eth"></span>
 					</div>
+
 					<div class="create_input">
 						<span>Дата начала аукциона:</span>
-						<input id="datepicker">
+						<input class="datepicker">
+						<span class="icon icon-calendar"></span>
+					</div>
+					<div class="create_input">
+						<label for="end">
+							<input type="checkbox" name="type" id="end" checked>
+							<span class="icon icon-check_sea"></span>
+							<span class="heading">Дата окончания аукциона:</span>
+						</label>
+						<input class="datepicker">
 						<span class="icon icon-calendar"></span>
 					</div>
 				</div>
