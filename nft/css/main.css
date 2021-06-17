@@ -3792,6 +3792,10 @@ textarea {
   background-image: url("../images/icon/download.svg");
 }
 
+.icon-download-black:before {
+  background-image: url("../images/icon/download_black.svg");
+}
+
 .icon-file:before {
   background-image: url("../images/icon/file.svg");
 }
@@ -4640,6 +4644,15 @@ textarea {
 
 .create_inputs .create_input.w100 {
   width: 100%;
+}
+
+.btn_gray {
+  background-color: #f4f4f4;
+}
+
+.btn_gray:before,
+.btn_gray span {
+  color: #000;
 }
 
 /* Create. */
