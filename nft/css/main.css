@@ -1353,7 +1353,7 @@ textarea {
 .bunner__item {
   padding: 74px 92px;
   border-radius: 10px;
-  min-height: 420px;
+  height: 420px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -6340,7 +6340,7 @@ a.ui-button:active,
 
   .bunner__item {
     padding: 45px 62px 60px;
-    min-height: 300px;
+    height: 300px;
   }
 
   .bunner__item-text {
@@ -6604,7 +6604,11 @@ a.ui-button:active,
 
   .bunner__item {
     padding: 35px 50px 80px;
-    min-height: 360px;
+    height: 360px;
+  }
+
+  .bunner__item-text {
+    width: calc(70.83333333333334% - 31px);
   }
 
   .marketplace__item {
@@ -6971,7 +6975,7 @@ a.ui-button:active,
 
   .bunner__item {
     padding: 30px 40px 70px;
-    min-height: 320px;
+    height: 320px;
   }
 
   .bunner__item-text {
@@ -7662,6 +7666,7 @@ a.ui-button:active,
   .bunner__item {
     padding: 25px 30px 70px;
     min-height: 320px;
+    height: auto;
   }
 
   .bunner__item-text {
