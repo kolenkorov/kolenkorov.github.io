@@ -160,6 +160,7 @@ body {
   z-index: 10;
   display: none;
   background-image: url(../img/chat_bg.png);
+  background-size: cover;
   width: 100%;
 }
 
@@ -255,15 +256,12 @@ body {
   padding: 0 18px 16px;
   height: 263px;
   overflow: auto;
-  /* полоса прокрутки (скроллбар) */
-  /* ползунок скроллбара */
   scrollbar-color: #fdcc17 #2b2949;
   scrollbar-width: thin;
 }
 
 .support__chat::-webkit-scrollbar {
   width: 4px;
-  /* ширина для вертикального скролла */
   background-color: #2b2949;
 }
 
@@ -483,6 +481,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-top: 17px;
+  overflow: hidden;
 }
 
 .support__bottom-item {
