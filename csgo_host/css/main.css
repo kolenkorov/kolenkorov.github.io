@@ -267,7 +267,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  background-color: #8f35fc;
+  background-color: #4d53de;
   left: 50%;
   bottom: -34px;
   -webkit-transform: translateX(-50%);
@@ -296,6 +296,9 @@ body {
 
 .header__buttons {
   margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__buttons a {
@@ -330,13 +333,13 @@ body {
 }
 
 .header__buttons a.price:hover {
-  -webkit-box-shadow: 0px 15px 35px 0px rgba(218, 111, 91, 0.5);
-  box-shadow: 0px 15px 35px 0px rgba(218, 111, 91, 0.5);
+  -webkit-box-shadow: 0px 15px 35px 0px rgba(104, 176, 68, 0.5);
+  box-shadow: 0px 15px 35px 0px rgba(104, 176, 68, 0.5);
 }
 
 .header__buttons a.login {
   margin-left: 10px;
-  background-color: #8f35fc;
+  background-color: #4d53de;
 }
 
 .header__buttons a.login:hover {
