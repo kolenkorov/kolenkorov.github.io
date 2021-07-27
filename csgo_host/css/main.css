@@ -343,8 +343,8 @@ body {
 }
 
 .header__buttons a.login:hover {
-  -webkit-box-shadow: 0px 15px 35px 0px rgba(143, 53, 252, 0.5);
-  box-shadow: 0px 15px 35px 0px rgba(143, 53, 252, 0.5);
+  -webkit-box-shadow: 0px 15px 35px 0px rgba(77, 83, 222, 0.5);
+  box-shadow: 0px 15px 35px 0px rgba(77, 83, 222, 0.5);
 }
 
 .header__burger {
@@ -501,8 +501,8 @@ body {
 }
 
 .main__button a:hover {
-  -webkit-box-shadow: 0px 15px 35px 0px rgba(143, 53, 252, 0.5);
-  box-shadow: 0px 15px 35px 0px rgba(143, 53, 252, 0.5);
+  -webkit-box-shadow: 0px 15px 35px 0px rgba(77, 83, 222, 0.5);
+  box-shadow: 0px 15px 35px 0px rgba(77, 83, 222, 0.5);
 }
 
 .main__button a img {
