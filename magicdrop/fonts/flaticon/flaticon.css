@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf") format("truetype"),
+url("./flaticon.woff") format("woff"),
+url("./flaticon.woff2") format("woff2"),
+url("./flaticon.eot#iefix") format("embedded-opentype"),
+url("./flaticon.svg#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-file:before {
+    content: "\f101";
+}
+.flaticon-document:before {
+    content: "\f102";
+}
+.flaticon-up-arrow:before {
+    content: "\f103";
+}
+.flaticon-bar-chart:before {
+    content: "\f104";
+}
+.flaticon-flash:before {
+    content: "\f105";
+}
+.flaticon-star:before {
+    content: "\f106";
+}
+.flaticon-bell:before {
+    content: "\f107";
+}
+.flaticon-envelope:before {
+    content: "\f108";
+}
+.flaticon-user:before {
+    content: "\f109";
+}
+.flaticon-gift-box-with-a-ribbon:before {
+    content: "\f10a";
+}
+.flaticon-close:before {
+    content: "\f10b";
+}
+.flaticon-plus:before {
+    content: "\f10c";
+}
+.flaticon-info-button:before {
+    content: "\f10d";
+}
+.flaticon-home:before {
+    content: "\f10e";
+}
+.flaticon-yellow-card:before {
+    content: "\f10f";
+}
+.flaticon-cards:before {
+    content: "\f110";
+}
+.flaticon-users:before {
+    content: "\f111";
+}
+.flaticon-reload:before {
+    content: "\f112";
+}
+.flaticon-faq:before {
+    content: "\f113";
+}
+.flaticon-lifebuoy:before {
+    content: "\f114";
+}
+.flaticon-youtube:before {
+    content: "\f115";
+}
+.flaticon-vk:before {
+    content: "\f116";
+}
+.flaticon-twitter:before {
+    content: "\f117";
+}
+.flaticon-magnifying-glass:before {
+    content: "\f118";
+}
+.flaticon-down-arrow:before {
+    content: "\f119";
+}
+.flaticon-left-arrow:before {
+    content: "\f11a";
+}
+.flaticon-coins:before {
+    content: "\f11b";
+}
