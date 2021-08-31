@@ -1072,6 +1072,12 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
+  cursor: pointer;
+}
+
+.aside__user-avatar:hover:before {
+  -webkit-box-shadow: 0px 0px 55px 65px #003fda;
+  box-shadow: 0px 0px 55px 65px #003fda;
 }
 
 .aside__user-avatar:before {
@@ -1088,6 +1094,9 @@ body {
   -webkit-box-shadow: 0px 0px 55px 50px #003fda;
   box-shadow: 0px 0px 55px 50px #003fda;
   z-index: -1;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
 }
 
 .aside__user-name {
@@ -1166,6 +1175,10 @@ body {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
 }
 
 .aside__user-balance .user-balance__value i {
@@ -1174,6 +1187,16 @@ body {
   display: flex;
   font-size: 14px;
   margin-right: 6px;
+}
+
+.aside__user-balance .user-balance__value:hover {
+  -webkit-box-shadow: 0px 0px 10px 4px #1200ff;
+  box-shadow: 0px 0px 10px 4px #1200ff;
+}
+
+.aside__user-balance .user-balance__value:hover:before,
+.aside__user-balance .user-balance__value:hover:after {
+  opacity: 0;
 }
 
 .aside__user-balance .user-balance__add {
