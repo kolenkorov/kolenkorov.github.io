@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?f3fcbeae366b9a49d4a2f008d029fc39") format("truetype"),
-url("./flaticon.woff?f3fcbeae366b9a49d4a2f008d029fc39") format("woff"),
-url("./flaticon.woff2?f3fcbeae366b9a49d4a2f008d029fc39") format("woff2"),
-url("./flaticon.eot?f3fcbeae366b9a49d4a2f008d029fc39#iefix") format("embedded-opentype"),
-url("./flaticon.svg?f3fcbeae366b9a49d4a2f008d029fc39#flaticon") format("svg");
+    src: url("./flaticon.ttf?b60efba7b3dcccffd811257630d937b1") format("truetype"),
+url("./flaticon.woff?b60efba7b3dcccffd811257630d937b1") format("woff"),
+url("./flaticon.woff2?b60efba7b3dcccffd811257630d937b1") format("woff2"),
+url("./flaticon.eot?b60efba7b3dcccffd811257630d937b1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b60efba7b3dcccffd811257630d937b1#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -48,6 +48,10 @@ $flaticon-map: (
     "down-arrow": "\f119",
     "left-arrow": "\f11a",
     "coins": "\f11b",
+    "steam": "\f11c",
+    "danger": "\f11d",
+    "check": "\f11e",
+    "ruble-currency-sign": "\f11f",
 );
 
 .flaticon-file:before {
@@ -130,4 +134,16 @@ $flaticon-map: (
 }
 .flaticon-coins:before {
     content: map-get($flaticon-map, "coins");
+}
+.flaticon-steam:before {
+    content: map-get($flaticon-map, "steam");
+}
+.flaticon-danger:before {
+    content: map-get($flaticon-map, "danger");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}
+.flaticon-ruble-currency-sign:before {
+    content: map-get($flaticon-map, "ruble-currency-sign");
 }

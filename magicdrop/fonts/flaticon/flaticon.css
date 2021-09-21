@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf") format("truetype"),
-url("./flaticon.woff") format("woff"),
-url("./flaticon.woff2") format("woff2"),
-url("./flaticon.eot#iefix") format("embedded-opentype"),
-url("./flaticon.svg#flaticon") format("svg");
+    src: url("./flaticon.ttf?b60efba7b3dcccffd811257630d937b1") format("truetype"),
+url("./flaticon.woff?b60efba7b3dcccffd811257630d937b1") format("woff"),
+url("./flaticon.woff2?b60efba7b3dcccffd811257630d937b1") format("woff2"),
+url("./flaticon.eot?b60efba7b3dcccffd811257630d937b1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b60efba7b3dcccffd811257630d937b1#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -98,4 +98,16 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-coins:before {
     content: "\f11b";
+}
+.flaticon-steam:before {
+    content: "\f11c";
+}
+.flaticon-danger:before {
+    content: "\f11d";
+}
+.flaticon-check:before {
+    content: "\f11e";
+}
+.flaticon-ruble-currency-sign:before {
+    content: "\f11f";
 }
