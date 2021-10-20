@@ -8882,6 +8882,21 @@ body {
   background-color: #58ea00;
 }
 
+.crash__chart-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(47%, -40%);
+  -ms-transform: translate(47%, -40%);
+  transform: translate(47%, -40%);
+}
+
 .crash__popup {
   display: none;
   position: absolute;
