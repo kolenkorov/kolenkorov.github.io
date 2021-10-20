@@ -480,7 +480,7 @@
 					<div class="content__top">
 						<div class="head head__top heading">
 							<div class="head__left">
-								<a href="#"><span><i class="flaticon-plus"></i> Пополнить баланс</span></a>
+								<a href="#topup"><span><i class="flaticon-plus"></i> Пополнить баланс</span></a>
 								<div class="shadow"></div>
 							</div>
 							<div class="head__center">
@@ -488,17 +488,18 @@
 							</div>
 							<div class="head__right">
 								<div class="shadow"></div>
-								<a href="#"><span>История платежей <i class="flaticon-clock"></i></span></a>
+								<a href="#history"><span>История платежей <i class="flaticon-clock"></i></span></a>
 							</div>
 						</div>		
 					</div>
 
-					<div class="replenishment__block">
+					<div class="replenishment__block topup" id="topup">
 						<div class="replenishment__variant">
 							<div class="replenishment__title">Выбор метода оплаты</div>
 							<div class="replenishment__variant-items">
-								<a href="#" class="btn blue_btn active"><i class="flaticon-coins"></i> <span>Стандартный метод</span></a>
-								<a href="#" class="btn"><i class="flaticon-modern-gun"></i> <span>Оплата скинами</span></a>
+								<a href="#standart" class="btn blue_btn active"><i class="flaticon-coins"></i> <span>Стандартный метод</span></a>
+
+								<a href="#skin" class="btn"><i class="flaticon-modern-gun"></i> <span>Оплата скинами</span></a>
 							</div>
 							<div class="replenishment__variant-desc">
 								<p>
@@ -510,7 +511,7 @@
 							</div>
 						</div>
 						<div class="replenishment__payment">
-							<div class="replenishment__payment-block standart active">
+							<div class="replenishment__payment-block active" id="standart">
 								<div class="replenishment__title">Стандартный метод</div>
 
 								<div class="replenishment__support">
@@ -548,7 +549,118 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="replenishment__payment-block" id="skin">
+								<div class="replenishment__title">Оплата скинами</div>
+
+								<div class="replenishment__support">
+									<div class="replenishment__support-icon">
+										<i class="flaticon-vk"></i>
+									</div>
+									<div class="replenishment__support-text">
+										Тех.Поддержка в нашей группе «<a href="http://vk.com">Вконтакте</a>» вам поможет. 
+									</div>
+									<div class="replenishment__support-button">
+										<a href="#" class="btn blue_btn"><span>Написать</span></a>
+									</div>
+								</div>
+								<div class="replenishment__promo">
+									<div class="replenishment__promo-input input">
+										<input type="text" placeholder="Промокод">
+									</div>
+									<div class="replenishment__promo-bonus btn">
+										<div class="promo-bonus__range"></div>
+										<div class="promo-bonus__text">
+											<span>%</span>
+											<span>Бонус от промокода</span>
+										</div>
+										<div class="promo-bonus__value">55%</div>
+									</div>
+								</div>
+								<div class="replenishment__summ input">
+									<input type="num" placeholder="Введите сумму пополнения">
+								</div>
+								<div class="replenishment__button">
+									<a href="#" class="btn blue_btn"><span>Пополнить баланс скинами</span></a>
+
+									<div class="replenishment__method">
+										Промокод вводить не обязательно
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+
+					<div class="replenishment__block history active" id="history">
+						<table class="history__table">
+							<thead>
+								<tr>
+									<td>Метод</td>
+									<td>Платёжная система</td>
+									<td>Сумма зачисления</td>
+									<td>Статус</td>
+									<td>Дата</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>Банковская карта</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>11,650</span>РУБ.</td>
+									<td class="status success"><i class="flaticon-check"></i> Успешно</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>Яндекс Деньги</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>1,870</span>РУБ.</td>
+									<td class="status success"><i class="flaticon-check"></i> Успешно</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>QIWI</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>4,500</span>РУБ.</td>
+									<td class="status fail"><i class="flaticon-close"></i> Ошибка</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>Яндекс Деньги</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>1,870</span>РУБ.</td>
+									<td class="status success"><i class="flaticon-check"></i> Успешно</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>QIWI</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>4,500</span>РУБ.</td>
+									<td class="status fail"><i class="flaticon-close"></i> Ошибка</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>Яндекс Деньги</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>1,870</span>РУБ.</td>
+									<td class="status success"><i class="flaticon-check"></i> Успешно</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>QIWI</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>4,500</span>РУБ.</td>
+									<td class="status fail"><i class="flaticon-close"></i> Ошибка</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+								<tr>
+									<td>Стандартная оплата</td>
+									<td>Яндекс Деньги</td>
+									<td class="summ"><i class="flaticon-coins"></i> <span>1,870</span>РУБ.</td>
+									<td class="status success"><i class="flaticon-check"></i> Успешно</td>
+									<td class="date"><span>01.11.2020</span> <span>10:31</span></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>

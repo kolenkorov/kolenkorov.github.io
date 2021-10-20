@@ -474,280 +474,464 @@
 				</div>
 			</div>	
 		</aside>
-		<main class="main" style="background-image: url(img/top/top_bg.png);">
-			<div class="main__banner">
-				<div class="main__banner-img">
-					<img src="img/top_knife_1.png" alt="">
-				</div>
-				<div class="main__banner-text gradient">
-					Кейсы со скидкой по промокоду
-				</div>
-				<div class="main__banner-sale">
-					-35%
-				</div>
-				<div class="main__banner-code">
-					<div class="banner-code__quantity">
-						Кодов осталось: <span>1,250</span>
-					</div>
-					<div class="banner-code__value gradient">MD-G54-50FBRH</div>
-				</div>
-				<div class="main__banner-img">
-					<img src="img/top_knife_2.png" alt="">
-				</div>
-			</div>
-
+		<main class="main">
 			<div class="content">
-				<div class="top">
+				<div class="upgrade">
 					<div class="content__top">
-						<div class="heading">
-							<span></span>
-							<h2 class="gradient">ТОП ИГРОКОВ ЗА СЕГОДНЯ</h2>
-							<span></span>
-						</div>					
+						<div class="head head__top heading">
+							<div class="head__left"><div class="shadow"></div></div>
+							<div class="head__center">
+								<h2 class="gradient">Апгрейд</h2>
+							</div>
+							<div class="head__right"><div class="shadow"></div></div>
+						</div>
 					</div>
 
-					<div class="wrapper">
-						<div class="top__items">
-							<div class="top__item">
-								<div class="top__item-sparks">
-									<img src="img/top/sparks.png" alt="sparks">
-								</div>
-								<div class="top__item-wrap">
-									<div class="top__item-title">
-										<div class="top__item-avatar">
-											<div class="top__item-img">
-												<img src="img/avatar.png" alt="avatar">
-											</div>
-											<div class="top__item-name">Konstantin</div>
-										</div>
-
-										<div class="top__item-position">
-											<img src="img/top/no1.png" alt="№1">
-										</div>
+					<div class="upgrade__block">
+						<div class="upgrade__block-cover">
+							<div class="upgrade__items">
+								<!-- skin -->
+								<div class="contract__item skin active visible" id="skin">
+									<div class="contract__item-close">
+										<a href="#"><i class="flaticon-close"></i></a>
 									</div>
-									<div class="top__item-cover">
-										<div class="top__item-case">
-											<a href="#">
-												<img src="img/top/case_1.png" alt="case">
-											</a>
-										</div>
 
-										<div class="top__item-product">
-											<div class="item-product__img">
-												<img src="img/top/ak.png" alt="ak">
-											</div>
-											<div class="item-product__text">
-												<div class="item-product__title gradient">
-													АК-74 / Азимов
-												</div>
-												<div class="item-product__price gradient">
-													2,500 Р.
-												</div>
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin">
+											<img src="img/contract/gun.png" alt="img">
+
+											<div class="item-skin__price">
+												<i class="flaticon-coins"></i>
+												<span>435 р.</span>
 											</div>
 										</div>
 									</div>
+
+									<div class="upgrade__sub">
+										Выберите скин для апгрейда из списка ниже
+									</div>
 								</div>
-								<span class="angle tl"></span>
-								<span class="angle tr"></span>
-								<span class="angle br"></span>
+
+								<!-- balance -->
+								<div class="contract__item balance" id="balance">
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin"></div>
+										<div class="contract__item-info">
+											<div class="item-info__summ">
+												<i class="flaticon-coins"></i>
+												<input type="text">
+											</div>
+										</div>
+									</div>
+
+									<div class="upgrade__sub">
+										Укажите сумму
+									</div>
+								</div>
+
+
+								<!-- not select -->
+								<div class="contract__item center not_select visible">
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin"></div>
+
+										<div class="contract__item-info">
+											<i class="flaticon-info-button"></i>
+											<div class="item-info__title">
+												Не выбран
+											</div>
+											<div class="item-info__sub">
+												предмет апгрейда
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- fail -->
+								<div class="contract__item center fail">
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin"></div>
+
+										<div class="contract__item-info">
+											<div class="item-info__title">
+												Неудача
+											</div>
+											<div class="item-info__sub">
+												в следующий раз все получится
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- success -->
+								<div class="contract__item center success">
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin"></div>
+
+										<div class="contract__item-info">
+											<div class="item-info__price">
+												<i class="flaticon-coins"></i>
+												<span>Продать за:</span>
+												<span class="value">3,350 Р.</span>
+											</div>
+											<div class="item-info__cover">
+												<div class="item-info__title">
+													Успех
+												</div>
+												<div class="item-info__name">
+													PP-BIZON / Disco tech
+												</div>
+												<div class="item-info__sub">
+													ваш приз уже ждет
+												</div>
+											</div>
+											<div class="item-info__repeat">
+												<i class="flaticon-reload-arrow"></i>
+												<span>Повторить</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- chance -->
+								<div class="contract__item center chance">
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin"></div>
+
+										<div class="contract__item-info">
+											<div class="item-info__value">
+												Шанс: <span>35%</span>
+											</div>
+
+											<div class="item-info__button">
+												<a href="#" class="btn blue_btn"><span>Начать</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- chance -->
+								<div class="contract__item center probability">
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin"></div>
+
+										<div class="contract__item-info">
+											<div class="item-info__title">
+												65%
+											</div>
+
+											<div class="item-info__sub">
+												вероятность успеха
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- empty -->
+								<div class="contract__item visible empty">
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin">
+											<img src="img/contract/empty_gun.png" alt="img">
+										</div>
+									</div>
+
+									<div class="upgrade__sub">
+										<p>Выберите скин для апгрейда из списка ниже</p>
+									</div>
+								</div>
+
+								<!-- gun -->
+								<div class="contract__item active gun">
+									<div class="contract__item-close">
+										<a href="#"><i class="flaticon-close"></i></a>
+									</div>
+
+									<div class="contract__item-offset"></div>
+									<div class="contract__item-cover">
+										<div class="contract__item-skin">
+											<img src="img/contract/gun.png" alt="img">
+										</div>
+									</div>
+
+									<div class="upgrade__sub">
+										<div class="upgrade__sub-title">PP-Bizon</div>
+										<div class="upgrade__sub-name">Карамельное яблоко</div>
+										<div class="upgrade__sub-price"><i class="flaticon-coins"></i> 435 Р.</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="upgrade__nav">
+						<div class="upgrade__nav-choice">
+							Использовать:
+						</div>
+						
+						<div class="upgrade__nav-buttons">
+							<a href="#skin" class="skinBtn btn blue_btn active"><span>Скинами</span></a>
+							<a href="#balance" class="balanceBtn btn blue_btn"><span>Балансом</span></a>
+						</div>
+
+						<div class="upgrade__nav-items">
+							<div class="upgrade__nav-item btn blue_btn active"><span>1</span></div>
+							<div class="upgrade__nav-item btn blue_btn"><span>2</span></div>
+							<div class="upgrade__nav-item dots">...</div>
+							<div class="upgrade__nav-item btn blue_btn"><span>11</span></div>
+							<div class="upgrade__nav-item btn blue_btn"><span>12</span></div>
+						</div>
+					</div>
+
+					<div class="upgrade__cover">
+						<div class="upgrade__thing my">	
+							<div class="head heading">
+								<div class="head__left">
+									<div class="filter">
+										<div class="filter__sort">
+											<img src="img/icon/sort.png" alt="img">
+										</div>
+										<div class="filter__price">
+											<div class="filter__price-item">
+												<span>от</span>
+												<input type="text">
+												<span>₽</span>
+											</div>
+											<div class="filter__price-item">
+												<span>до</span>
+												<input type="text">
+												<span>₽</span>
+											</div>
+										</div>
+									</div>
+									<div class="shadow"></div>
+								</div>
+								<div class="head__center">
+									<h3>Мои предметы</h3>
+								</div>
+								<div class="head__right">
+									<div class="shadow"></div>
+
+									<div class="cover">
+										<a href="#skin" class="skinBtn btn blue_btn active"><span>Скинами</span></a>
+									</div>
+								</div>
 							</div>
 
-							<div class="top__item">
-								<div class="top__item-sparks">
-									<img src="img/top/sparks.png" alt="sparks">
-								</div>
-								<div class="top__item-wrap">
-									<div class="top__item-title">
-										<div class="top__item-avatar">
-											<div class="top__item-img">
-												<img src="img/avatar.png" alt="avatar">
-											</div>
-											<div class="top__item-name">VIzzardBoy</div>
+							<div class="profile__things-items">
+								<div class="profile__things-item type_1">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											25 Р.
+										</div>
+										<div class="things-item__title">
+											PM14
+										</div>
+										<div class="things-item__name">
+											Гроза
 										</div>
 
-										<div class="top__item-position">
-											<img src="img/top/no2.png" alt="№1">
-										</div>
-									</div>
-									<div class="top__item-cover">
-										<div class="top__item-case">
-											<a href="#">
-												<img src="img/top/case_2.png" alt="case">
-											</a>
-										</div>
-
-										<div class="top__item-product">
-											<div class="item-product__img">
-												<img src="img/top/ak.png" alt="ak">
-											</div>
-											<div class="item-product__text">
-												<div class="item-product__title gradient">
-													АК-74 / Азимов
-												</div>
-												<div class="item-product__price gradient">
-													2,500 Р.
-												</div>
-											</div>
-										</div>
+										<img src="img/profile/things/1.png" alt="img">
 									</div>
 								</div>
-								<span class="angle tl"></span>
-								<span class="angle tr"></span>
-								<span class="angle br"></span>
-							</div>
-							<div class="top__item">
-								<div class="top__item-sparks">
-									<img src="img/top/sparks.png" alt="sparks">
-								</div>
-								<div class="top__item-wrap">
-									<div class="top__item-title">
-										<div class="top__item-avatar">
-											<div class="top__item-img">
-												<img src="img/avatar.png" alt="avatar">
-											</div>
-											<div class="top__item-name">Burbon</div>
+
+								<div class="profile__things-item type_2 checked">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											74 Р.
+										</div>
+										<div class="things-item__title">
+											MP7
+										</div>
+										<div class="things-item__name">
+											Перистое облако
 										</div>
 
-										<div class="top__item-position">
-											<img src="img/top/no3.png" alt="№1">
-										</div>
-									</div>
-									<div class="top__item-cover">
-										<div class="top__item-case">
-											<a href="#">
-												<img src="img/top/case_3.png" alt="case">
-											</a>
-										</div>
-
-										<div class="top__item-product">
-											<div class="item-product__img">
-												<img src="img/top/ak.png" alt="ak">
-											</div>
-											<div class="item-product__text">
-												<div class="item-product__title gradient">
-													АК-74 / Азимов
-												</div>
-												<div class="item-product__price gradient">
-													2,500 Р.
-												</div>
-											</div>
-										</div>
+										<img src="img/profile/things/2.png" alt="img">
 									</div>
 								</div>
-								<span class="angle tl"></span>
-								<span class="angle tr"></span>
-								<span class="angle br"></span>
-							</div>
-							<div class="top__item">
-								<div class="top__item-sparks">
-									<img src="img/top/sparks.png" alt="sparks">
-								</div>
-								<div class="top__item-wrap">
-									<div class="top__item-title">
-										<div class="top__item-avatar">
-											<div class="top__item-img">
-												<img src="img/avatar.png" alt="avatar">
-											</div>
-											<div class="top__item-name">Belouha</div>
+
+								<div class="profile__things-item type_3">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											104 Р.
+										</div>
+										<div class="things-item__title">
+											PP-Bizon
+										</div>
+										<div class="things-item__name">
+											Карамельное яблоко
 										</div>
 
-										<div class="top__item-position">
-											<img src="img/top/no4.png" alt="№1">
-										</div>
+										<img src="img/profile/things/3.png" alt="img">
 									</div>
-									<div class="top__item-cover">
-										<div class="top__item-case">
-											<a href="#">
-												<img src="img/top/case_4.png" alt="case">
-											</a>
-										</div>
-
-										<div class="top__item-product">
-											<div class="item-product__img">
-												<img src="img/top/ak.png" alt="ak">
-											</div>
-											<div class="item-product__text">
-												<div class="item-product__title gradient">
-													АК-74 / Азимов
-												</div>
-												<div class="item-product__price gradient">
-													2,500 Р.
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<span class="angle tl"></span>
-								<span class="angle tr"></span>
-								<span class="angle br"></span>
+								</div>					
 							</div>
 						</div>
 
-						<div class="top__other">
-							<div class="head top__other-heading heading">
-								<div class="head__left"><div class="shadow"></div></div>
-								<div class="head__center">
-									<h3>Остальные пользователи</h3>
+						<div class="upgrade__thing upgrade">
+							<div class="head heading">
+								<div class="head__left">
+									<div class="shadow"></div>
+									<div class="cover">
+										<a href="#balance" class="balanceBtn btn blue_btn"><span>Балансом</span></a>
+									</div>
 								</div>
-								<div class="head__right"><div class="shadow"></div></div>
+								<div class="head__center">
+									<h3>Апгрейд</h3>
+								</div>
+								<div class="head__right">
+									<div class="shadow"></div>
+									<div class="filter">
+										<div class="filter__price">
+											<div class="filter__price-item">
+												<span>от</span>
+												<input type="text">
+												<span>₽</span>
+											</div>
+											<div class="filter__price-item">
+												<span>до</span>
+												<input type="text">
+												<span>₽</span>
+											</div>
+										</div>
+										<div class="filter__sort">
+											<img src="img/icon/sort.png" alt="img">
+										</div>
+									</div>
+								</div>
 							</div>
 
-							<div class="other-table__cover table__cover">
-								<table>
-									<thead>
-										<tr>
-											<td class="place">МЕСТО</td>
-											<td class="user">ПОЛЬЗОВАТЕЛЬ</td>
-											<td class="case">Кейс</td>
-											<td class="object">предметы</td>
-											<td class="price">Цена</td>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="place">5</td>
-											<td class="user">
-												<div class="top__item-avatar">
-													<div class="top__item-img">
-														<img src="img/avatar.png" alt="avatar">
-													</div>
-													<div class="top__item-name">Magicdrop.top Insomnia</div>
-												</div>
-											</td>
-											<td class="case">
-												<img src="img/top/case.png" alt="img">
-											</td>
-											<td class="object">
-												<img src="img/top/object.png" alt="img">
-												<span>StatTrak™ CZ75-Auto | Сян-лю (Закаленное в боях)</span>
-											</td>
-											<td class="price">
-												885.52Р
-											</td>
-										</tr>
-										<tr>
-											<td class="place">5</td>
-											<td class="user">
-												<div class="top__item-avatar">
-													<div class="top__item-img">
-														<img src="img/avatar.png" alt="avatar">
-													</div>
-													<div class="top__item-name">Magicdrop.top Insomnia</div>
-												</div>
-											</td>
-											<td class="case">
-												<img src="img/top/case.png" alt="img">
-											</td>
-											<td class="object">
-												<img src="img/top/object.png" alt="img">
-												<span>StatTrak™ CZ75-Auto | Сян-лю (Закаленное в боях)</span>
-											</td>
-											<td class="price">
-												885.52Р
-											</td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="profile__things-items">
+								<div class="profile__things-item type_1">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											25 Р.
+										</div>
+										<div class="things-item__title">
+											PM14
+										</div>
+										<div class="things-item__name">
+											Гроза
+										</div>
+
+										<img src="img/profile/things/1.png" alt="img">
+									</div>
+								</div>
+
+								<div class="profile__things-item type_2">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											74 Р.
+										</div>
+										<div class="things-item__title">
+											MP7
+										</div>
+										<div class="things-item__name">
+											Перистое облако
+										</div>
+
+										<img src="img/profile/things/2.png" alt="img">
+									</div>
+								</div>
+
+								<div class="profile__things-item type_3">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											104 Р.
+										</div>
+										<div class="things-item__title">
+											PP-Bizon
+										</div>
+										<div class="things-item__name">
+											Карамельное яблоко
+										</div>
+
+										<img src="img/profile/things/3.png" alt="img">
+									</div>
+								</div>
+
+								<div class="profile__things-item type_4">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											342 Р.
+										</div>
+										<div class="things-item__title">
+											MP5-SD
+										</div>
+										<div class="things-item__name">
+											Умелые ручки
+										</div>
+
+										<img src="img/profile/things/4.png" alt="img">
+									</div>
+								</div>
+
+								<div class="profile__things-item type_5">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											760 Р.
+										</div>
+										<div class="things-item__title">
+											AUG
+										</div>
+										<div class="things-item__name">
+											Скорая стая
+										</div>
+
+										<img src="img/profile/things/5.png" alt="img">
+									</div>
+								</div>
+
+								<div class="profile__things-item type_6">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											3,360 Р.
+										</div>
+										<div class="things-item__title">
+											AK-47
+										</div>
+										<div class="things-item__name">
+											Азимов
+										</div>
+
+										<img src="img/profile/things/6.png" alt="img">
+									</div>
+								</div>
+
+								<div class="profile__things-item type_7">
+									<div class="things-item__block">
+										<div class="things-item__price">
+											<i class="flaticon-coins"></i>
+											8,780 Р.
+										</div>
+										<div class="things-item__title special">
+											<i class="flaticon-star"></i>Перчатки 
+											спецназа
+										</div>
+										<div class="things-item__name">
+											Основа
+										</div>
+
+										<img src="img/profile/things/5.png" alt="img">
+									</div>
+								</div>						
 							</div>
 						</div>
 					</div>
