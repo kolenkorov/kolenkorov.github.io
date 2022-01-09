@@ -569,7 +569,8 @@ body {
 .why-us {
   padding: 70px 0 93px;
   background-image: url(../img/why-us_bg.png);
-  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 }
 
 .why-us .heading {
@@ -787,8 +788,7 @@ body {
   }
 
   .why-us {
-    background-size: cover;
-    background-position: 50% 26%;
+    background-size: 100%;
   }
 
   .why-us__items {
