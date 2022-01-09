@@ -63,7 +63,7 @@ window.addEventListener('load', function(){
 	});
 
 	//Video
-	let src = ['/video/step_1.mp4', '/video/step_2.mp4', '/video/step_3.mp4', '/video/step_4.mp4']
+	let src = ['video/step_1.mp4', 'video/step_2.mp4', 'video/step_3.mp4', 'video/step_4.mp4']
 	let section = document.querySelector('.server')
 	let video = document.querySelector('.server__video video')
 	let videoLink = document.querySelectorAll('.server__item')
