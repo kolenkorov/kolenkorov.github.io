@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>CS-16.host</title>
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__logo">
+				<img src="img/logo.png" alt="img">
+			</div>
+			<div class="header__nav">
+				<div class="header__nav-item">
+					<a href="#main" class="header__nav-link active">Главная</a>
+				</div>
+				<div class="header__nav-item">
+					<a href="#server" class="header__nav-link">Создать сервер</a>
+				</div>
+				<div class="header__nav-item">
+					<a href="#whyus" class="header__nav-link">Почему мы?</a>
+				</div>
+				<div class="header__nav-item">
+					<a href="#contacts" class="header__nav-link">Контакты</a>
+				</div>
+
+				<div class="header__button button">
+					<a href="#" class="login">Авторизация</a>
+				</div>
+			</div>
+			<div class="header__button button">
+				<a href="#" class="login">Авторизация</a>
+			</div>
+
+			<div class="header__burger">
+				<span></span>
+			</div>
+		</div>
+	</header>
+
+	<main class="main section" id="main">
+		<div class="wrapper">
+			<div class="main__block">
+				<div class="main__text heading">
+					<h2>
+						<span>Ваш любимый хостинг</span>
+						Counter-Strike 1.6 серверов
+					</h2>
+				</div>
+
+				<div class="main__sub">
+					<img src="img/smile.png" alt="img"> Ещё нет? Самое время попробовать
+				</div>
+
+				<div class="main__button button">
+					<a href="#">Создать сервер</a>
+					<a href="#">Изучить цены</a>
+				</div>
+			</div>
+			<div class="main__img">
+				<img src="img/main_img.png" alt="img">
+			</div>
+		</div>
+	</main>
+
+	<section class="server" id="server">
+		<div class="wrapper">
+			<div class="server__block">
+				<div class="server__video">
+					<img src="img/gif.png" alt="img">
+					<video muted="muted" src="video/step_1.mp4"></video>
+				</div>
+				<div class="server__cover">
+					<div class="server__heading heading">
+						<h2><span>Создай свой сервер</span> за 4 простых шага</h2>
+					</div>
+					<div class="server__items">
+						<div class="server__item active">
+							<div class="server__item-icon">
+								<img src="img/icon_1.png" alt="img">
+							</div>
+							<div class="server__item-text">Регистрация</div>
+						</div>
+						<div class="server__item">
+							<div class="server__item-icon">
+								<img src="img/icon_2.png" alt="img">
+							</div>
+							<div class="server__item-text">Покупка</div>
+						</div>
+						<div class="server__item">
+							<div class="server__item-icon">
+								<img src="img/icon_3.png" alt="img">
+							</div>
+							<div class="server__item-text">Настройка</div>
+						</div>
+						<div class="server__item">
+							<div class="server__item-icon">
+								<img src="img/icon_4.png" alt="img">
+							</div>
+							<div class="server__item-text">Запуск</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="why-us" id="whyus">
+		<div class="wrapper">
+			<div class="heading">
+				<h2>Почему именно мы?</h2>
+			</div>
+
+			<div class="why-us__items">
+				<div class="why-us__item active" data-link="0">
+					<object type="image/svg+xml" data="img/why-us_1.svg" width="56" height="56"></object>
+				</div>
+				<div class="why-us__item" data-link="1">
+					<object type="image/svg+xml" data="img/why-us_2.svg" width="42" height="42"></object>
+				</div>
+				<div class="why-us__item" data-link="2">
+					<object type="image/svg+xml" data="img/why-us_3.svg" width="42" height="42"></object>
+				</div>
+				<div class="why-us__item" data-link="3">
+					<object type="image/svg+xml" data="img/why-us_4.svg" width="42" height="42"></object>
+				</div>
+				<div class="why-us__item" data-link="4">
+					<object type="image/svg+xml" data="img/why-us_5.svg" width="36" height="36"></object>
+				</div>
+				<div class="why-us__item" data-link="5">
+					<object type="image/svg+xml" data="img/why-us_6.svg" width="42" height="42"></object>
+				</div>
+				<div class="why-us__item" data-link="6">
+					<object type="image/svg+xml" data="img/why-us_7.svg" width="42" height="42"></object>
+				</div>
+			</div>
+			
+			<div class="why-us__slides">
+				<div class="why-us__slide active" data-tab="0">
+					<div class="slide__title">
+						Удобная панель управления
+					</div>
+					<div class="slide__desc">
+						Описание удобной панели управления, которое позже придумает владелец сайта
+					</div>
+					<div class="slide__button button">
+						<a href="#">Создать сервер</a>
+					</div>
+				</div>
+				<div class="why-us__slide" data-tab="1">
+					<div class="slide__title">
+						Удобная панель управления 2
+					</div>
+					<div class="slide__desc">
+						Описание удобной панели управления, которое позже придумает владелец сайта
+					</div>
+					<div class="slide__button button">
+						<a href="#">Создать сервер</a>
+					</div>
+				</div>
+				<div class="why-us__slide" data-tab="2">
+					<div class="slide__title">
+						Удобная панель управления 3
+					</div>
+					<div class="slide__desc">
+						Описание удобной панели управления, которое позже придумает владелец сайта
+					</div>
+					<div class="slide__button button">
+						<a href="#">Создать сервер</a>
+					</div>
+				</div>
+				<div class="why-us__slide" data-tab="3">
+					<div class="slide__title">
+						Удобная панель управления 4
+					</div>
+					<div class="slide__desc">
+						Описание удобной панели управления, которое позже придумает владелец сайта
+					</div>
+					<div class="slide__button button">
+						<a href="#">Создать сервер</a>
+					</div>
+				</div>
+				<div class="why-us__slide" data-tab="4">
+					<div class="slide__title">
+						Удобная панель управления 5
+					</div>
+					<div class="slide__desc">
+						Описание удобной панели управления, которое позже придумает владелец сайта
+					</div>
+					<div class="slide__button button">
+						<a href="#">Создать сервер</a>
+					</div>
+				</div>
+				<div class="why-us__slide" data-tab="5">
+					<div class="slide__title">
+						Удобная панель управления 6
+					</div>
+					<div class="slide__desc">
+						Описание удобной панели управления, которое позже придумает владелец сайта
+					</div>
+					<div class="slide__button button">
+						<a href="#">Создать сервер</a>
+					</div>
+				</div>
+				<div class="why-us__slide" data-tab="6">
+					<div class="slide__title">
+						Удобная панель управления 7
+					</div>
+					<div class="slide__desc">
+						Описание удобной панели управления, которое позже придумает владелец сайта
+					</div>
+					<div class="slide__button button">
+						<a href="#">Создать сервер</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="create">
+		<div class="wrapper">
+			<div class="create__heading heading">
+				<h2>
+					<span>Настало время перейти</span>
+					к созданию сервера 
+				</h2>
+			</div>
+
+			<div class="create__button button">
+				<a href="#">Создать сервер</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" id="contacts">
+		<div class="wrapper">
+			<div class="footer__logo">
+				<img src="img/logo_footer.png" alt="img">
+				<div class="footer__logo-sub">
+					Хостинг игровых серверов
+					<span>Counter-Strike 1.6</span>
+				</div>
+			</div>
+			<div class="footer__nav">
+				<div class="footer__nav-items">
+					<div class="footer__nav-item active">
+						<a href="#main" class="footer__nav-link">Главная</a>
+					</div>
+					<div class="footer__nav-item active">
+						<a href="#whyus" class="footer__nav-link">Почему мы?</a>
+					</div>
+					<div class="footer__nav-item active">
+						<a href="#server" class="footer__nav-link">Создать сервер</a>
+					</div>
+					<div class="footer__nav-item active">
+						<a href="#">Авторизация</a>
+					</div>
+				</div>
+				<div class="footer__nav-items">
+					<div class="footer__nav-item">
+						<a href="https://vk.com" target="_blank">Группа вконтакте</a>
+					</div>
+					<div class="footer__nav-item">
+						<a href="#contacts" class="footer__nav-link">Контакты</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- lib -->
+	<script src="js/main.js"></script>  
+</body>
+</html>
