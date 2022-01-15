@@ -224,12 +224,7 @@ body {
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  display: none;
 }
 
 .header__nav {
@@ -962,6 +957,15 @@ body {
 
   .header {
     padding: 8px 0;
+  }
+
+  .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .header__nav {
