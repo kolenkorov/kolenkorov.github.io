@@ -389,6 +389,9 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
+  -webkit-transform: rotateY(180deg) rotate(17deg);
+  transform: rotateY(180deg) rotate(17deg);
+  max-width: 125px;
 }
 
 .label span {
@@ -841,7 +844,7 @@ body {
 }
 
 .create__label span {
-  margin-left: -14px;
+  margin-left: -20px;
   padding: 0 20px;
 }
 
