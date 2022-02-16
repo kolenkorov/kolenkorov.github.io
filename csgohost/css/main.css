@@ -166,6 +166,35 @@ a {
   text-decoration: none;
 }
 
+html {
+  position: relative;
+}
+
+html:before,
+html:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+html:before {
+  background-image: url(../img/bullets_1.png);
+  left: 0;
+  width: 40%;
+}
+
+html:after {
+  background-image: url(../img/bullets_2.png);
+  background-position: right;
+  right: 0;
+  width: 25%;
+}
+
 body {
   font-family: "UniSans";
   position: relative;
