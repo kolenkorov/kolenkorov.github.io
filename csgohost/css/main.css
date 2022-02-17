@@ -829,6 +829,7 @@ body:before {
 .tariff .section__cover {
   background-image: url(../img/tariff_bg.png);
   background-size: cover;
+  background-position: 10px 0;
   padding: 60px 0 38px 0;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 94%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 94%);
@@ -1250,6 +1251,10 @@ body:before {
     background-color: #0A0E17;
   }
 
+  .header__logo {
+    max-width: 30%;
+  }
+
   .header__nav {
     display: none;
     -webkit-box-orient: vertical;
@@ -1439,6 +1444,10 @@ body:before {
     padding-right: 23px;
   }
 
+  .header__logo {
+    max-width: 40%;
+  }
+
   .main__img {
     display: none;
   }
@@ -1538,6 +1547,10 @@ body:before {
 
   .main__button .line {
     display: none;
+  }
+
+  .tariff__img {
+    bottom: 84%;
   }
 
   .tariff .section__cover {
