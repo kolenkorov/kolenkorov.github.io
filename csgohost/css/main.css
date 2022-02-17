@@ -559,6 +559,8 @@ body:before {
   transform: skew(0);
   background: none;
   text-transform: none;
+  padding: 0;
+  width: auto;
 }
 
 .main__button-text a:hover {
@@ -1450,6 +1452,10 @@ body:before {
     max-width: 350px;
   }
 
+  .main__button-text a {
+    margin-left: 30px;
+  }
+
   .server__heading h2 span {
     font-size: 22px;
     margin-bottom: -12px;
@@ -1528,6 +1534,10 @@ body:before {
 @media screen and (max-width: 480px) {
   .heading h2 {
     font-size: 21px;
+  }
+
+  .main__button .line {
+    display: none;
   }
 
   .tariff .section__cover {
