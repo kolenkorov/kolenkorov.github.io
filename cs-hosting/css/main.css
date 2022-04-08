@@ -757,6 +757,7 @@ body {
 
 .server__cover {
   width: calc(25% - 30px);
+  min-width: 250px;
 }
 
 .server__item {
@@ -771,10 +772,6 @@ body {
   -webkit-transition: 0.25s ease all;
   -o-transition: 0.25s ease all;
   transition: 0.25s ease all;
-}
-
-.server__item:first-child {
-  margin-left: 0 !important;
 }
 
 .server__item + .server__item {
@@ -1582,6 +1579,10 @@ body {
     justify-content: center;
     margin-left: 0;
     margin-top: 20px;
+  }
+
+  .server__item:first-child {
+    margin-left: 0 !important;
   }
 
   .server__item + .server__item {
