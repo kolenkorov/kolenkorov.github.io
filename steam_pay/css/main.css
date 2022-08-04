@@ -182,9 +182,9 @@ body:before {
 body:after {
   bottom: 0;
   right: 0;
-  -webkit-transform: translate(50%, 50%);
-  -ms-transform: translate(50%, 50%);
-  transform: translate(50%, 50%);
+  width: 28vw;
+  height: 28vw;
+  border-radius: 0;
 }
 
 .wrapper {
