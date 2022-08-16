@@ -4230,7 +4230,7 @@ body {
 }
 
 .profile__contract-result {
-  width: calc(25% - 30px);
+  width: calc(16.666666666666668% - 30px);
   max-width: 243px;
   margin-right: 6.5%;
   min-width: 170px;
@@ -4254,8 +4254,7 @@ body {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  width: calc(75% - 30px);
-  max-width: 815px;
+  width: calc(54.16666666666667% - 30px);
 }
 
 .profile__contract-item {
@@ -4518,6 +4517,10 @@ body {
 
 .profile__craft-items .profile__contract-item:after {
   display: none;
+}
+
+.profile__craft .contract-result__info .title {
+  max-width: 158px;
 }
 
 .profile__craft-icon {
@@ -9945,6 +9948,10 @@ body {
     margin-right: 5px;
     width: calc(14.28% - 10px);
     padding-left: 10px;
+  }
+
+  .profile__contract-items {
+    width: calc(66.66666666666667% - 30px);
   }
 
   .profile__craft-column {
