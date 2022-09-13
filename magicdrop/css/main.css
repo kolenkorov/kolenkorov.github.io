@@ -601,6 +601,58 @@ body {
 
 /* General end */
 
+/* Animate */
+
+@-webkit-keyframes rays {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rays {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes upgrade {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(1230deg);
+    transform: rotate(1230deg);
+  }
+}
+
+@keyframes upgrade {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(1230deg);
+    transform: rotate(1230deg);
+  }
+}
+
+/* Animate end */
+
 .header__live {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,6 +880,7 @@ body {
   -webkit-transition: 0.25s ease all;
   -o-transition: 0.25s ease all;
   transition: 0.25s ease all;
+  white-space: nowrap;
 }
 
 .header__live-item .live-item__user {
@@ -1997,9 +2050,13 @@ body {
 
 .aside {
   width: 222px;
+  height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-right: 1px solid rgba(35, 43, 54, 0.5);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .aside__user {
@@ -3474,6 +3531,42 @@ body {
   flex-direction: column;
 }
 
+.profile__item.drop .drop__img img {
+  position: relative;
+  z-index: 4;
+}
+
+.profile__item.drop .drop__img:before {
+  position: absolute;
+  content: "";
+  width: 85%;
+  padding-bottom: 85%;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url(../img/contract/rays.png);
+  background-size: cover;
+  z-index: 2;
+}
+
+.profile__item.drop .drop__img:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 1px;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 40px 55px rgba(186, 121, 202, 0.8);
+  box-shadow: 0px 0px 40px 55px rgba(186, 121, 202, 0.8);
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .profile__item.stats {
   width: calc(14.1% - 6px);
 }
@@ -4101,6 +4194,10 @@ body {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: 0.25s ease all;
+  -o-transition: 0.25s ease all;
+  transition: 0.25s ease all;
 }
 
 .profile__things-item .things-item__status.output {
@@ -4110,6 +4207,11 @@ body {
 .profile__things-item .things-item__status.output i {
   margin-right: 0;
   margin-left: 7px;
+}
+
+.profile__things-item .things-item__status.output:hover {
+  color: #ffd52e;
+  text-shadow: 0 0 0;
 }
 
 .profile__things-item .things-item__status.repeat {
@@ -5977,7 +6079,7 @@ body {
   z-index: -1;
   background-image: url(../img/case/case_bg.png);
   background-position: top;
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .case__quantity {
@@ -6049,33 +6151,8 @@ body {
 
 .case__open-case {
   text-align: center;
-  margin: 0 -10px;
-}
-
-.case .roll__cover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.case .roll__cover.x2 .case__roll {
-  width: calc(50% - 30px);
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-.case .roll__cover.x3 .case__roll,
-.case .roll__cover.x4 .case__roll,
-.case .roll__cover.x5 .case__roll,
-.case .roll__cover.x10 .case__roll {
-  width: calc(33% - 30px);
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 15px;
+  max-width: 210px;
 }
 
 .case__roll {
@@ -6337,6 +6414,8 @@ body {
   background-image: url(../img/contract/rays.png);
   background-size: cover;
   z-index: 2;
+  -webkit-animation: rays 6s linear infinite;
+  animation: rays 6s linear infinite;
 }
 
 .case .win__img-cover:after {
@@ -8127,10 +8206,6 @@ body {
   margin: 0 auto;
 }
 
-.upgrade .contract__item.center.probability {
-  background-image: url(../img/upgrade/arrow.png);
-}
-
 .upgrade .contract__item.center.probability .contract__item-offset {
   position: relative;
 }
@@ -8160,6 +8235,24 @@ body {
   color: #bdc1ff;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
   max-width: 100px;
+}
+
+.upgrade .contract__item.center.probability:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/upgrade/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 5% 15%;
+  display: block !important;
+  z-index: 5;
+  -webkit-animation: upgrade 6s ease-in-out;
+  animation: upgrade 6s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .upgrade .contract__item-info {
@@ -9446,10 +9539,6 @@ body {
   background-color: #141921;
   -webkit-box-shadow: 0px -60px 20px 3px rgba(20, 25, 33, 0.99);
   box-shadow: 0px -60px 20px 3px rgba(20, 25, 33, 0.99);
-  position: fixed;
-  z-index: 9;
-  right: 0;
-  bottom: 0;
 }
 
 .footer__logo {
@@ -10193,13 +10282,6 @@ body {
     display: block;
   }
 
-  .case .roll__cover.x3 .case__roll,
-  .case .roll__cover.x4 .case__roll,
-  .case .roll__cover.x5 .case__roll,
-  .case .roll__cover.x10 .case__roll {
-    width: calc(50% - 30px);
-  }
-
   .case .win__item {
     -ms-flex-preferred-size: calc(50% - 30px);
     flex-basis: calc(50% - 30px);
@@ -10479,17 +10561,6 @@ body {
   .profile__craft-icon:before,
   .profile__craft-icon:after {
     width: 4vw;
-  }
-
-  .case .roll__cover.x2 .case__roll {
-    width: calc(100% - 30px);
-  }
-
-  .case .roll__cover.x3 .case__roll,
-  .case .roll__cover.x4 .case__roll,
-  .case .roll__cover.x5 .case__roll,
-  .case .roll__cover.x10 .case__roll {
-    width: calc(100% - 30px);
   }
 
   .case .win__item {
@@ -12030,10 +12101,6 @@ body {
 
   .crash__popup {
     padding-top: 36px;
-  }
-
-  .footer {
-    position: static;
   }
 }
 
