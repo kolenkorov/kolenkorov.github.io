@@ -8059,6 +8059,10 @@ body {
   max-width: 105px;
 }
 
+.upgrade .contract__item.center.success:before {
+  display: block !important;
+}
+
 .upgrade .contract__item.center.success .contract__item-cover {
   border-color: #b7e500;
 }
