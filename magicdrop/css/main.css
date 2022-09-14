@@ -6405,8 +6405,8 @@ body {
 .case .win__img-cover:before {
   position: absolute;
   content: "";
-  width: 80%;
-  padding-bottom: 80%;
+  width: 100%;
+  padding-bottom: 100%;
   top: 47%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
