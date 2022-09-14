@@ -6429,8 +6429,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-box-shadow: 0px 0px 40px 100px rgba(186, 121, 202, 0.8);
-  box-shadow: 0px 0px 40px 100px rgba(186, 121, 202, 0.8);
+  -webkit-box-shadow: 0px 0px 40px 120px rgba(186, 121, 202, 0.8);
+  box-shadow: 0px 0px 40px 120px rgba(186, 121, 202, 0.8);
   border-radius: 50%;
   z-index: 1;
 }
