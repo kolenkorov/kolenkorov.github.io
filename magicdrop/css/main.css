@@ -5820,6 +5820,7 @@ body {
   background-size: 100%;
   margin-bottom: 48px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .contract__item:before,
@@ -8183,6 +8184,17 @@ body {
   margin-top: 5px;
 }
 
+.upgrade .contract__item.center.chance .contract__item-offset {
+  background-image: url(../img/upgrade/dashed.png);
+  background-position: center;
+  background-size: 80.1%;
+  background-repeat: no-repeat;
+}
+
+.upgrade .contract__item.center.chance .contract__item-cover {
+  border: none;
+}
+
 .upgrade .contract__item.center.chance .contract__item-info {
   padding-bottom: 35px;
 }
@@ -8210,23 +8222,25 @@ body {
   margin: 0 auto;
 }
 
-.upgrade .contract__item.center.probability .contract__item-offset {
-  position: relative;
-}
-
-.upgrade .contract__item.center.probability .contract__item-offset:after {
+.upgrade .contract__item.center.chance:after {
   position: absolute;
   content: "";
-  width: 80.1%;
-  height: 80.1%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/upgrade/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 5% 15%;
+  display: block !important;
+}
+
+.upgrade .contract__item.center.probability .contract__item-offset {
+  position: relative;
   background-image: url(../img/upgrade/dashed.png);
   background-position: center;
-  background-size: 100%;
+  background-size: 80.1%;
+  background-repeat: no-repeat;
 }
 
 .upgrade .contract__item.center.probability .contract__item-cover {
@@ -8252,7 +8266,6 @@ body {
   background-repeat: no-repeat;
   background-position: 5% 15%;
   display: block !important;
-  z-index: 5;
   -webkit-animation: upgrade 6s ease-in-out;
   animation: upgrade 6s ease-in-out;
   -webkit-animation-fill-mode: forwards;
