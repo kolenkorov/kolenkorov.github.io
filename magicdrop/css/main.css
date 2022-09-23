@@ -605,25 +605,25 @@ body {
 
 @-webkit-keyframes rays {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0);
-    transform: translate(-50%, -50%) rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
 
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-    transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rays {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0);
-    transform: translate(-50%, -50%) rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
 
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-    transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -6395,6 +6395,15 @@ body {
 
 .case .win__img-cover {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .case .win__img-cover img {
@@ -6407,11 +6416,6 @@ body {
   content: "";
   width: 100%;
   padding-bottom: 100%;
-  top: 47%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   background-image: url(../img/contract/rays.png);
   background-size: cover;
   z-index: 2;
