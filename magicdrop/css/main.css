@@ -7995,7 +7995,11 @@ body {
 }
 
 .upgrade .contract__item.center {
-  width: calc(38.15% - 80px);
+  width: 313px;
+}
+
+.upgrade .contract__item.center:before {
+  display: block !important;
 }
 
 .upgrade .contract__item.center .contract__item-cover {
@@ -8189,7 +8193,6 @@ body {
 }
 
 .upgrade .contract__item.center.chance .contract__item-offset {
-  background-image: url(../img/upgrade/dashed.png);
   background-position: center;
   background-size: 80.1%;
   background-repeat: no-repeat;
@@ -8241,7 +8244,6 @@ body {
 
 .upgrade .contract__item.center.probability .contract__item-offset {
   position: relative;
-  background-image: url(../img/upgrade/dashed.png);
   background-position: center;
   background-size: 80.1%;
   background-repeat: no-repeat;
@@ -8274,6 +8276,47 @@ body {
   animation: upgrade 6s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.upgrade .contract__item.center #svg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.upgrade .contract__item.center #svg circle {
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset 1s linear;
+  -o-transition: stroke-dashoffset 1s linear;
+  transition: stroke-dashoffset 1s linear;
+  stroke: #fb0003;
+  stroke-width: 5px;
+  stroke-dasharray: 753.8;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+}
+
+.upgrade .contract__item.center #svg #bar {
+  stroke: #79e301;
+}
+
+.upgrade .contract__item.center #cont {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+  -ms-transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .upgrade .contract__item-info {
@@ -10368,6 +10411,15 @@ body {
     padding-bottom: 45px;
   }
 
+  .upgrade .contract__item:before {
+    width: 56px;
+  }
+
+  .upgrade .contract__item.center {
+    width: 280px;
+    margin: 0;
+  }
+
   .upgrade .contract__item.center .contract__item-info .item-info__title {
     font-size: 30px;
   }
@@ -10414,6 +10466,12 @@ body {
 
   .upgrade .contract__item.center.chance .contract__item-info .item-info__button a {
     max-width: 150px;
+  }
+
+  .upgrade .contract__item.center #svg {
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+    -ms-transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
   }
 
   .upgrade__nav {
@@ -10653,11 +10711,7 @@ body {
   }
 
   .upgrade .contract__item:before {
-    width: 57px;
-  }
-
-  .upgrade .contract__item.center {
-    width: calc(38.15% - 40px);
+    width: 38px;
   }
 
   .footer {
@@ -11246,11 +11300,11 @@ body {
   }
 
   .upgrade .contract__item:before {
-    width: 35px;
+    width: 27px;
   }
 
   .upgrade .contract__item.center {
-    width: calc(38.15% - 20px);
+    width: 260px;
   }
 
   .upgrade .contract__item.center .contract__item-info .item-info__title {
@@ -11264,6 +11318,12 @@ body {
   .upgrade .contract__item.center.chance .contract__item-info .item-info__button a {
     max-width: 130px;
     height: 42px;
+  }
+
+  .upgrade .contract__item.center #svg {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+    -ms-transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
   }
 
   .upgrade__sub {
@@ -11376,6 +11436,18 @@ body {
 
   .footer__social {
     margin: 0 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .upgrade .contract__item.center {
+    width: 215px;
+  }
+
+  .upgrade .contract__item.center #svg {
+    -webkit-transform: translate(-50%, -50%) scale(0.65);
+    -ms-transform: translate(-50%, -50%) scale(0.65);
+    transform: translate(-50%, -50%) scale(0.65);
   }
 }
 
@@ -12060,6 +12132,7 @@ body {
 
   .upgrade .contract__item {
     width: calc(60% - 20px);
+    width: 280px;
     margin-bottom: 30px;
   }
 
@@ -12072,8 +12145,19 @@ body {
   }
 
   .upgrade .contract__item.center {
-    width: calc(70% - 20px);
+    width: 280px;
     margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .upgrade .contract__item.center:before {
+    display: none !important;
+  }
+
+  .upgrade .contract__item.center #svg {
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+    -ms-transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
   }
 
   .upgrade__nav-choice {
@@ -12828,14 +12912,6 @@ body {
 
   .chat__item-text {
     font-size: 12px;
-  }
-
-  .upgrade .contract__item {
-    width: calc(70% - 20px);
-  }
-
-  .upgrade .contract__item.center {
-    width: calc(80% - 20px);
   }
 
   .upgrade__sub {
