@@ -1506,6 +1506,20 @@ body {
     display: none;
   }
 
+  .header__button a {
+    width: 180px;
+  }
+
+  .header__button a span {
+    display: block;
+  }
+
+  .header__button a svg {
+    position: absolute;
+    margin: 0;
+    left: 20px;
+  }
+
   .header__burger {
     display: -webkit-box;
     display: -ms-flexbox;
