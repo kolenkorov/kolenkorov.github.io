@@ -259,8 +259,20 @@ body {
   transition: 0.25s ease all;
 }
 
+.button a span {
+  position: relative;
+  z-index: 2;
+}
+
 .button a svg {
   margin-right: 10px;
+  z-index: 1;
+}
+
+.button a svg.arrow {
+  margin-right: 0;
+  position: absolute;
+  right: 28px;
 }
 
 .header {
@@ -514,6 +526,22 @@ body {
   font-size: 75px;
   line-height: 123.8%;
   text-align: center;
+  position: relative;
+}
+
+.main__text h1:before {
+  position: absolute;
+  content: "";
+  width: 55%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 90px 70px rgba(7, 11, 25, 0.9);
+  box-shadow: 0px 0px 90px 70px rgba(7, 11, 25, 0.9);
+  border-radius: 100%;
+  z-index: -1;
 }
 
 .main__text h1 .blue {
@@ -527,6 +555,24 @@ body {
 .main__button {
   margin-top: 27px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.main__button:before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  -webkit-box-shadow: 0 0 90px 48px rgba(7, 11, 25, 0.9);
+  box-shadow: 0 0 90px 48px rgba(7, 11, 25, 0.9);
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 10px);
+  -ms-transform: translate(-50%, 10px);
+  transform: translate(-50%, 10px);
+}
+
+.main__button + .main__button:before {
+  display: none;
 }
 
 .main__button a {
@@ -597,6 +643,7 @@ body {
 .main .bullet {
   top: 36.5%;
   left: 27.5%;
+  z-index: 3;
 }
 
 .main .he {
@@ -992,7 +1039,7 @@ body {
 
 .footer {
   text-align: center;
-  padding: 268px 0 40px;
+  padding: 150px 0 40px;
   position: relative;
   overflow: hidden;
 }
@@ -1218,6 +1265,10 @@ body {
     width: 232px;
     height: 67px;
     font-size: 18px;
+  }
+
+  .button a svg.arrow {
+    right: 15px;
   }
 
   .header__nav-item + .header__nav-item {
@@ -1523,7 +1574,7 @@ body {
   }
 
   .footer {
-    padding-top: 200px;
+    padding-top: 120px;
   }
 
   .footer__links a {
@@ -1553,7 +1604,12 @@ body {
     border-bottom-width: 3px;
     width: 200px;
     height: 60px;
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .button a svg.arrow {
+    right: 10px;
+    width: 7px;
   }
 
   .main__text h1 {
@@ -1614,7 +1670,7 @@ body {
   }
 
   .footer {
-    padding-top: 160px;
+    padding-top: 100px;
   }
 
   .footer__links a {
