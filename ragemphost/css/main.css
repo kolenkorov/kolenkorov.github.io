@@ -175,6 +175,15 @@ a {
     transform: translateX(-220px);
   }
 
+  2% {
+    opacity: 1;
+  }
+
+  20% {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+
   100% {
     -webkit-transform: translateX(40px);
     transform: translateX(40px);
@@ -185,6 +194,15 @@ a {
   0% {
     -webkit-transform: translateX(-220px);
     transform: translateX(-220px);
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  20% {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
   }
 
   100% {
@@ -199,6 +217,11 @@ a {
     transform: translateX(-220px);
   }
 
+  20% {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+  }
+
   100% {
     -webkit-transform: translateX(150px);
     transform: translateX(150px);
@@ -209,6 +232,11 @@ a {
   0% {
     -webkit-transform: translateX(-220px);
     transform: translateX(-220px);
+  }
+
+  20% {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
   }
 
   100% {
@@ -223,6 +251,11 @@ a {
     transform: translateX(-180px);
   }
 
+  20% {
+    -webkit-transform: translateX(260px);
+    transform: translateX(260px);
+  }
+
   100% {
     -webkit-transform: translateX(260px);
     transform: translateX(260px);
@@ -233,6 +266,11 @@ a {
   0% {
     -webkit-transform: translateX(-180px);
     transform: translateX(-180px);
+  }
+
+  20% {
+    -webkit-transform: translateX(260px);
+    transform: translateX(260px);
   }
 
   100% {
@@ -247,9 +285,14 @@ a {
     transform: translateX(-20px);
   }
 
+  40% {
+    -webkit-transform: translate(780px, -120px);
+    transform: translate(780px, -120px);
+  }
+
   100% {
-    -webkit-transform: translate(210px, -50px);
-    transform: translate(210px, -50px);
+    -webkit-transform: translate(780px, -120px);
+    transform: translate(780px, -120px);
   }
 }
 
@@ -259,9 +302,14 @@ a {
     transform: translateX(-20px);
   }
 
+  40% {
+    -webkit-transform: translate(780px, -120px);
+    transform: translate(780px, -120px);
+  }
+
   100% {
-    -webkit-transform: translate(210px, -50px);
-    transform: translate(210px, -50px);
+    -webkit-transform: translate(780px, -120px);
+    transform: translate(780px, -120px);
   }
 }
 
@@ -1268,38 +1316,49 @@ body {
   animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .price__road .cars.animation .car_1 {
   -webkit-animation-name: car_1;
   animation-name: car_1;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
 }
 
 .price__road .cars.animation .car_2 {
   -webkit-animation-name: car_2;
   animation-name: car_2;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
 }
 
 .price__road .cars.animation .car_3 {
   -webkit-animation-name: car_3;
   animation-name: car_3;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
 }
 
 .price__road .cars.animation .car_4 {
   -webkit-animation-name: plane;
   animation-name: plane;
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
 }
 
 .price__road .cars .car_1 {
   -webkit-transform: translateX(-220px);
   -ms-transform: translateX(-220px);
   transform: translateX(-220px);
+  opacity: 0;
 }
 
 .price__road .cars .car_2 {
