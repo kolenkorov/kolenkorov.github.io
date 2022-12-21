@@ -2829,7 +2829,7 @@ body {
   }
 
   .about {
-    padding-bottom: 180px;
+    padding-bottom: 200px;
   }
 
   .about__item {
@@ -2842,10 +2842,20 @@ body {
     flex-wrap: wrap;
   }
 
+  .about__img {
+    bottom: 0;
+    max-width: 45%;
+  }
+
   .mods {
     margin-top: -270px;
     background-size: cover;
     background-position: 54% -68px;
+  }
+
+  .mods__progress:before,
+  .mods__progress:after {
+    display: none;
   }
 
   .mods__progress {
