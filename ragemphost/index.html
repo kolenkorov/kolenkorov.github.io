@@ -57,7 +57,13 @@
 						Настало время создать <br>
 						<b>свой rage mp сервер</b>
 
-						<div>с режимом <span class="bg">DEATHMATCH</span></div>
+						<div>с режимом <div class="bg">
+							<span class="active">ROLEPLAY</span>
+							<span>DEATHMATCH</span>
+							<span>DRIFT</span>
+							<span>RPG</span>
+							<span>GANGWAR</span>
+						</div></div>
 					</h2>
 				</div>
 				
@@ -531,10 +537,19 @@
 			}
 		});
 
-		$('.progress-item__info .button').on('click', function(e){
+		let p_btn = $('.progress-item__info .button');
+
+		p_btn.on('click', function(e){
 			e.preventDefault();
 
 			$(this).parent().parent().removeClass('active').next().addClass('active').find('.progress-item__checkbox').addClass('active');
+		});
+
+		p_btn.eq(0).on('click', function() {
+			$('.mods__progress').addClass('_66');
+		});
+		p_btn.eq(1).on('click', function() {
+			$('.mods__progress').addClass('_100');
 		});
 
 		function is_fully_shown(target) {  
@@ -560,6 +575,21 @@
 			});
 		});
 
+		let modes = $('.main__text .bg span');
+		i = 0;
+
+		console.log(modes.length);
+
+		setInterval(function() {
+			modes[i].classList.remove('active');
+			i++;
+
+			if(i >= modes.length){
+				i = 0;
+			}
+
+			modes[i].classList.add('active');
+		}, 1500);
 
 		$('.footer__links a').on('click', function(e){
 			e.preventDefault();

@@ -658,11 +658,21 @@ body {
   font-weight: 900;
 }
 
-.main__text h2 > div span {
+.main__text h2 > div .bg {
+  display: inline-block;
   padding: 8px 27px 8px 24px;
   background-image: url(../img/btn_1.png);
   background-color: #FF004D;
   margin-left: 19px;
+  text-align: center;
+}
+
+.main__text h2 > div .bg span {
+  display: none;
+}
+
+.main__text h2 > div .bg span.active {
+  display: inline-block;
 }
 
 .main__button {
@@ -1025,7 +1035,40 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 117px;
+  max-width: 560px;
+  margin: 117px auto 0;
+  position: relative;
+}
+
+.mods__progress:before,
+.mods__progress:after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 425px;
+  top: 59px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #c780ff;
+  z-index: -2;
+}
+
+.mods__progress:after {
+  background-color: #fff;
+  width: 112px;
+  left: 60px;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+
+.mods__progress._66:after {
+  width: 325px;
+}
+
+.mods__progress._100:after {
+  width: 440px;
 }
 
 .mods__progress-item {
@@ -1038,47 +1081,12 @@ body {
 }
 
 .mods__progress-item.active .progress-item__info {
-  display: block;
-}
-
-.mods__progress-item:nth-child(1) .progress-item__checkbox.active:after {
-  width: 110px;
+  visibility: visible;
+  opacity: 1;
 }
 
 .mods__progress-item:nth-child(2) {
   margin: 0 88px;
-}
-
-.mods__progress-item:nth-child(2) .progress-item__checkbox {
-  position: relative;
-}
-
-.mods__progress-item:nth-child(2) .progress-item__checkbox:before {
-  position: absolute;
-  content: "";
-  height: 5px;
-  width: 425px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #c780ff;
-  z-index: -2;
-}
-
-.mods__progress-item:nth-child(2) .progress-item__checkbox.active:after {
-  width: 215px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.mods__progress-item:nth-child(3) .progress-item__checkbox.active:after {
-  width: 116px;
-  right: 0;
-  left: auto;
 }
 
 .mods__progress-item .progress-item__step {
@@ -1089,6 +1097,9 @@ body {
   text-transform: uppercase;
   color: #fff;
   opacity: 0.5;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
 }
 
 .mods__progress-item .progress-item__checkbox {
@@ -1099,6 +1110,9 @@ body {
   background-position: center;
   margin: 8px auto 0;
   position: relative;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
 }
 
 .mods__progress-item .progress-item__checkbox.active {
@@ -1125,7 +1139,11 @@ body {
   max-width: 128px;
   letter-spacing: -0.07em;
   margin-top: 24px;
-  display: none;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .mods__progress-item .progress-item__info .title {
@@ -2110,7 +2128,6 @@ body {
 }
 
 .tariff .price__items input:checked + label {
-  border-color: #53D624;
   -webkit-box-shadow: 0px 53px 107px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 53px 107px rgba(0, 0, 0, 0.35);
 }
@@ -2123,6 +2140,18 @@ body {
 
 .tariff .price__items input:checked + label .price__item-icon svg {
   display: none;
+}
+
+.tariff .price__items input:checked + label.start {
+  border-color: #53D624;
+}
+
+.tariff .price__items input:checked + label.comfort {
+  border-color: #FF004D;
+}
+
+.tariff .price__items input:checked + label.pro {
+  border-color: #8F00FF;
 }
 
 .tariff .price__item {
@@ -2643,24 +2672,29 @@ body {
     right: -12%;
   }
 
-  .mods__progress-item:nth-child(1) .progress-item__checkbox.active:after {
-    width: 88px;
+  .mods__progress {
+    max-width: 484px;
+  }
+
+  .mods__progress:before,
+  .mods__progress:after {
+    width: 350px;
+  }
+
+  .mods__progress:after {
+    width: 98px;
+  }
+
+  .mods__progress._66:after {
+    width: 272px;
+  }
+
+  .mods__progress._100:after {
+    width: 360px;
   }
 
   .mods__progress-item:nth-child(2) {
     margin: 0 50px;
-  }
-
-  .mods__progress-item:nth-child(2) .progress-item__checkbox:before {
-    width: 360px;
-  }
-
-  .mods__progress-item:nth-child(2) .progress-item__checkbox.active:after {
-    width: 180px;
-  }
-
-  .mods__progress-item:nth-child(3) .progress-item__checkbox.active:after {
-    width: 95px;
   }
 
   .price .gun {
